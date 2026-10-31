@@ -9719,7 +9719,7 @@ function cm88Gen(seed){const R=cm88Rng((seed>>>0)^0x8808);let G=null;
  for(const n of nodes){if(n.c===9)n.nx=['10:2'];else if(n.c<9)n.nx=cm88Nb(n.c,n.r).map(q=>(n.c+1)+':'+q).filter(id=>by[id]);}
  const sz=n=>n.t==='boss'||n.t==='elite'?4:Math.max(n.t==='escort'?2:1,(n.c<=2?2:n.c<=5?3:4)-(n.t==='escort'?1:0));
  for(const n of nodes){n.sz=sz(n);const k=(n.c*7+n.r*3)%4;
-  n.w=n.t==='start'?['kill','hunt','kill']:n.t==='fort'?(n.c>=7?['sh','sh']:['sh']):n.t==='escort'?['kill','escort','kill']:n.t==='elite'?['kill','hunt','boss']:n.t==='boss'?['kill','hold','kill','boss']
+  n.w=n.t==='start'?['kill']:n.t==='fort'?(n.c>=7?['sh','sh']:['sh']):n.t==='escort'?['kill','escort','kill']:n.t==='elite'?['kill','hunt','boss']:n.t==='boss'?['kill','hold','kill','boss']
    :n.c>=8?['kill',['hunt','collect','survive','hold'][k],'kill',['hold','hunt','collect','survive'][k]]:['kill',['hunt','collect','survive','hold'][k],'kill'];}
  return{nodes,by,act:G};}
 CM88.maps=MR.ORDER.filter(i=>SQMAPS[i]&&SQMAPS[i].i>=0);
@@ -9911,7 +9911,7 @@ function cm88Render(){const d=RL.d,C=cm88D(),g=CM88.g,M=mxS(),R=CM88.R,opts=cm88
   let el='';try{const sv=d.squad;if(cm88Combat(sel))d.squad=cm88Squad(sel).sq;try{el=mxEL();}finally{d.squad=sv;}}catch(e){}
   const o=cmb?cm88Squad(sel):null,bench=o?d.squad.filter(id=>o.sq.indexOf(id)<0):[];
   nd=`<div class="tb" style="background:${rq?CM88.REQ:T.c}"></div><div class="t" style="color:${rq?'#ff8ac4':'#fff'}">${T.f}</div><div class="m">STAGE ${sel.c} · ${cmb?mn:'NO FIGHT'}${cmb&&el?' · ENEMY LV '+el:''}</div><div class="d">${T.d}</div>`;
-  if(cmb)nd+=`<div class="l">${sel.w.length} WAVES · ${sel.w.filter(w=>w!=='kill').map(w=>w.toUpperCase()).join(' · ')||'CLEAR'}</div><div class="l">${cm88SzT(sel)}: <b>${o.sq.map(id=>rlUI.nm(id)).join(', ')}</b>${bench.length?' · '+bench.map(id=>rlUI.nm(id)+(cap89Has(id)?' (captive)':rc89N(id)?' (recovering '+rc89N(id)+')':' (bench)')).join(', '):''}</div>`;
+  if(cmb)nd+=`<div class="l">${sel.w.length} WAVE${sel.w.length===1?'':'S'} · ${sel.w.filter(w=>w!=='kill').map(w=>w.toUpperCase()).join(' · ')||'CLEAR'}</div><div class="l">${cm88SzT(sel)}: <b>${o.sq.map(id=>rlUI.nm(id)).join(', ')}</b>${bench.length?' · '+bench.map(id=>rlUI.nm(id)+(cap89Has(id)?' (captive)':rc89N(id)?' (recovering '+rc89N(id)+')':' (bench)')).join(', '):''}</div>`;
   if(rq)nd+=`<div class="l rq">REQUIRED: ${rlUI.nm(rq)} deploys here</div>`;
   if(sel.t==='elite'||sel.t==='boss')nd+=`<div class="l">REWARD: <b>◆ ${MX.GEM.boss} GOLD</b> + stage BLUE + stars</div>`;else if(cmb)nd+=`<div class="l">REWARD: stage BLUE + up to 3 stars</div>`;}
  if(CM88.msg)nd+=`<div class="ms">${CM88.msg}</div>`;
@@ -10653,11 +10653,12 @@ UW.V90={SH90,HP90,SC90,sc90Mig,sh90Build,hp90Init};
 {const _sc=rlStageClear;rlStageClear=function(){const S=G.squad;if(S&&S.clr90)return;if(S)S.clr90=1;return _sc.apply(this,arguments);};}
 
 
-// ===== 9.1: one-time FIRST-CLEAR BONUS (+600 gold for clearing campaign stage 1, once per save) =====
-const FC91={GOLD:600};
-{const _sc=rlStageClear;rlStageClear=function(){try{const d=RL.d,S=G.squad,st=RL.st;
- if(d&&st&&S&&!S.clr90&&!RL.i88&&d.stage===1&&!d.over){const M=mxS();if(!M.fc91){M.fc91=1;cur83Gold(FC91.GOLD);st.fc91=FC91.GOLD;try{mxSave();}catch(e){}}}}catch(e){}
- return _sc.apply(this,arguments);};}
+// ===== 9.1: one-time FIRST-CLEAR BONUS for campaign stage 1, once per save: tops gold up to 1,000 (min +600) after the normal stage pay =====
+const FC91={MIN:600,TO:1000};
+{const _sc=rlStageClear;rlStageClear=function(){let go=0;try{const d=RL.d,S=G.squad;go=!!(d&&RL.st&&S&&!S.clr90&&!RL.i88&&d.stage===1&&!d.over&&!mxS().fc91);}catch(e){}
+ const st=RL.st,r=_sc.apply(this,arguments);
+ if(go)try{const M=mxS();if(!M.fc91){M.fc91=1;const v=Math.max(FC91.MIN,FC91.TO-Math.round(M.gems||0));cur83Gold(v);if(st){st.fc91=v;st.gold83=(st.gold83||0)+(RL.st===st?0:v);}try{mxSave();rlSave();}catch(e){}try{if(V83&&V83.st===st&&V83.el&&V83.el.style.display!=='none'&&V83.pg===0)v83Render();}catch(e){}}}catch(e){}
+ return r;};}
 {const cs=document.createElement('style');cs.textContent=`#v83c .fc91{display:inline-flex;align-items:center;gap:10px;margin:10px 0 2px;padding:6px 16px;border:2px solid #ffe94a;border-radius:10px;background:linear-gradient(90deg,rgba(255,242,18,.24),rgba(255,200,40,.08));color:#FFF212;font:900 22px/1.1 inherit;letter-spacing:1px;animation:fc91in .6s cubic-bezier(.2,1.8,.4,1) .9s both}
 #v83c .fc91>svg,#v83c .fc91>i,#v83c .fc91>span,#v83c .fc91>img{width:30px!important;height:30px!important;flex:none;font-size:30px}
 #v83c .fc91>div{white-space:nowrap}
