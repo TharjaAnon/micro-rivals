@@ -7042,7 +7042,7 @@ const rlUI={el:null,page:null,f:0,sk:0,det:null,toast:'',conf:0,
 #rl69 .aura{position:absolute;left:-60px;top:20px;width:550px;height:600px;background:radial-gradient(ellipse at 50% 45%,var(--rc) 0%,transparent 62%);opacity:.55}
 #rl69 .rays{position:absolute;left:15px;top:70px;width:400px;height:400px;border-radius:50%;background:repeating-conic-gradient(from 0deg,var(--rc) 0 4deg,transparent 4deg 18deg);opacity:.22;animation:rlsp 24s linear infinite;-webkit-mask:radial-gradient(circle,#000 30%,transparent 70%);mask:radial-gradient(circle,#000 30%,transparent 70%)}
 @keyframes rlsp{to{transform:rotate(360deg)}}
-#rl69 .lft img{position:absolute;left:50%;bottom:58px;height:560px;transform:translateX(-50%);filter:drop-shadow(0 0 18px var(--rc))}
+#rl69 .lft img{position:absolute;left:50%;bottom:58px;height:560px;transform:translateX(-50%)}
 #rl69 .lft .nm{position:absolute;left:24px;bottom:14px;font-family:'MRA','MRB',Impact,sans-serif;font-style:italic;font-size:40px;font-weight:900;text-shadow:0 3px 0 #000}
 #rl69 .lft .nv{position:absolute;top:290px;width:44px;height:64px;border-radius:10px;background:rgba(10,14,30,.7);border:2px solid #3b4670;font-size:30px;display:flex;align-items:center;justify-content:center}
 #rl69 .rp{position:absolute;left:438px;top:14px;width:566px;height:612px;border-radius:14px;background:linear-gradient(rgba(18,24,46,.94),rgba(10,13,28,.96));border:2px solid #2f3a62}
@@ -7237,7 +7237,7 @@ const RLX_CSS=`
 @keyframes rkrays{to{opacity:.32}}
 #rlcx .rrays.ur{background:repeating-conic-gradient(from 0deg,#ff4a5a 0 5deg,#ffb02a 5deg 10deg,#ffe94a 10deg 15deg,#4aff8a 15deg 20deg,#4ac8ff 20deg 25deg,#b44aff 25deg 30deg)}
 #rlcx .rrays.r2{animation-direction:reverse,normal;width:620px;height:620px;left:450px;top:-75px}
-#rlcx .pw{position:absolute;left:-60px;top:20px;width:680px;height:620px;display:flex;justify-content:center;align-items:flex-end;animation:rkpor .75s cubic-bezier(.2,.9,.2,1) .15s both;filter:drop-shadow(0 0 26px var(--rc))}
+#rlcx .pw{position:absolute;left:-60px;top:20px;width:680px;height:620px;display:flex;justify-content:center;align-items:flex-end;animation:rkpor .75s cubic-bezier(.2,.9,.2,1) .15s both}
 #rlcx .pw img{height:600px}
 @keyframes rkpor{from{opacity:0;transform:translateX(-90px) scale(.9)}to{opacity:1;transform:none}}
 #rlcx .rnm{position:absolute;left:30px;bottom:26px;font-family:'MRA','MRB',Impact,sans-serif;font-style:italic;font-weight:900;font-size:52px;text-shadow:0 4px 0 #000,0 0 22px var(--rc);animation:rkpor .6s ease-out .5s both}
@@ -7927,7 +7927,7 @@ rlUI.detail=function(){const id=rlUI.det||RL.IDS[rlUI.f],d=RL.d,H=rlH(id),rk=H.r
    return`<div class="wt${on?' on':''}${q&&!own?' lk79':''}${j===rlUI.wf?' kf':''}" data-a="weq:${ci}"><div class="wk">${j}</div><img decoding="async" src="${(q&&mxCosArt(id,ci))||RLP[id]}" alt="" class="${q&&mxCosArt(id,ci)?'cosart':''}" style="${ci<0?'transform:translateX(calc(-50% + '+rlPO(id,'card')+'px));':''}${q&&!own?'filter:brightness(0)':q&&!mxCosArt(id,ci)?'filter:'+q.f:''}"><div class="wn">${q&&own?mxTagH(q,'w'):''}${q?(own?q.n:'???'):'DEFAULT'}<small>${q?(own?'look owned':'pull UR to unlock'):'base look'}</small></div><div class="ws${on?' eq':own?'':' lk'}">${lab}</div></div>`;}).join('')}</div>`;}
  const cost=rlUI.rankCost(id),cr=rlUI.canRank(id),atC=H.lv>=cap;
  const req=!atC?`Rank ${RL.RK[nr]} at Lv.${cap} (now ${H.lv}) · ◉ ${cost.toLocaleString()}`:d.coins<cost?`Need ◉ ${cost.toLocaleString()} (have ${d.coins.toLocaleString()})`:`◉ ${cost.toLocaleString()} → ${RL.RK[nr]} · ${mxRankGainTxt(id,rk,nr)}`;
- rlUI.el.de.innerHTML=`<div class="lft" style="--rc:${RL.RCOL[rk]}"><div class="aura"></div><div class="rays"></div><img decoding="async" src="${(eqc&&mxCosArt(id,eqc.i))||RLP[id]}" alt="" class="${eqc&&mxCosArt(id,eqc.i)?'cosart':''}" style="transform:translateX(calc(-50% + ${eqc?mxCosPO(id,eqc.i,'det'):rlPO(id,'det')}px));${eqc&&!mxCosArt(id,eqc.i)?'filter:'+eqc.f+' drop-shadow(0 0 18px var(--rc))':(eqc&&mxCosArt(id,eqc.i)?'filter:drop-shadow(0 0 18px var(--rc))':'')}"><div class="nm">${rlUI.nm(id)}</div>
+ rlUI.el.de.innerHTML=`<div class="lft" style="--rc:${RL.RCOL[rk]}"><div class="aura"></div><div class="rays"></div><img decoding="async" src="${(eqc&&mxCosArt(id,eqc.i))||RLP[id]}" alt="" class="${eqc&&mxCosArt(id,eqc.i)?'cosart':''}" style="transform:translateX(calc(-50% + ${eqc?mxCosPO(id,eqc.i,'det'):rlPO(id,'det')}px));${eqc&&!mxCosArt(id,eqc.i)?'filter:'+eqc.f:''}"><div class="nm">${rlUI.nm(id)}</div>
   <div class="nv" data-a="prevh" style="left:8px">‹</div><div class="nv" data-a="nexth" style="right:8px">›</div></div><div class="back" data-a="back">◂ ROSTER</div>
  <div class="rp"><div class="rh">${rlUI.badge(rk)}<span class="arw">➜</span>${rlUI.badge(nr)}<span style="color:#ffd23a;font-size:18px;margin-left:6px">${mxStarTxt(M.st[id],1)}</span></div>
   <div class="lvt">Lv.${H.lv}<small>NEXT RANK AT LV.${cap} · ◆ ${mxN(M.gems)}</small></div>
@@ -8077,7 +8077,7 @@ Object.assign(MXU,{ph:'done',fl:[],spl:null,chain:0,
   if(unl&&ur){const sg=mxSig(id).filter(k=>k>1);for(const k of sg)rows.push([SN[k],0,a[k]]);}
   const ban=unl?'<div class="sbn un">🔓 UNLOCKED!</div>':`<div class="sbn st">+1 STAR</div>`;
   w.innerHTML=`<div class="spl r${r}" data-a="spl">${ur?'<div class="prism"></div>':'<div class="gold"></div>'}<div class="rays"></div>${em76Svg(id,'em76sp')}
-   <img decoding="async" class="por${(ur?mxCosArt(id,it.i): (q&&mxCosArt(id,q.i)))?' cosart':''}" src="${(ur?mxCosArt(id,it.i):(q&&mxCosArt(id,q.i)))||RLP[id]}" alt="" style="${(ur?mxCosArt(id,it.i):(q&&mxCosArt(id,q.i)))?'filter:drop-shadow(0 0 30px rgba(255,255,255,.35))':(q&&q.f?'filter:'+q.f+' drop-shadow(0 0 30px rgba(255,255,255,.35))':'')}">
+   <img decoding="async" class="por${(ur?mxCosArt(id,it.i): (q&&mxCosArt(id,q.i)))?' cosart':''}" src="${(ur?mxCosArt(id,it.i):(q&&mxCosArt(id,q.i)))||RLP[id]}" alt="" style="${(ur?mxCosArt(id,it.i):(q&&mxCosArt(id,q.i)))?'':(q&&q.f?'filter:'+q.f:'')}">
    <div class="txt"><div class="rk">${MX.RN[r]}</div><div class="nm">${mxNm(id)}</div>${ur?`<div class="cn">👗 ${q.n}${mxTagH(q,'s')}</div><div class="cs">COSTUME SHOWCASE · STACK ×${it.stack} · +25% ATK +20% HP +2 SIG</div>`:''}
    ${ban}<div class="rows">${rows.map((x,j)=>`<div class="row"><span>${x[0]}</span><b class="cu" data-i="${j}">${x[3]||''}${Math.round(x[1])}</b><i>${x[0]==='STARS'||x[0]==='LEVEL'?'':'▲'}</i></div>`).join('')}</div>
    <div class="tap">TAP TO CONTINUE</div></div></div>`;
@@ -8574,7 +8574,7 @@ const CSS83=`
 #v83c .lp{position:absolute;left:-40px;top:0;width:390px;height:640px;background:linear-gradient(160deg,#5a1424,#2a0a14);clip-path:polygon(0 0,100% 0,78% 100%,0 100%);overflow:hidden;animation:v83in .45s cubic-bezier(.2,1,.3,1)}
 #v83c .lp:after{content:'';position:absolute;right:0;top:0;bottom:0;width:100%;clip-path:polygon(99% 0,100% 0,78.6% 100%,77.6% 100%);background:#ff3b5c;box-shadow:0 0 30px #ff3b5c}
 #v83c .lp .rg{position:absolute;left:40px;top:120px;width:300px;height:300px;border-radius:50%;border:26px solid rgba(255,90,110,.16)}
-#v83c .lp img{position:absolute;left:190px;bottom:-10px;height:560px;transform:translateX(-50%);filter:drop-shadow(0 0 18px rgba(255,60,90,.45))}
+#v83c .lp img{position:absolute;left:190px;bottom:-10px;height:560px;transform:translateX(-50%);filter:none}
 #v83c .lp img.cosart{height:600px;bottom:-30px}
 #v83c .mvp{position:absolute;left:24px;top:24px;z-index:3}#v83c .mvp i{display:inline-block;font-style:normal;background:#ffc93a;color:#2a1a00;font-weight:900;font-size:17px;padding:2px 30px;border-radius:14px}
 #v83c .mvp b{display:block;margin-top:10px;font-weight:900;font-size:24px;letter-spacing:.5px;text-shadow:0 2px 0 #000}
@@ -9011,13 +9011,13 @@ window.UC84=1;
  background:repeating-conic-gradient(from 0deg,rgba(255,230,140,.20) 0 5deg,transparent 5deg 15deg);
  -webkit-mask:radial-gradient(circle,#000 12%,transparent 58%);mask:radial-gradient(circle,#000 12%,transparent 58%);animation:r84spin 18s linear infinite}
 #v83c .lt84 .ry84{display:none}
-#v83c .lp .gl84{position:absolute;left:190px;top:300px;width:420px;height:420px;margin:-210px 0 0 -210px;border-radius:50%;background:radial-gradient(circle,rgba(255,220,120,.42),rgba(255,80,110,.12) 45%,transparent 70%);pointer-events:none}
+#v83c .lp .gl84{display:none;position:absolute;left:190px;top:300px;width:420px;height:420px;margin:-210px 0 0 -210px;border-radius:50%;background:radial-gradient(circle,rgba(255,220,120,.42),rgba(255,80,110,.12) 45%,transparent 70%);pointer-events:none}
 @keyframes r84spin{to{transform:rotate(360deg)}}
 #v83c .a84 .cl{animation:c84slam .6s cubic-bezier(.2,1.3,.4,1) backwards}
 @keyframes c84slam{0%{transform:scale(3.4) rotate(-10deg);opacity:0}45%{transform:scale(.86) rotate(1deg);opacity:1}70%{transform:scale(1.1)}100%{transform:none}}
 #v83c .a84 .lp{animation:v83in .55s .15s cubic-bezier(.2,1,.3,1) backwards}
 #v83c .a84 .lp img{animation:i84in .7s .2s cubic-bezier(.2,1,.3,1) backwards}
-@keyframes i84in{0%{transform:translateX(-50%) translateX(-140px) scale(1.06);filter:brightness(2.6) drop-shadow(0 0 40px #fff);opacity:0}60%{filter:brightness(1.5) drop-shadow(0 0 30px #ffe08a);opacity:1}}
+@keyframes i84in{0%{transform:translateX(-50%) translateX(-140px) scale(1.06);opacity:0}60%{opacity:1}}
 #v83c .a84 .ry84{animation:r84spin 18s linear infinite,f84in .8s .35s backwards}
 #v83c .a84 .gl84{animation:g84 1s .3s ease-out backwards}
 @keyframes g84{0%{transform:scale(.2);opacity:0}50%{transform:scale(1.25);opacity:1}}
@@ -10765,7 +10765,7 @@ const CF92={tm:[],n:0};
 #v83c .fy92{position:absolute;left:0;top:0;pointer-events:none;z-index:7;display:flex;align-items:center;justify-content:center;will-change:transform,opacity}
 #v83c .fy92 svg{width:100%;height:100%}#v83c .fy92 .xp{width:100%!important;height:100%!important;border-radius:50%;background:#7fe07a;color:#0b2a0a;font-weight:900;display:flex;align-items:center;justify-content:center}
 #v83c .fy92.ht{color:#ff5a8a;font-weight:900;line-height:1}
-#v83c .gw92{position:absolute;left:190px;top:330px;width:460px;height:460px;margin:-230px 0 0 -230px;border-radius:50%;pointer-events:none;opacity:0;z-index:1}
+#v83c .gw92{position:absolute;left:190px;top:330px;width:460px;height:460px;margin:-230px 0 0 -230px;border-radius:50%;pointer-events:none;opacity:0;box-sizing:border-box;background:none}
 #v83c .bt92{position:absolute;pointer-events:none;z-index:8;font:italic 900 34px/1 'MRA','MRB',Impact,sans-serif;color:#ff8ab0;white-space:nowrap;-webkit-text-stroke:2px #5a0a24}
 #v83c .lp img.hit92{}
 `;document.head.appendChild(st);})();
@@ -10777,7 +10777,7 @@ function cf92Target(stg){const img=stg.querySelector('.lp img');const r=(img||st
  return{x:r.left+r.width*.5,y:r.top+r.height*(img?.36:.5),img};}
 function cf92Intro(){const stg=V83.stg,el=V83.el;if(!stg||!el||!stg.querySelector('.lp img'))return;cf92Clear();
  const lite=v84Lite(),T=Object.assign({},V84T),pills=[...stg.querySelectorAll('.pl>div')];const sc=stg.getBoundingClientRect().width/1024||1;
- const er=el.getBoundingClientRect();const lp=stg.querySelector('.lp');let gw=lp.querySelector('.gw92');if(!gw){gw=document.createElement('div');gw.className='gw92';lp.appendChild(gw);}
+ const er=el.getBoundingClientRect();const lp=stg.querySelector('.lp');let gw=lp.querySelector('.gw92');if(!gw){gw=document.createElement('div');gw.className='gw92';const im=lp.querySelector('img');if(im)lp.insertBefore(gw,im);else lp.appendChild(gw);}
  let hits=0;
  pills.forEach((d,i)=>{const kind=cf92Kind(d),col=CF92C[kind],bond=kind==='bond';const t0=T.pill+i*T.pstep+T.pdur+120+(bond?260:0);
   const n=lite?(bond?5:3):(bond?12:7);
@@ -10791,8 +10791,8 @@ function cf92Intro(){const stg=V83.stg,el=V83.el;if(!stg||!el||!stg.querySelecto
    const D=(bond?820:660)+Math.random()*120;let an=null;try{an=f.animate(K,{duration:D,easing:'cubic-bezier(.45,0,.6,1)',fill:'forwards'});}catch(e){}
    const done=()=>{f.remove();if(!V83.stg)return;hits++;cf92Hit(stg,b,kind,col,j===0||bond,j===n-1&&bond,er,sc,lite);};if(an)an.onfinish=done;else setTimeout(done,D);});});}
 function cf92Hit(stg,b,kind,col,big,last,er,sc,lite){const img=b.img,gw=stg.querySelector('.gw92');
- if(img&&big){try{img.animate([{transform:'translateX(-50%)',filter:'brightness(1)'},{transform:'translateX(-50%) translateY(-'+(kind==='bond'?22:14)+'px) scale(1.045)',filter:'brightness(1.45)',offset:.35},{transform:'translateX(-50%) translateY(4px) scale(.99)',offset:.7},{transform:'translateX(-50%)',filter:'brightness(1)'}],{duration:kind==='bond'?520:380,easing:'ease-out'});}catch(e){}}
- if(gw){gw.style.background='radial-gradient(circle,rgba('+col+',.55),rgba('+col+',.18) 45%,transparent 70%)';try{gw.animate([{opacity:0,transform:'scale(.7)'},{opacity:1,transform:'scale(1.08)',offset:.3},{opacity:0,transform:'scale(1.25)'}],{duration:kind==='bond'?700:480,easing:'ease-out'});}catch(e){}}
+ if(img&&big){try{img.animate([{transform:'translateX(-50%)',},{transform:'translateX(-50%) translateY(-'+(kind==='bond'?22:14)+'px) scale(1.045)',offset:.35},{transform:'translateX(-50%) translateY(4px) scale(.99)',offset:.7},{transform:'translateX(-50%)'}],{duration:kind==='bond'?520:380,easing:'ease-out'});}catch(e){}}
+ if(gw){gw.style.border=(kind==='bond'?10:6)+'px solid rgba('+col+',.8)';try{gw.animate([{opacity:0,transform:'scale(.7)'},{opacity:1,transform:'scale(1.08)',offset:.3},{opacity:0,transform:'scale(1.25)'}],{duration:kind==='bond'?700:480,easing:'ease-out'});}catch(e){}}
  const R=V84.run;if(R&&R.cv&&!lite)v84Burst(img||stg,big?16:6,[col,'255,255,255'],big?.8:.4);
  if(last){// bond: heart burst out of her and a +BOND callout
   const el=V83.el,n=lite?8:16;for(let i=0;i<n;i++){const h=document.createElement('div');h.className='fy92 ht';const s=Math.round((18+Math.random()*22)*sc);h.style.width=s+'px';h.style.height=s+'px';h.style.fontSize=s+'px';h.textContent='♥';el.appendChild(h);
@@ -10804,6 +10804,24 @@ function cf92Hit(stg,b,kind,col,big,last,er,sc,lite){const img=b.img,gw=stg.quer
 {const _i=v84Intro;v84Intro=function(){const r=_i.apply(this,arguments);try{cf92Intro();}catch(e){console.error(e);}return r;};}
 {const _d=v84Done;v84Done=function(skip){if(skip)cf92Clear();return _d.apply(this,arguments);};}
 {const _a=v83Act;v83Act=function(){cf92Clear();return _a.apply(this,arguments);};}
-UW.V92={SH92,sh92Plan,sh92Next,cf92Intro,CF92};
+UW.V92=Object.assign(UW.V92||{},{SH92,sh92Plan,sh92Next,cf92Intro,CF92});
+// ===================== 9.2: no skill cancels / combos (all heroines, player + AI) =====================
+// A skill that is still dashing, flurrying or recovering blocks every other skill; after a skill fires, the
+// other slots wait a short shared lockout. Inputs during the lock are ignored (no buffered cancel).
+const LK92={on:1,L:[.12,.32,.3,.25,.35],MAXT:.5,inSk:0,inCb:0,blk:0};
+function lk92Now(){const S=G.squad;return S?S.time||0:0;}
+function lk92Busy(h){if(!h)return false;if(h.mvA)return true;const n=lk92Now();return (h.bz92||0)>n;}
+function lk92Ok(h,s){if(!LK92.on||!h||!h.k9)return true;if(lk92Busy(h))return false;const n=lk92Now();if((h.lk92||0)>n&&h.lks92!==s)return false;return true;}
+function lk92Mark(h,s){const n=lk92Now();h.lk92=n+LK92.L[s];h.lks92=s;}
+{const _l=k9Later;k9Later=function(h,t,fn){if(h&&(LK92.inSk||LK92.inCb)){if(t<=LK92.MAXT)h.bz92=Math.max(h.bz92||0,lk92Now()+t);const f=fn;fn=function(){LK92.inCb++;try{return f.apply(this,arguments);}finally{LK92.inCb--;}};}return _l.call(this,h,t,fn);};}
+{const _a=k9Act;k9Act=function(h,o){if(o&&o.onEnd&&(LK92.inSk||LK92.inCb)){const f=o.onEnd;o=Object.assign({},o,{onEnd:function(){LK92.inCb++;try{return f.apply(this,arguments);}finally{LK92.inCb--;}}});}return _a.call(this,h,o);};}
+{const _ku=k9Use;k9Use=function(h,s){if(h&&h.k9&&s>=0&&s<=4&&!lk92Ok(h,s)){LK92.blk++;return false;}LK92.inSk++;let r;try{r=_ku.apply(this,arguments);}finally{LK92.inSk--;}if(r&&h&&h.k9&&s>=0&&s<=4)lk92Mark(h,s);return r;};}
+{const _ul=k9Ult;k9Ult=function(h){if(h&&h.k9&&!LK92.inSk&&!lk92Ok(h,4)){LK92.blk++;return false;}const pre=!!(h&&h.ultOn);LK92.inSk++;let r;try{r=_ul.apply(this,arguments);}finally{LK92.inSk--;}if(r&&h&&h.k9&&!LK92.inSk)lk92Mark(h,4);return r;};}
+{const _s=sqKInit;sqKInit=function(h){const r=_s.apply(this,arguments);h.bz92=0;h.lk92=0;h.lks92=-1;return r;};}
+// the shared lockout counts from the END of the skill (dash / flurry / recovery), not from the button press
+function lk92Tick(){const S=G.squad;if(!S||!S.heroes||G.state!=='play')return;const n=S.time||0;for(const h of S.heroes){if(!h||!h.k9||!h.alive)continue;let e=0;
+ if(h.mvA)e=n+Math.max(0,(h.mvA.T||0)-(h.mvA.t||0));if((h.bz92||0)>e)e=h.bz92;if(e>n&&h.lks92>=0)h.lk92=Math.max(h.lk92||0,e+LK92.L[h.lks92]);}}
+{const _u=update;update=function(){const r=_u.apply(this,arguments);try{lk92Tick();}catch(e){}return r;};}
+UW.V92=Object.assign(UW.V92||{},{LK92,lk92Ok,lk92Busy});
 
 </script></body></html>
