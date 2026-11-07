@@ -1,4 +1,5 @@
 // Bump CACHE whenever the game HTML changes.
+// Only hangout-* caches are cleaned up so the main game's cache (same origin) is untouched.
 const CACHE = 'hangout-mock-1.4';
 const ASSETS = [
   './',
@@ -17,7 +18,7 @@ self.addEventListener('install', (event) => {
 self.addEventListener('activate', (event) => {
   event.waitUntil(
     caches.keys()
-      .then((keys) => Promise.all(keys.filter((k) => k !== CACHE).map((k) => caches.delete(k))))
+      .then((keys) => Promise.all(keys.filter((k) => k.startsWith('hangout-') && k !== CACHE).map((k) => caches.delete(k))))
       .then(() => self.clients.claim())
   );
 });
