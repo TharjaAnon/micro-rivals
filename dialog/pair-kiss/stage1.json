@@ -1,0 +1,919 @@
+{
+  "version": "2.0",
+  "scripts": {
+    "EF-RG": {
+      "a": "EF",
+      "b": "RG",
+      "lines": [
+        {
+          "id": "S1-EF-RG-1",
+          "speaker": "EF",
+          "text": "You're thinking very loudly, darling. Something about whether I'm really letting you sit this close."
+        },
+        {
+          "id": "S1-EF-RG-2",
+          "speaker": "RG",
+          "text": "Well, can ya blame me? Folks like you don't usually look twice at a girl like me, Emma."
+        },
+        {
+          "id": "S1-EF-RG-3",
+          "speaker": "EF",
+          "text": "Folks like me have impeccable taste. And I've looked at you a great deal more than twice."
+        },
+        {
+          "id": "S1-EF-RG-4",
+          "speaker": "RG",
+          "text": "Lord, don't say things like that with a straight face, sugah. I'll believe every word."
+        }
+      ]
+    },
+    "EF-BW": {
+      "a": "EF",
+      "b": "BW",
+      "lines": [
+        {
+          "id": "S1-EF-BW-1",
+          "speaker": "EF",
+          "text": "You've worn that perfectly neutral face since the moment we sat down, Natasha. I could teach a class on that face."
+        },
+        {
+          "id": "S1-EF-BW-2",
+          "speaker": "BW",
+          "text": "Then you know it means nothing. I'm completely calm."
+        },
+        {
+          "id": "S1-EF-BW-3",
+          "speaker": "EF",
+          "text": "Your mind says otherwise, darling. It's been repeating my name like a nervous little drumbeat."
+        },
+        {
+          "id": "S1-EF-BW-4",
+          "speaker": "BW",
+          "text": "That's an invasion of privacy. ...Fine. It's accurate. Don't make me say it twice."
+        }
+      ]
+    },
+    "EF-BC": {
+      "a": "EF",
+      "b": "BC",
+      "lines": [
+        {
+          "id": "S1-EF-BC-1",
+          "speaker": "EF",
+          "text": "You stole my earring the first time we met."
+        },
+        {
+          "id": "S1-EF-BC-2",
+          "speaker": "BC",
+          "text": "And I gave it back, didn't I?"
+        },
+        {
+          "id": "S1-EF-BC-3",
+          "speaker": "EF",
+          "text": "Eventually. You kept my attention, though."
+        },
+        {
+          "id": "S1-EF-BC-4",
+          "speaker": "BC",
+          "text": "Mm. That one I'm never giving back."
+        }
+      ]
+    },
+    "EF-LS": {
+      "a": "EF",
+      "b": "LS",
+      "lines": [
+        {
+          "id": "S1-EF-LS-1",
+          "speaker": "EF",
+          "text": "You're staring at me like I'm the headliner, Luna. I'm flattered, but do remember to breathe."
+        },
+        {
+          "id": "S1-EF-LS-2",
+          "speaker": "LS",
+          "text": "I can't help it! You're Emma Frost! You sat down next to me like it was nothing!"
+        },
+        {
+          "id": "S1-EF-LS-3",
+          "speaker": "EF",
+          "text": "It was nothing, darling. Choosing you is the easiest decision I've made in years."
+        },
+        {
+          "id": "S1-EF-LS-4",
+          "speaker": "LS",
+          "text": "Then I'm going to be really brave and hold your hand! Okay? Okay! I'm doing it!"
+        }
+      ]
+    },
+    "EF-IW": {
+      "a": "EF",
+      "b": "IW",
+      "lines": [
+        {
+          "id": "S1-EF-IW-1",
+          "speaker": "EF",
+          "text": "Susan, you keep straightening my collar. I'm beginning to suspect it's an excuse."
+        },
+        {
+          "id": "S1-EF-IW-2",
+          "speaker": "IW",
+          "text": "It is an excuse, honey. You're very hard to fuss over when you pretend you don't need it."
+        },
+        {
+          "id": "S1-EF-IW-3",
+          "speaker": "EF",
+          "text": "I don't need it. I simply... permit it. From you. Exclusively."
+        },
+        {
+          "id": "S1-EF-IW-4",
+          "speaker": "IW",
+          "text": "That's the sweetest thing you've ever said to me, and you said it like a contract. I'll take it, sweetheart."
+        }
+      ]
+    },
+    "RG-EF": {
+      "a": "RG",
+      "b": "EF",
+      "lines": [
+        {
+          "id": "S1-RG-EF-1",
+          "speaker": "RG",
+          "text": "Emma, I gotta tell ya somethin' plain, 'cause I ain't any good at fancy. I like bein' near you. A whole lot."
+        },
+        {
+          "id": "S1-RG-EF-2",
+          "speaker": "EF",
+          "text": "Darling, I've spent years surrounded by clever people saying clever things. Nobody has ever said anything that plainly to me."
+        },
+        {
+          "id": "S1-RG-EF-3",
+          "speaker": "RG",
+          "text": "Is that good or bad, sugah? 'Cause your face just did somethin' I ain't never seen it do."
+        },
+        {
+          "id": "S1-RG-EF-4",
+          "speaker": "EF",
+          "text": "It's good. Terribly good. And if you tell anyone I blushed, I'll deny it with my whole chest."
+        }
+      ]
+    },
+    "RG-BW": {
+      "a": "RG",
+      "b": "BW",
+      "lines": [
+        {
+          "id": "S1-RG-BW-1",
+          "speaker": "RG",
+          "text": "You went real quiet when I reached for your hand, Natasha. Didn't pull away, though."
+        },
+        {
+          "id": "S1-RG-BW-2",
+          "speaker": "BW",
+          "text": "I thought about it. Habit. Then I decided I didn't want to."
+        },
+        {
+          "id": "S1-RG-BW-3",
+          "speaker": "RG",
+          "text": "That's a big ol' risk for somebody who plans everything. I don't take it lightly, darlin'."
+        },
+        {
+          "id": "S1-RG-BW-4",
+          "speaker": "BW",
+          "text": "Good. Because I've never let anyone watch me decide something like that. Only you."
+        }
+      ]
+    },
+    "RG-BC": {
+      "a": "RG",
+      "b": "BC",
+      "lines": [
+        {
+          "id": "S1-RG-BC-1",
+          "speaker": "RG",
+          "text": "Felicia, you keep sneakin' closer like you think I won't notice. I notice, sugah."
+        },
+        {
+          "id": "S1-RG-BC-2",
+          "speaker": "BC",
+          "text": "Old habits, cowgirl. I'm used to getting close to things without asking first."
+        },
+        {
+          "id": "S1-RG-BC-3",
+          "speaker": "RG",
+          "text": "Well, you don't gotta sneak with me. I spent too many years wishin' somebody'd just walk right up and hold on."
+        },
+        {
+          "id": "S1-RG-BC-4",
+          "speaker": "BC",
+          "text": "...Okay. No tricks, then. Just me, arms open. That's scarier than any vault, you know."
+        }
+      ]
+    },
+    "RG-LS": {
+      "a": "RG",
+      "b": "LS",
+      "lines": [
+        {
+          "id": "S1-RG-LS-1",
+          "speaker": "RG",
+          "text": "Luna, you look at me like I'm somethin' special, and I swear I don't know what to do with my hands."
+        },
+        {
+          "id": "S1-RG-LS-2",
+          "speaker": "LS",
+          "text": "Hold mine! That's what they're for! You're allowed to want things, Rogue. Really, truly!"
+        },
+        {
+          "id": "S1-RG-LS-3",
+          "speaker": "RG",
+          "text": "You make it sound so simple, darlin'. Like wantin' you ain't somethin' I gotta apologize for."
+        },
+        {
+          "id": "S1-RG-LS-4",
+          "speaker": "LS",
+          "text": "Because it isn't! Never ever! I want you right back, so we're even!"
+        }
+      ]
+    },
+    "RG-IW": {
+      "a": "RG",
+      "b": "IW",
+      "lines": [
+        {
+          "id": "S1-RG-IW-1",
+          "speaker": "RG",
+          "text": "Sue, you hold me like it's the easiest thing in the world."
+        },
+        {
+          "id": "S1-RG-IW-2",
+          "speaker": "IW",
+          "text": "It is the easiest thing in the world, sweetheart."
+        },
+        {
+          "id": "S1-RG-IW-3",
+          "speaker": "RG",
+          "text": "Nobody's ever made it feel easy before."
+        },
+        {
+          "id": "S1-RG-IW-4",
+          "speaker": "IW",
+          "text": "Then I'll keep doing it until you stop being surprised."
+        }
+      ]
+    },
+    "BW-EF": {
+      "a": "BW",
+      "b": "EF",
+      "lines": [
+        {
+          "id": "S1-BW-EF-1",
+          "speaker": "BW",
+          "text": "You haven't said anything clever in a full minute, Emma. I'm starting to worry."
+        },
+        {
+          "id": "S1-BW-EF-2",
+          "speaker": "EF",
+          "text": "I'm conserving my wit, darling. You make me want to say something sincere, and that requires preparation."
+        },
+        {
+          "id": "S1-BW-EF-3",
+          "speaker": "BW",
+          "text": "Take your time. I've been rehearsing mine for weeks and it still sounds like a mission brief."
+        },
+        {
+          "id": "S1-BW-EF-4",
+          "speaker": "EF",
+          "text": "Then let's both be terrible at it together. I'll start: I'm glad it's you, Natasha."
+        }
+      ]
+    },
+    "BW-RG": {
+      "a": "BW",
+      "b": "RG",
+      "lines": [
+        {
+          "id": "S1-BW-RG-1",
+          "speaker": "BW",
+          "text": "So. We're doing this properly now. Officially."
+        },
+        {
+          "id": "S1-BW-RG-2",
+          "speaker": "RG",
+          "text": "Officially, sugah? You sound like you're signin' paperwork."
+        },
+        {
+          "id": "S1-BW-RG-3",
+          "speaker": "BW",
+          "text": "I'm nervous. Paperwork is how I hide it."
+        },
+        {
+          "id": "S1-BW-RG-4",
+          "speaker": "RG",
+          "text": "Then quit hidin'. I took my gloves off for you, Natasha. Least you can do is smile."
+        }
+      ]
+    },
+    "BW-BC": {
+      "a": "BW",
+      "b": "BC",
+      "lines": [
+        {
+          "id": "S1-BW-BC-1",
+          "speaker": "BW",
+          "text": "You let me sit on your blind side, Felicia. You never do that."
+        },
+        {
+          "id": "S1-BW-BC-2",
+          "speaker": "BC",
+          "text": "Neither do you, Nat. Guess we both found something worth getting caught for."
+        },
+        {
+          "id": "S1-BW-BC-3",
+          "speaker": "BW",
+          "text": "I spent years trying to catch you. I never imagined it would feel like this."
+        },
+        {
+          "id": "S1-BW-BC-4",
+          "speaker": "BC",
+          "text": "Catching me was the easy part, Natasha. Keeping me is the real job. Think you're up for it?"
+        }
+      ]
+    },
+    "BW-LS": {
+      "a": "BW",
+      "b": "LS",
+      "lines": [
+        {
+          "id": "S1-BW-LS-1",
+          "speaker": "BW",
+          "text": "You've been smiling at me for ten seconds straight, Luna. I'm trying to work out what you want."
+        },
+        {
+          "id": "S1-BW-LS-2",
+          "speaker": "LS",
+          "text": "Nothing sneaky! I just like looking at you! Is that allowed, or is it classified?"
+        },
+        {
+          "id": "S1-BW-LS-3",
+          "speaker": "BW",
+          "text": "It's... allowed. People don't usually look at me like that. Like there's nothing to be afraid of."
+        },
+        {
+          "id": "S1-BW-LS-4",
+          "speaker": "LS",
+          "text": "There isn't! And oh my gosh, Natasha, you're blushing! I made the Black Widow blush! This is going in my diary forever!"
+        }
+      ]
+    },
+    "BW-IW": {
+      "a": "BW",
+      "b": "IW",
+      "lines": [
+        {
+          "id": "S1-BW-IW-1",
+          "speaker": "BW",
+          "text": "Sue. Everyone's taken care of. Nobody needs either of us for a while."
+        },
+        {
+          "id": "S1-BW-IW-2",
+          "speaker": "IW",
+          "text": "I keep waiting for someone to call my name. It's strange, honey, just... sitting with you."
+        },
+        {
+          "id": "S1-BW-IW-3",
+          "speaker": "BW",
+          "text": "We're always the responsible ones. I'd like to be irresponsible for once, milaya. Just with you."
+        },
+        {
+          "id": "S1-BW-IW-4",
+          "speaker": "IW",
+          "text": "Oh, Natasha. Yes. Let them manage without us. I want something that's only ours."
+        }
+      ]
+    },
+    "BC-EF": {
+      "a": "BC",
+      "b": "EF",
+      "lines": [
+        {
+          "id": "S1-BC-EF-1",
+          "speaker": "BC",
+          "text": "Before you say a word, Emma, I want it on the record: I made the first move and I spoke first."
+        },
+        {
+          "id": "S1-BC-EF-2",
+          "speaker": "EF",
+          "text": "Darling, I let you. I saw you coming three thoughts away."
+        },
+        {
+          "id": "S1-BC-EF-3",
+          "speaker": "BC",
+          "text": "Uh-huh. Then why'd your eyebrows jump when I took your hand? Queens don't flinch, kitten."
+        },
+        {
+          "id": "S1-BC-EF-4",
+          "speaker": "EF",
+          "text": "Queens don't flinch. They react with tremendous elegance. ...Don't you dare let go."
+        }
+      ]
+    },
+    "BC-RG": {
+      "a": "BC",
+      "b": "RG",
+      "lines": [
+        {
+          "id": "S1-BC-RG-1",
+          "speaker": "BC",
+          "text": "Rogue, sugar, you keep looking at my hand like it's the crown jewels. Go on. It's not alarmed."
+        },
+        {
+          "id": "S1-BC-RG-2",
+          "speaker": "RG",
+          "text": "Ain't the hand, Felicia. It's that you're just offerin' it. Nobody used to offer."
+        },
+        {
+          "id": "S1-BC-RG-3",
+          "speaker": "BC",
+          "text": "Then I'm the first thief in history giving something away for free. Don't tell anyone, I have a reputation."
+        },
+        {
+          "id": "S1-BC-RG-4",
+          "speaker": "RG",
+          "text": "Your secret's safe, darlin'. But I'm keepin' the hand. Finders keepers."
+        }
+      ]
+    },
+    "BC-BW": {
+      "a": "BC",
+      "b": "BW",
+      "lines": [
+        {
+          "id": "S1-BC-BW-1",
+          "speaker": "BC",
+          "text": "Nat, you've checked me for hidden lockpicks twice now. I'm starting to think you just like the excuse."
+        },
+        {
+          "id": "S1-BC-BW-2",
+          "speaker": "BW",
+          "text": "Professional caution. You have a history."
+        },
+        {
+          "id": "S1-BC-BW-3",
+          "speaker": "BC",
+          "text": "So do you, Agent Romanoff. Funny how ours keeps turning into the same story."
+        },
+        {
+          "id": "S1-BC-BW-4",
+          "speaker": "BW",
+          "text": "...Fine. I liked the excuse. Don't look so pleased with yourself, Felicia."
+        }
+      ]
+    },
+    "BC-LS": {
+      "a": "BC",
+      "b": "LS",
+      "lines": [
+        {
+          "id": "S1-BC-LS-1",
+          "speaker": "BC",
+          "text": "You signed my hand instead of a photo. Nobody's ever given me an autograph."
+        },
+        {
+          "id": "S1-BC-LS-2",
+          "speaker": "LS",
+          "text": "You're my favourite fan! I mean... my favourite person!"
+        },
+        {
+          "id": "S1-BC-LS-3",
+          "speaker": "BC",
+          "text": "I'll take both titles, starlight."
+        },
+        {
+          "id": "S1-BC-LS-4",
+          "speaker": "LS",
+          "text": "Then you're stuck with me! Forever! Hehe!"
+        }
+      ]
+    },
+    "BC-IW": {
+      "a": "BC",
+      "b": "IW",
+      "lines": [
+        {
+          "id": "S1-BC-IW-1",
+          "speaker": "BC",
+          "text": "Sue, you've fed everyone, fixed everyone's problems, and checked on everyone twice. Now I'm stealing you for myself."
+        },
+        {
+          "id": "S1-BC-IW-2",
+          "speaker": "IW",
+          "text": "Felicia, honey, you can't just steal a person. ...Though you're doing a very charming job of it."
+        },
+        {
+          "id": "S1-BC-IW-3",
+          "speaker": "BC",
+          "text": "Mm, I'm a professional. Look at you, all pink. You've taken care of everybody so long you forgot how to be taken care of."
+        },
+        {
+          "id": "S1-BC-IW-4",
+          "speaker": "IW",
+          "text": "Maybe I did. Don't you dare laugh, sweetheart. You're the only troublemaker I'd ever let get away with this."
+        }
+      ]
+    },
+    "LS-EF": {
+      "a": "LS",
+      "b": "EF",
+      "lines": [
+        {
+          "id": "S1-LS-EF-1",
+          "speaker": "LS",
+          "text": "Emma! Emma! I sat next to you without tripping over anything! Are you proud of me?"
+        },
+        {
+          "id": "S1-LS-EF-2",
+          "speaker": "EF",
+          "text": "Enormously, darling. Though your thoughts did a small cartwheel when our knees touched."
+        },
+        {
+          "id": "S1-LS-EF-3",
+          "speaker": "LS",
+          "text": "You weren't supposed to hear that! ...Okay, fine, it was a big cartwheel! A whole routine!"
+        },
+        {
+          "id": "S1-LS-EF-4",
+          "speaker": "EF",
+          "text": "Then I'll give it a perfect score. Come closer, sunshine, and let the queen be fond of you properly."
+        }
+      ]
+    },
+    "LS-RG": {
+      "a": "LS",
+      "b": "RG",
+      "lines": [
+        {
+          "id": "S1-LS-RG-1",
+          "speaker": "LS",
+          "text": "Rogue! Your gloves are off again! That means you're comfy with me, right? Right?"
+        },
+        {
+          "id": "S1-LS-RG-2",
+          "speaker": "RG",
+          "text": "Means I trust ya, sugah. More'n I've trusted most anybody."
+        },
+        {
+          "id": "S1-LS-RG-3",
+          "speaker": "LS",
+          "text": "Then I'm going to hold your hand every single chance I get! You'll be so tired of it!"
+        },
+        {
+          "id": "S1-LS-RG-4",
+          "speaker": "RG",
+          "text": "Darlin', I waited half my life for somebody to say that. Ain't no way I'm gettin' tired of it."
+        }
+      ]
+    },
+    "LS-BW": {
+      "a": "LS",
+      "b": "BW",
+      "lines": [
+        {
+          "id": "S1-LS-BW-1",
+          "speaker": "LS",
+          "text": "Natasha, I wrote you a song! Well, half a song. The chorus is mostly just your name!"
+        },
+        {
+          "id": "S1-LS-BW-2",
+          "speaker": "BW",
+          "text": "...You wrote a song about me. Nobody does that. People write reports about me."
+        },
+        {
+          "id": "S1-LS-BW-3",
+          "speaker": "LS",
+          "text": "Reports are boring! You're not boring! You make this little face when you're happy and nobody else gets to see it!"
+        },
+        {
+          "id": "S1-LS-BW-4",
+          "speaker": "BW",
+          "text": "That's... the face I'm making now, isn't it. Don't you dare put it in the second verse, milaya."
+        }
+      ]
+    },
+    "LS-BC": {
+      "a": "LS",
+      "b": "BC",
+      "lines": [
+        {
+          "id": "S1-LS-BC-1",
+          "speaker": "LS",
+          "text": "Felicia! Everyone says the Black Cat can never be caught! But I caught you! You're my girlfriend!"
+        },
+        {
+          "id": "S1-LS-BC-2",
+          "speaker": "BC",
+          "text": "Shh, starlight, you'll ruin my reputation. ...Say it again, though."
+        },
+        {
+          "id": "S1-LS-BC-3",
+          "speaker": "LS",
+          "text": "My girlfriend! The most slippery thief alive, and she chose to stay with me! I'm telling everyone!"
+        },
+        {
+          "id": "S1-LS-BC-4",
+          "speaker": "BC",
+          "text": "Go ahead. For you, I'll let the whole world know I got caught. Just this once. ...Okay, every time."
+        }
+      ]
+    },
+    "LS-IW": {
+      "a": "LS",
+      "b": "IW",
+      "lines": [
+        {
+          "id": "S1-LS-IW-1",
+          "speaker": "LS",
+          "text": "Sue, sit down! You've made sure everybody else is okay, and nobody's asked about you yet!"
+        },
+        {
+          "id": "S1-LS-IW-2",
+          "speaker": "IW",
+          "text": "Oh, sweetheart, I'm fine. Someone has to keep an eye on all of you."
+        },
+        {
+          "id": "S1-LS-IW-3",
+          "speaker": "LS",
+          "text": "Then I'm keeping an eye on you! Right now! Did you even eat? Are your feet sore? Tell me everything!"
+        },
+        {
+          "id": "S1-LS-IW-4",
+          "speaker": "IW",
+          "text": "Luna... I don't know what to do with being fussed over, honey. I think I could get used to it."
+        }
+      ]
+    },
+    "IW-EF": {
+      "a": "IW",
+      "b": "EF",
+      "lines": [
+        {
+          "id": "S1-IW-EF-1",
+          "speaker": "IW",
+          "text": "Emma, you're doing that thing where you look bored so no one notices you're happy."
+        },
+        {
+          "id": "S1-IW-EF-2",
+          "speaker": "EF",
+          "text": "Susan, I'm never bored. I'm merely selective about who gets to see me pleased."
+        },
+        {
+          "id": "S1-IW-EF-3",
+          "speaker": "IW",
+          "text": "Well, I've seen it. Twice now. You can't take it back, sweetheart."
+        },
+        {
+          "id": "S1-IW-EF-4",
+          "speaker": "EF",
+          "text": "I wouldn't dream of it. Though I'm keeping count of every time you catch me, and you're winning."
+        }
+      ]
+    },
+    "IW-RG": {
+      "a": "IW",
+      "b": "RG",
+      "lines": [
+        {
+          "id": "S1-IW-RG-1",
+          "speaker": "IW",
+          "text": "Rogue, honey, you still wait for me to reach first. Every single time."
+        },
+        {
+          "id": "S1-IW-RG-2",
+          "speaker": "RG",
+          "text": "Old habit, Sue. Spent so long bein' careful, I forget I'm allowed to just... reach."
+        },
+        {
+          "id": "S1-IW-RG-3",
+          "speaker": "IW",
+          "text": "You're allowed. Always. With me, you never need to ask, sweetheart."
+        },
+        {
+          "id": "S1-IW-RG-4",
+          "speaker": "RG",
+          "text": "Then I'm reachin'. Right now. And you're gonna have to put up with me not lettin' go."
+        }
+      ]
+    },
+    "IW-BW": {
+      "a": "IW",
+      "b": "BW",
+      "lines": [
+        {
+          "id": "S1-IW-BW-1",
+          "speaker": "IW",
+          "text": "Natasha, you're sitting like you're ready to leave at a moment's notice. You can relax, sweetheart."
+        },
+        {
+          "id": "S1-IW-BW-2",
+          "speaker": "BW",
+          "text": "I am relaxed. This is relaxed, for me. ...Mostly."
+        },
+        {
+          "id": "S1-IW-BW-3",
+          "speaker": "IW",
+          "text": "Then let me help with the rest. Take a breath, and give me your hand. There. Much better."
+        },
+        {
+          "id": "S1-IW-BW-4",
+          "speaker": "BW",
+          "text": "You're the only person who could tell me to relax and actually get away with it, Sue."
+        }
+      ]
+    },
+    "IW-BC": {
+      "a": "IW",
+      "b": "BC",
+      "lines": [
+        {
+          "id": "S1-IW-BC-1",
+          "speaker": "IW",
+          "text": "Felicia, you've been very well behaved. Nothing's gone missing at all. I'm almost suspicious."
+        },
+        {
+          "id": "S1-IW-BC-2",
+          "speaker": "BC",
+          "text": "Reformed, darling. The only thing worth stealing is sitting right next to me."
+        },
+        {
+          "id": "S1-IW-BC-3",
+          "speaker": "IW",
+          "text": "That's a very smooth line, honey. I'm going to pretend it didn't work on me."
+        },
+        {
+          "id": "S1-IW-BC-4",
+          "speaker": "BC",
+          "text": "You're going see-through around the edges, Sue. Pretty sure that means it worked."
+        }
+      ]
+    },
+    "IW-LS": {
+      "a": "IW",
+      "b": "LS",
+      "lines": [
+        {
+          "id": "S1-IW-LS-1",
+          "speaker": "IW",
+          "text": "Did you remember your scarf? You always forget it."
+        },
+        {
+          "id": "S1-IW-LS-2",
+          "speaker": "LS",
+          "text": "I don't get cold! ...But I wore it anyway, because you knitted it!"
+        },
+        {
+          "id": "S1-IW-LS-3",
+          "speaker": "IW",
+          "text": "You're such a sweetheart."
+        },
+        {
+          "id": "S1-IW-LS-4",
+          "speaker": "LS",
+          "text": "You're my sweetheart, Sue! That's the whole point!"
+        }
+      ]
+    }
+  },
+  "generic_fallback": {
+    "BW": [
+      {
+        "id": "G1-BW-1",
+        "role": "A",
+        "text": "You've gone quiet. That's usually my move."
+      },
+      {
+        "id": "G1-BW-2",
+        "role": "B",
+        "text": "I'm nervous. I don't get nervous. Remember that."
+      },
+      {
+        "id": "G1-BW-3",
+        "role": "A",
+        "text": "You don't have to say anything. I'm already listening."
+      },
+      {
+        "id": "G1-BW-4",
+        "role": "B",
+        "text": "Then stay close. Closer than that."
+      }
+    ],
+    "RG": [
+      {
+        "id": "G1-RG-1",
+        "role": "A",
+        "text": "You're mighty quiet, sugah. Somethin' on your mind?"
+      },
+      {
+        "id": "G1-RG-2",
+        "role": "B",
+        "text": "My heart's goin' a mile a minute, darlin'. That's all."
+      },
+      {
+        "id": "G1-RG-3",
+        "role": "A",
+        "text": "Hush, hon. Whatever it is, I'm right with ya."
+      },
+      {
+        "id": "G1-RG-4",
+        "role": "B",
+        "text": "Then don't you let go of my hand. Not yet."
+      }
+    ],
+    "BC": [
+      {
+        "id": "G1-BC-1",
+        "role": "A",
+        "text": "Look at you, all quiet. Did someone steal your words, kitten?"
+      },
+      {
+        "id": "G1-BC-2",
+        "role": "B",
+        "text": "Mm. My heart's misbehaving. It does that around you."
+      },
+      {
+        "id": "G1-BC-3",
+        "role": "A",
+        "text": "Relax, sweetheart. I'm not going anywhere. Not without you."
+      },
+      {
+        "id": "G1-BC-4",
+        "role": "B",
+        "text": "Then come a little closer. I want you within reach."
+      }
+    ],
+    "EF": [
+      {
+        "id": "G1-EF-1",
+        "role": "A",
+        "text": "Your thoughts have gone very quiet, darling. That's never happened."
+      },
+      {
+        "id": "G1-EF-2",
+        "role": "B",
+        "text": "I'm not nervous. I'm simply... aware of you. Intensely."
+      },
+      {
+        "id": "G1-EF-3",
+        "role": "A",
+        "text": "Breathe, darling. You're perfectly safe with me."
+      },
+      {
+        "id": "G1-EF-4",
+        "role": "B",
+        "text": "Then come closer. I've been patient long enough."
+      }
+    ],
+    "IW": [
+      {
+        "id": "G1-IW-1",
+        "role": "A",
+        "text": "You've gone all quiet. Are you okay, sweetheart?"
+      },
+      {
+        "id": "G1-IW-2",
+        "role": "B",
+        "text": "I'm a little nervous. The good kind, I think."
+      },
+      {
+        "id": "G1-IW-3",
+        "role": "A",
+        "text": "It's all right. Take your time. I'm right beside you."
+      },
+      {
+        "id": "G1-IW-4",
+        "role": "B",
+        "text": "Then hold my hand. I want to feel you there."
+      }
+    ],
+    "LS": [
+      {
+        "id": "G1-LS-1",
+        "role": "A",
+        "text": "You're so quiet! Are you nervous? I'm nervous!"
+      },
+      {
+        "id": "G1-LS-2",
+        "role": "B",
+        "text": "My heart's doing a drumroll! Can you hear it?"
+      },
+      {
+        "id": "G1-LS-3",
+        "role": "A",
+        "text": "It's okay! Whatever happens, we'll do it together!"
+      },
+      {
+        "id": "G1-LS-4",
+        "role": "B",
+        "text": "Then come closer! Pretty please!"
+      }
+    ]
+  }
+}
