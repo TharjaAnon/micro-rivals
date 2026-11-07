@@ -1,0 +1,23 @@
+{
+  "name": "Micro Rivals Hangout",
+  "short_name": "Hangout",
+  "display": "standalone",
+  "start_url": "./",
+  "scope": "./",
+  "theme_color": "#ff5aa8",
+  "background_color": "#f7d9e7",
+  "icons": [
+    {
+      "src": "./icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
