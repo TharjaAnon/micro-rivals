@@ -1,6 +1,6 @@
 // Bump CACHE whenever the game HTML changes.
 // Only hangout-* caches are cleaned up so the main game's cache (same origin) is untouched.
-const CACHE = 'hangout-mock-1.7';
+const CACHE = 'hangout-mock-1.8';
 const ASSETS = [
   './',
   './index.html',

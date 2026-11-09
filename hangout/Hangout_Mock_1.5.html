@@ -248,10 +248,10 @@ select{width:100%;height:24px;border-radius:7px;border:2px solid #ffc2dc;backgro
 /* ===== 1.5 CG viewer (4:3 art on the wide stage) ===== */
 #stg.kwide #dbg{display:none}
 #stg.kwide #mn{grid-column:1/3}
-#ks .cg{position:absolute;inset:0;border:2px solid #ffc2dc;border-radius:12px;overflow:hidden;background:#2a1020;--fw:100%;--fh:100%;--sw:0px}
-.cgl{position:absolute;inset:0;opacity:0;transition:opacity .35s ease}
-.cgl.on{opacity:1}
-.cgl .bgb{position:absolute;inset:0;background:#2a1020;transition:background .35s}
+#ks .cg{position:absolute;inset:0;border:2px solid #ffc2dc;border-radius:12px;overflow:hidden;background:#f4a3c4;--fw:100%;--fh:100%;--sw:0px}
+.cgl{position:absolute;inset:0;opacity:0;filter:blur(16px);-webkit-filter:blur(16px);transition:opacity .55s ease,filter .55s ease,-webkit-filter .55s ease}
+.cgl.on{opacity:1;filter:blur(0);-webkit-filter:blur(0)}
+.cgl .bgb{position:absolute;inset:-20px;background:#f4a3c4}
 .cgl .fr{-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 7%,#000 93%,transparent 100%);mask-image:linear-gradient(90deg,transparent 0,#000 7%,#000 93%,transparent 100%)}
 #cg.nostrip .cgl .fr{-webkit-mask-image:none;mask-image:none}
 .cgl .fr{position:absolute;left:50%;top:50%;width:var(--fw);height:var(--fh);transform:translate(-50%,-50%)}
@@ -279,8 +279,10 @@ select{width:100%;height:24px;border-radius:7px;border:2px solid #ffc2dc;backgro
 .kbt button.on{background:#ff5aa8}
 .dfr{position:absolute;left:50%;top:50%;width:var(--fw);height:var(--fh);transform:translate(-50%,-50%);z-index:4;pointer-events:none}
 #ksbox{position:absolute;left:3%;right:3%;bottom:3.5%;margin:0;min-height:22%;padding:20px 18px 18px;display:flex;flex-direction:column;justify-content:center;cursor:pointer;pointer-events:auto;background:rgba(255,255,255,.84);-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px);border-color:rgba(255,255,255,.9)}
-#ks .sbox .txt{font-size:18px;min-height:0}
-.short #ks .sbox .txt{font-size:16px}
+#ks .sbox .txt{font-size:25px;line-height:1.32;min-height:0}
+#ks .sbox .tab{font-size:24px;height:38px;top:-22px;padding:0 16px;border-radius:11px}
+.short #ks .sbox .txt{font-size:22px}
+.short #ks .sbox .tab{font-size:21px;height:34px;top:-20px}
 .short #ksbox{padding:17px 14px 15px}
 .short .kside .av{width:46px;height:46px;font-size:22px}
 .short .kside .pn{font-size:14px}
@@ -1293,11 +1295,15 @@ function showCG(url){const c=$('#cg'),L=[$('#cgL0'),$('#cgL1')];
  c.classList.add('hascg');
  if(url===cgCur)return;cgCur=url;
  const cur=L[cgTop],nx=L[cgTop^1];cgTop^=1;
- nx.querySelector('img').src=url;edgeFill(nx.querySelector('img'),nx.querySelector('.bgb'));
+ nx.querySelector('img').src=url;
  nx.style.zIndex=2;cur.style.zIndex=1;
- const go=()=>{void nx.offsetWidth;nx.classList.add('on');setTimeout(()=>{if(cgCur===url)cur.classList.remove('on')},380)};
+ const go=()=>{void nx.offsetWidth;nx.classList.add('on');setTimeout(()=>{if(cgCur===url)cur.classList.remove('on')},560)};
  const im=nx.querySelector('img');(im.decode?im.decode():Promise.resolve()).then(go,go)}
 let kSkipF=false;
+function typeK(t){const el=$('#kTxt'),tap=$('#kTap');if(RM||window.HM.auto){el.textContent=t;return Promise.resolve()}
+ const id0=runId;return new Promise(r=>{const ch=[...t];let i=0,iv;el.textContent='';tap.style.visibility='hidden';
+  const fin=()=>{clearInterval(iv);el.textContent=t;tap.style.visibility='';if(tapRes===fin)tapRes=null;r()};
+  tapRes=fin;iv=setInterval(()=>{if(id0!==runId){clearInterval(iv);return}i++;el.textContent=ch.slice(0,i).join('');if(i>=ch.length)fin()},30)})}
 async function playKiss(A,B){if(S.mode!=='kiss')S.kback=S.mode;cancel();S.mode='kiss';S.kA=A;S.kB=B;kSkipF=false;refresh();const id=runId;skip=false;
   try{const seq=kissSeq(A,B);const rec={A,B,seq:seq.map(x=>({st:x.st,sp:x.sp,id:x.id,slot:x.slot,t:x.t})),done:false};LOG.kiss.push(rec);
   const ca=HI[A].c,cb=HI[B].c;$('#cg').style.background=`linear-gradient(115deg,${tint(ca,.55)} 0 50%,${tint(cb,.55)} 50% 100%)`;showCG(null);
@@ -1311,8 +1317,9 @@ async function playKiss(A,B){if(S.mode!=='kiss')S.kback=S.mode;cancel();S.mode='
    if(kind){showCG(cgFor(A,B,kind));$('#cgLbl').textContent=`${cgIsSample(A,B,kind)?'SAMPLE CG':'CG'} · ${kind.toUpperCase()}`}
    else{showCG(null);$('#cgWm').textContent=KSTN[x.st-1];$('#cgSub').textContent='SPRITES TALKING';$('#cgLbl').textContent='SPRITES · PLACEHOLDER'}
    $('#sideA').classList.toggle('act',x.sp===A);$('#sideB').classList.toggle('act',x.sp===B);
-   $('#kTab').style.background=HI[x.sp].c;$('#kTabName').textContent=x.sp==='Cat'?'CAT':HI[x.sp].s;$('#kTxt').textContent=x.t;$('#kId').textContent=x.id;
+   $('#kTab').style.background=HI[x.sp].c;$('#kTabName').textContent=x.sp==='Cat'?'CAT':HI[x.sp].s;$('#kId').textContent=x.id;
    $('#kTap').textContent=i<seq.length-1?'TAP ▸':'TAP ✦';
+   await typeK(x.t);chk(id);if(kSkipF){kSkipF=false;rec.skipped=true;break}
    await awaitTap(id);if(kSkipF){kSkipF=false;rec.skipped=true;break}}
   rec.done=true;
   $('#sideA').classList.remove('act');$('#sideB').classList.remove('act');
