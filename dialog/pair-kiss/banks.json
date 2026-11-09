@@ -1,0 +1,3977 @@
+{
+  "version": "2.1",
+  "heroines": {
+    "EF": {
+      "name": "Emma Frost",
+      "code": "EF",
+      "slots": {
+        "2A": [
+          {
+            "id": "EF-2A-01",
+            "text": "Come closer, darling. I've been listening to you think about this for ages."
+          },
+          {
+            "id": "EF-2A-02",
+            "text": "You keep glancing at my lips. Shall I put you out of your misery?"
+          },
+          {
+            "id": "EF-2A-03",
+            "text": "I could read your mind. I'd rather you showed me."
+          },
+          {
+            "id": "EF-2A-04",
+            "text": "Don't be shy. I already know exactly what you want."
+          },
+          {
+            "id": "EF-2A-05",
+            "text": "Stay perfectly still. I'm going to do something I've wanted to do for a while."
+          },
+          {
+            "id": "EF-2A-06",
+            "text": "I've decided to stop waiting for you to be brave, darling. Hold still and let me be brave for both of us."
+          },
+          {
+            "id": "EF-2A-07",
+            "text": "Your heartbeat is terribly loud. Let me give it a proper reason."
+          },
+          {
+            "id": "EF-2A-08",
+            "text": "I've rehearsed this a dozen times in my head. Every version ended exactly like this."
+          },
+          {
+            "id": "EF-2A-09",
+            "text": "Tilt your head just a little. Perfect. Now don't you dare move."
+          },
+          {
+            "id": "EF-2A-10",
+            "text": "I've been very well-behaved for far too long. I think I've earned a little indulgence."
+          },
+          {
+            "id": "EF-2A-11",
+            "text": "Darling, you're blushing in your thoughts as well. It's rather adorable."
+          },
+          {
+            "id": "EF-2A-12",
+            "text": "There's a question on your lips. Let me answer it with mine."
+          },
+          {
+            "id": "EF-2A-13",
+            "text": "I don't usually make the first move. Consider yourself extraordinarily lucky."
+          },
+          {
+            "id": "EF-2A-14",
+            "text": "Close your eyes, darling. I'd like this to be the only thing you remember."
+          },
+          {
+            "id": "EF-2A-15",
+            "text": "One kiss. I promise to make it worth the fuss you've been making in your head."
+          },
+          {
+            "id": "EF-2A-16",
+            "text": "I've been watching your mouth all through that sentence. I didn't hear a word."
+          },
+          {
+            "id": "EF-2A-17",
+            "text": "Let's skip the part where we both pretend we aren't thinking about this."
+          },
+          {
+            "id": "EF-2A-18",
+            "text": "Hush, darling. Your thoughts are shouting, and I'd like to answer them properly."
+          },
+          {
+            "id": "EF-2A-19",
+            "text": "I'm going to kiss you slowly. I want you to feel every second of it."
+          },
+          {
+            "id": "EF-2A-20",
+            "text": "I've had nearly everything I've ever wanted, darling. Except this. Let me fix that."
+          }
+        ],
+        "2B": [
+          {
+            "id": "EF-2B-01",
+            "text": "Oh? You're bolder than I expected. I like that."
+          },
+          {
+            "id": "EF-2B-02",
+            "text": "Careful, darling. I might enjoy this far too much."
+          },
+          {
+            "id": "EF-2B-03",
+            "text": "You're asking very nicely. I suppose I'll allow it."
+          },
+          {
+            "id": "EF-2B-04",
+            "text": "Mm. I wondered when you'd finally work up the nerve."
+          },
+          {
+            "id": "EF-2B-05",
+            "text": "My, my. Look who's taking charge."
+          },
+          {
+            "id": "EF-2B-06",
+            "text": "Well, well. Someone's been reading my mind for once."
+          },
+          {
+            "id": "EF-2B-07",
+            "text": "You've rendered me speechless, darling. Do you know how rare that is?"
+          },
+          {
+            "id": "EF-2B-08",
+            "text": "How delightfully forward of you. Go on, then."
+          },
+          {
+            "id": "EF-2B-09",
+            "text": "And I thought I'd have to be the brave one. How refreshing."
+          },
+          {
+            "id": "EF-2B-10",
+            "text": "Mm. Your confidence is very becoming. Don't lose it now."
+          },
+          {
+            "id": "EF-2B-11",
+            "text": "I'll admit it, darling. You've caught me completely off guard."
+          },
+          {
+            "id": "EF-2B-12",
+            "text": "Oh, I heard that thought. You've been planning this, haven't you?"
+          },
+          {
+            "id": "EF-2B-13",
+            "text": "That's the loveliest invitation I've had in years. Possibly ever."
+          },
+          {
+            "id": "EF-2B-14",
+            "text": "You're trembling a little. So am I, if I'm honest."
+          },
+          {
+            "id": "EF-2B-15",
+            "text": "Darling, I've been hoping you'd say something like that."
+          },
+          {
+            "id": "EF-2B-16",
+            "text": "Bold, sweet, and blushing. You do know how to get my attention."
+          },
+          {
+            "id": "EF-2B-17",
+            "text": "I was going to make you work for it. I've reconsidered."
+          },
+          {
+            "id": "EF-2B-18",
+            "text": "Oh, you clever thing. You've found the one thing I can't resist."
+          },
+          {
+            "id": "EF-2B-19",
+            "text": "My pulse just did something terribly undignified. Your fault entirely."
+          },
+          {
+            "id": "EF-2B-20",
+            "text": "Mm, yes. I think I'd like that very much."
+          }
+        ],
+        "2C": [
+          {
+            "id": "EF-2C-01",
+            "text": "Don't think. Just come closer."
+          },
+          {
+            "id": "EF-2C-02",
+            "text": "You're still too far away, darling."
+          },
+          {
+            "id": "EF-2C-03",
+            "text": "Hands on my waist. There. Much better."
+          },
+          {
+            "id": "EF-2C-04",
+            "text": "Stop hesitating. You're wasting my patience."
+          },
+          {
+            "id": "EF-2C-05",
+            "text": "Look at me. Not at your shoes. At me."
+          },
+          {
+            "id": "EF-2C-06",
+            "text": "Closer, darling. I can still fit a secret between us."
+          },
+          {
+            "id": "EF-2C-07",
+            "text": "You're thinking too loudly. Let me quiet you down."
+          },
+          {
+            "id": "EF-2C-08",
+            "text": "Lean in. I promise I'm far softer than my reputation."
+          },
+          {
+            "id": "EF-2C-09",
+            "text": "Your hand, darling. Put it in mine and don't let go."
+          },
+          {
+            "id": "EF-2C-10",
+            "text": "There's no rush. But I'd prefer you didn't make me wait."
+          },
+          {
+            "id": "EF-2C-11",
+            "text": "Every inch you hold back, I'm going to tease you about."
+          },
+          {
+            "id": "EF-2C-12",
+            "text": "Come here, darling. I want to hear your heart, not your thoughts."
+          },
+          {
+            "id": "EF-2C-13",
+            "text": "I'd rather like your arms around me. Now, ideally."
+          },
+          {
+            "id": "EF-2C-14",
+            "text": "Mm, a little closer. Your perfume is distracting me in the nicest way."
+          },
+          {
+            "id": "EF-2C-15",
+            "text": "Don't make me use telepathy to coax you over. It's terribly unsporting."
+          },
+          {
+            "id": "EF-2C-16",
+            "text": "Eyes up, darling. I want to see what you're feeling."
+          },
+          {
+            "id": "EF-2C-17",
+            "text": "You've come this far. One more step and we're there."
+          },
+          {
+            "id": "EF-2C-18",
+            "text": "Hold my hand a little tighter. I like knowing you mean it."
+          },
+          {
+            "id": "EF-2C-19",
+            "text": "Darling, I've been patient with you. Be impatient with me for once."
+          },
+          {
+            "id": "EF-2C-20",
+            "text": "Closer still. I want to forget where I end and you begin."
+          }
+        ],
+        "2D": [
+          {
+            "id": "EF-2D-01",
+            "text": "Oh, fine. You win. Come closer."
+          },
+          {
+            "id": "EF-2D-02",
+            "text": "Darling, you're impossible. Kiss me."
+          },
+          {
+            "id": "EF-2D-03",
+            "text": "All right. All right. I surrender."
+          },
+          {
+            "id": "EF-2D-04",
+            "text": "I was never going to say no. You knew that."
+          },
+          {
+            "id": "EF-2D-05",
+            "text": "Very well. But I'm keeping score."
+          },
+          {
+            "id": "EF-2D-06",
+            "text": "Oh, darling. I've wanted this far longer than I've let on."
+          },
+          {
+            "id": "EF-2D-07",
+            "text": "I can't pretend I'm not enjoying this. So I won't."
+          },
+          {
+            "id": "EF-2D-08",
+            "text": "There goes my composure. I hope you're pleased with yourself."
+          },
+          {
+            "id": "EF-2D-09",
+            "text": "Very well. I'm done being sensible."
+          },
+          {
+            "id": "EF-2D-10",
+            "text": "Kiss me, darling, before I think of something clever to say instead."
+          },
+          {
+            "id": "EF-2D-11",
+            "text": "I've built a great many walls in my life. You've just walked straight through them."
+          },
+          {
+            "id": "EF-2D-12",
+            "text": "Mm. Yes. Please. There, I said it."
+          },
+          {
+            "id": "EF-2D-13",
+            "text": "My thoughts are all about you now, darling. There's no space left for anything else."
+          },
+          {
+            "id": "EF-2D-14",
+            "text": "I was going to play it cool. I seem to have forgotten how."
+          },
+          {
+            "id": "EF-2D-15",
+            "text": "Oh, come here. I want you far too much to keep teasing."
+          },
+          {
+            "id": "EF-2D-16",
+            "text": "Fine, darling. Have all of my attention. It was yours anyway."
+          },
+          {
+            "id": "EF-2D-17",
+            "text": "For once in my life, I'm not going to overthink it. I just want you."
+          },
+          {
+            "id": "EF-2D-18",
+            "text": "You've made my heart race. I'd like you to take responsibility."
+          },
+          {
+            "id": "EF-2D-19",
+            "text": "I'm melting, darling. Please don't tell anyone."
+          },
+          {
+            "id": "EF-2D-20",
+            "text": "Yes. A thousand times, yes. Now kiss me."
+          }
+        ],
+        "3": [
+          {
+            "id": "EF-3-01",
+            "text": "Mmh~ ♡ ...chu~"
+          },
+          {
+            "id": "EF-3-02",
+            "text": "Mm... ♡ mmh~"
+          },
+          {
+            "id": "EF-3-03",
+            "text": "Nn... chu ♡ ...mm~"
+          },
+          {
+            "id": "EF-3-04",
+            "text": "Ah~ ♡ ...mmh, darling~"
+          },
+          {
+            "id": "EF-3-05",
+            "text": "Mmm~ ...chu, chu ♡"
+          },
+          {
+            "id": "EF-3-06",
+            "text": "Mmh... ♡ ...lovely~"
+          },
+          {
+            "id": "EF-3-07",
+            "text": "Chu~ ♡ ...mm, more~"
+          },
+          {
+            "id": "EF-3-08",
+            "text": "Nn~ ♡ ...mmh... chu~"
+          },
+          {
+            "id": "EF-3-09",
+            "text": "Mm, darling~ ♡ ...chu ♡"
+          },
+          {
+            "id": "EF-3-10",
+            "text": "Ah... ♡ ...mm~ ...don't stop~"
+          },
+          {
+            "id": "EF-3-11",
+            "text": "Mmh~ ...chu ♡ ...mmh~"
+          },
+          {
+            "id": "EF-3-12",
+            "text": "Hah~ ♡ ...mm, yes~"
+          },
+          {
+            "id": "EF-3-13",
+            "text": "Chu ♡ ...chu ♡ ...mmm~"
+          },
+          {
+            "id": "EF-3-14",
+            "text": "Mm~ ♡ ...divine~"
+          },
+          {
+            "id": "EF-3-15",
+            "text": "Nnh~ ♡ ...darling... mm~"
+          },
+          {
+            "id": "EF-3-16",
+            "text": "Mmh, mm~ ♡ ...chu~"
+          },
+          {
+            "id": "EF-3-17",
+            "text": "Ah~ ...chu ♡ ...mmh ♡"
+          },
+          {
+            "id": "EF-3-18",
+            "text": "Mm... ♡ ...exquisite~"
+          },
+          {
+            "id": "EF-3-19",
+            "text": "Chuu~ ♡ ...mmh, darling~"
+          },
+          {
+            "id": "EF-3-20",
+            "text": "Hm~ ♡ ...mm... chu~ ♡"
+          }
+        ],
+        "4A": [
+          {
+            "id": "EF-4A-01",
+            "text": "Well. That was considerably better than I imagined. And I imagined a lot."
+          },
+          {
+            "id": "EF-4A-02",
+            "text": "Your thoughts just went completely quiet. I'll take that as a compliment."
+          },
+          {
+            "id": "EF-4A-03",
+            "text": "Mm. I think I'll keep you."
+          },
+          {
+            "id": "EF-4A-04",
+            "text": "That's one. I expect a great many more."
+          },
+          {
+            "id": "EF-4A-05",
+            "text": "You've smudged my lipstick. I'm choosing to forgive you."
+          },
+          {
+            "id": "EF-4A-06",
+            "text": "You kiss like you've been studying. I approve of your homework."
+          },
+          {
+            "id": "EF-4A-07",
+            "text": "Darling, you've ruined me for anyone else. I hope you're proud."
+          },
+          {
+            "id": "EF-4A-08",
+            "text": "I've read thousands of minds. None of them ever made me feel like that."
+          },
+          {
+            "id": "EF-4A-09",
+            "text": "Well. I seem to have misplaced my composure. Do help me look for it."
+          },
+          {
+            "id": "EF-4A-10",
+            "text": "I'd call that adequate, but we both know I'd be lying."
+          },
+          {
+            "id": "EF-4A-11",
+            "text": "You're blushing, darling. It's terribly unlike me to find that so charming."
+          },
+          {
+            "id": "EF-4A-12",
+            "text": "That was rather a scandal. Let's have another."
+          },
+          {
+            "id": "EF-4A-13",
+            "text": "I'll need a moment. And then I'll need you again."
+          },
+          {
+            "id": "EF-4A-14",
+            "text": "Darling, your thoughts just started glowing. I can practically read by them."
+          },
+          {
+            "id": "EF-4A-15",
+            "text": "Mm. I may have underestimated you. I so rarely do."
+          },
+          {
+            "id": "EF-4A-16",
+            "text": "I'm going to be thinking about that for weeks. Possibly months."
+          },
+          {
+            "id": "EF-4A-17",
+            "text": "My lipstick looks much better on you, darling."
+          },
+          {
+            "id": "EF-4A-18",
+            "text": "Well. That's going to make every conversation with you dreadfully distracting."
+          },
+          {
+            "id": "EF-4A-19",
+            "text": "I'm a notoriously harsh critic, darling. That was a rave review."
+          },
+          {
+            "id": "EF-4A-20",
+            "text": "I'd tell you how I feel, but I suspect you already heard it."
+          }
+        ],
+        "4B": [
+          {
+            "id": "EF-4B-01",
+            "text": "Oh, hush. You're beaming and you know it."
+          },
+          {
+            "id": "EF-4B-02",
+            "text": "Then come back and let me prove it again."
+          },
+          {
+            "id": "EF-4B-03",
+            "text": "Flattery will get you exactly one more."
+          },
+          {
+            "id": "EF-4B-04",
+            "text": "Darling, I was holding back."
+          },
+          {
+            "id": "EF-4B-05",
+            "text": "Keep talking like that and I'll never let you go."
+          },
+          {
+            "id": "EF-4B-06",
+            "text": "Of course it was. You were kissing me, after all."
+          },
+          {
+            "id": "EF-4B-07",
+            "text": "Darling, you say the sweetest things when you're dazed."
+          },
+          {
+            "id": "EF-4B-08",
+            "text": "I know. I felt every bit of it too."
+          },
+          {
+            "id": "EF-4B-09",
+            "text": "Mm. Then let's not waste the feeling."
+          },
+          {
+            "id": "EF-4B-10",
+            "text": "You're adorable when you're flustered. Do it more often."
+          },
+          {
+            "id": "EF-4B-11",
+            "text": "Careful, darling. I'm starting to believe you."
+          },
+          {
+            "id": "EF-4B-12",
+            "text": "I'll take that as a standing request."
+          },
+          {
+            "id": "EF-4B-13",
+            "text": "You needn't tell me. I could hear you thinking it."
+          },
+          {
+            "id": "EF-4B-14",
+            "text": "Then we'll simply have to practise until you're used to it."
+          },
+          {
+            "id": "EF-4B-15",
+            "text": "Mm, darling. I was rather hoping you'd say that."
+          },
+          {
+            "id": "EF-4B-16",
+            "text": "Don't look so surprised. I did warn you I'd be wonderful."
+          },
+          {
+            "id": "EF-4B-17",
+            "text": "And you were everything I hoped. Don't let that go to your head."
+          },
+          {
+            "id": "EF-4B-18",
+            "text": "Hush. Let me enjoy that smile of yours a moment longer."
+          },
+          {
+            "id": "EF-4B-19",
+            "text": "I'll remember you said that. I remember everything."
+          },
+          {
+            "id": "EF-4B-20",
+            "text": "Good. I'd hate to be the only one who's ruined."
+          }
+        ],
+        "5": [
+          {
+            "id": "EF-5-01",
+            "text": "Mmh... ♡ ...darling, don't you dare stop~"
+          },
+          {
+            "id": "EF-5-02",
+            "text": "Chu~ ♡ ...mm, you're far too good at this~"
+          },
+          {
+            "id": "EF-5-03",
+            "text": "Mmm... ♡ ...closer, darling. Closer still~"
+          },
+          {
+            "id": "EF-5-04",
+            "text": "Nn~ ♡ ...chu... ♡ ...I could do this forever~"
+          },
+          {
+            "id": "EF-5-05",
+            "text": "Hah~ ♡ ...mm... that's it, darling~"
+          },
+          {
+            "id": "EF-5-06",
+            "text": "Mmh~ ♡ ...chu... ♡ ...clever thing~"
+          },
+          {
+            "id": "EF-5-07",
+            "text": "Ah... ♡ ...mm, I'm not letting you go~"
+          },
+          {
+            "id": "EF-5-08",
+            "text": "Chu, chu~ ♡ ...mmh... how very indulgent~"
+          },
+          {
+            "id": "EF-5-09",
+            "text": "Mm... ♡ ...say it with your lips, darling~"
+          },
+          {
+            "id": "EF-5-10",
+            "text": "Nnh~ ♡ ...mm... ♡ ...I might just keep you~"
+          },
+          {
+            "id": "EF-5-11",
+            "text": "Mmh... ♡ ...chu~ ...lingering, are we?~ ♡"
+          },
+          {
+            "id": "EF-5-12",
+            "text": "Hah... ♡ ...mm, darling~ ...so warm~"
+          },
+          {
+            "id": "EF-5-13",
+            "text": "Mm~ ♡ ...chu ♡ ...hold me tighter~"
+          },
+          {
+            "id": "EF-5-14",
+            "text": "Ah~ ♡ ...mmh... ♡ ...exactly like that~"
+          },
+          {
+            "id": "EF-5-15",
+            "text": "Chuu... ♡ ...mm... ♡ ...I'm quite undone~"
+          },
+          {
+            "id": "EF-5-16",
+            "text": "Nn... ♡ ...mmh, darling... ♡ ...one more~"
+          },
+          {
+            "id": "EF-5-17",
+            "text": "Mm~ ♡ ...chu... ♡ ...you're trembling. Lovely~"
+          },
+          {
+            "id": "EF-5-18",
+            "text": "Hah~ ♡ ...mm... ♡ ...breathing is overrated, darling~"
+          },
+          {
+            "id": "EF-5-19",
+            "text": "Mmh... ♡ ...chu, chu, chu~ ♡"
+          },
+          {
+            "id": "EF-5-20",
+            "text": "Mm... ♡ ...stay, darling. Just like this~ ♡"
+          }
+        ]
+      }
+    },
+    "RG": {
+      "name": "Rogue",
+      "code": "RG",
+      "slots": {
+        "2A": [
+          {
+            "id": "RG-2A-01",
+            "text": "C'mere, sugah. I've been wantin' to do this so bad."
+          },
+          {
+            "id": "RG-2A-02",
+            "text": "I took my gloves off. Just for you."
+          },
+          {
+            "id": "RG-2A-03",
+            "text": "Can I... can I touch your cheek? I've been dreamin' about it."
+          },
+          {
+            "id": "RG-2A-04",
+            "text": "Don't move, darlin'. I'm workin' up my nerve."
+          },
+          {
+            "id": "RG-2A-05",
+            "text": "I spent so long not bein' able to get close to anybody. Let me get close to you."
+          },
+          {
+            "id": "RG-2A-06",
+            "text": "I ain't real good at this, sugah. But I sure want to try with you."
+          },
+          {
+            "id": "RG-2A-07",
+            "text": "Hold still a sec. I just wanna look at you real close first."
+          },
+          {
+            "id": "RG-2A-08",
+            "text": "I been thinkin' about kissin' you so long, I plumb forgot how to breathe."
+          },
+          {
+            "id": "RG-2A-09",
+            "text": "Is it okay if I lean in, darlin'? Just nod if it is."
+          },
+          {
+            "id": "RG-2A-10",
+            "text": "My hands are shakin'. Reckon you can hold 'em steady for me?"
+          },
+          {
+            "id": "RG-2A-11",
+            "text": "I don't wanna waste one more second bein' scared. C'mere, hon."
+          },
+          {
+            "id": "RG-2A-12",
+            "text": "Close your eyes, sugah. I'm fixin' to do somethin' brave."
+          },
+          {
+            "id": "RG-2A-13",
+            "text": "Ain't nothin' between us now. No gloves, no worries. Just me."
+          },
+          {
+            "id": "RG-2A-14",
+            "text": "I used to dream about bein' this close to somebody. Now I'm gonna stop dreamin'."
+          },
+          {
+            "id": "RG-2A-15",
+            "text": "Darlin', you're lookin' at me like you want the same thing I do."
+          },
+          {
+            "id": "RG-2A-16",
+            "text": "Just one kiss, hon. Then maybe a whole lot more of 'em."
+          },
+          {
+            "id": "RG-2A-17",
+            "text": "My heart's poundin' so hard you can prob'ly hear it. Let me get closer anyway."
+          },
+          {
+            "id": "RG-2A-18",
+            "text": "Don't laugh, sugah. I'm real serious about this."
+          },
+          {
+            "id": "RG-2A-19",
+            "text": "I been carryin' this feelin' around forever. Let me give it to you."
+          },
+          {
+            "id": "RG-2A-20",
+            "text": "Lean on in, darlin'. I wanna find out if you taste as sweet as you look."
+          }
+        ],
+        "2B": [
+          {
+            "id": "RG-2B-01",
+            "text": "Oh my stars. You really mean it?"
+          },
+          {
+            "id": "RG-2B-02",
+            "text": "Sugah, if you touch me like that I might just melt."
+          },
+          {
+            "id": "RG-2B-03",
+            "text": "You... you ain't scared of me? Not even a little?"
+          },
+          {
+            "id": "RG-2B-04",
+            "text": "Well, I'll be. Took you long enough, darlin'."
+          },
+          {
+            "id": "RG-2B-05",
+            "text": "My heart just about jumped clean outta my chest."
+          },
+          {
+            "id": "RG-2B-06",
+            "text": "Me? You wanna kiss me? Well, ain't that the sweetest thing."
+          },
+          {
+            "id": "RG-2B-07",
+            "text": "Oh, darlin'. I been hopin' you'd say that for ages."
+          },
+          {
+            "id": "RG-2B-08",
+            "text": "Lord have mercy. You can't just say things like that to a girl."
+          },
+          {
+            "id": "RG-2B-09",
+            "text": "Sugah, I think I forgot every word I know."
+          },
+          {
+            "id": "RG-2B-10",
+            "text": "You're bein' so brave. Guess I gotta be brave right back."
+          },
+          {
+            "id": "RG-2B-11",
+            "text": "Wait, wait. Let me get my breath back. Okay. Yes."
+          },
+          {
+            "id": "RG-2B-12",
+            "text": "Nobody's ever asked me that so sweet before."
+          },
+          {
+            "id": "RG-2B-13",
+            "text": "Hon, you just made my whole heart light up."
+          },
+          {
+            "id": "RG-2B-14",
+            "text": "Is this real? Pinch me. No, wait, kiss me instead."
+          },
+          {
+            "id": "RG-2B-15",
+            "text": "Well, I'll be. You want me just as much as I want you."
+          },
+          {
+            "id": "RG-2B-16",
+            "text": "Oh my word. I'm grinnin' like a fool and I can't stop."
+          },
+          {
+            "id": "RG-2B-17",
+            "text": "You ain't flinchin'. You ain't even a little bit flinchin'."
+          },
+          {
+            "id": "RG-2B-18",
+            "text": "Sugah, you're gonna make me cry happy tears."
+          },
+          {
+            "id": "RG-2B-19",
+            "text": "Lordy. My face is so hot I could fry an egg on it."
+          },
+          {
+            "id": "RG-2B-20",
+            "text": "Darlin', that's all I ever wanted to hear."
+          }
+        ],
+        "2C": [
+          {
+            "id": "RG-2C-01",
+            "text": "Don't let go of my hand, sugah. Not ever."
+          },
+          {
+            "id": "RG-2C-02",
+            "text": "Closer, darlin'. I wanna feel you breathin'."
+          },
+          {
+            "id": "RG-2C-03",
+            "text": "I been waitin' my whole life for this. Don't make me wait more."
+          },
+          {
+            "id": "RG-2C-04",
+            "text": "C'mon. I ain't gonna break, and neither are you."
+          },
+          {
+            "id": "RG-2C-05",
+            "text": "Put your arms around me. Tighter."
+          },
+          {
+            "id": "RG-2C-06",
+            "text": "Don't pull away, sugah. Stay right with me."
+          },
+          {
+            "id": "RG-2C-07",
+            "text": "Hold me like you mean it, darlin'. I wanna feel it."
+          },
+          {
+            "id": "RG-2C-08",
+            "text": "Just a little closer, hon. I ain't scared no more."
+          },
+          {
+            "id": "RG-2C-09",
+            "text": "Let me feel your hand in mine. Skin to skin. Lord, that's nice."
+          },
+          {
+            "id": "RG-2C-10",
+            "text": "Your heart's racin' too. I can feel it. Come closer so I can feel it more."
+          },
+          {
+            "id": "RG-2C-11",
+            "text": "I waited forever for somebody to hold. Don't make it a second longer."
+          },
+          {
+            "id": "RG-2C-12",
+            "text": "Lean on me, sugah. I got you."
+          },
+          {
+            "id": "RG-2C-13",
+            "text": "Wrap me up, darlin'. I wanna remember how this feels."
+          },
+          {
+            "id": "RG-2C-14",
+            "text": "Look at me, hon. I want you to see how happy you make me."
+          },
+          {
+            "id": "RG-2C-15",
+            "text": "Closer. I swear I could stay like this forever."
+          },
+          {
+            "id": "RG-2C-16",
+            "text": "Don't you dare let go now. I just got you."
+          },
+          {
+            "id": "RG-2C-17",
+            "text": "Rest your forehead on mine, sugah. Just like that."
+          },
+          {
+            "id": "RG-2C-18",
+            "text": "Every inch closer, my heart sings a little louder."
+          },
+          {
+            "id": "RG-2C-19",
+            "text": "C'mon, darlin'. You're close enough to taste and still too far."
+          },
+          {
+            "id": "RG-2C-20",
+            "text": "Hold my waist, hon. I want you right where I can feel you."
+          }
+        ],
+        "2D": [
+          {
+            "id": "RG-2D-01",
+            "text": "Okay. Okay, sugah. I'm yours."
+          },
+          {
+            "id": "RG-2D-02",
+            "text": "I can't say no to you. Never could."
+          },
+          {
+            "id": "RG-2D-03",
+            "text": "Mercy me... all right. C'mere."
+          },
+          {
+            "id": "RG-2D-04",
+            "text": "Kiss me 'fore I lose my nerve."
+          },
+          {
+            "id": "RG-2D-05",
+            "text": "Darlin', I give up. I give up all the way."
+          },
+          {
+            "id": "RG-2D-06",
+            "text": "Sugah, I can't hold out no more. Kiss me."
+          },
+          {
+            "id": "RG-2D-07",
+            "text": "Lord, I'm meltin' clean through. C'mere."
+          },
+          {
+            "id": "RG-2D-08",
+            "text": "Okay, darlin'. I want this so much it aches."
+          },
+          {
+            "id": "RG-2D-09",
+            "text": "Ain't no use fightin' it, sugah. I don't even wanna."
+          },
+          {
+            "id": "RG-2D-10",
+            "text": "Hon, you're too sweet to resist, and I'm done tryin'."
+          },
+          {
+            "id": "RG-2D-11",
+            "text": "I'm shakin' like a leaf, but I ain't stoppin'."
+          },
+          {
+            "id": "RG-2D-12",
+            "text": "Yes, sugah. A hundred times yes."
+          },
+          {
+            "id": "RG-2D-13",
+            "text": "Go on, darlin'. I been ready longer than you know."
+          },
+          {
+            "id": "RG-2D-14",
+            "text": "My whole heart's sayin' yes. Guess I'll listen to it."
+          },
+          {
+            "id": "RG-2D-15",
+            "text": "Don't you make me wait, hon. Not one more second."
+          },
+          {
+            "id": "RG-2D-16",
+            "text": "I'm done bein' careful. I just want you."
+          },
+          {
+            "id": "RG-2D-17",
+            "text": "All right, darlin'. Take my breath away. I'm askin' nice."
+          },
+          {
+            "id": "RG-2D-18",
+            "text": "Sugah, I'm so dizzy I need you to hold me up. And kiss me."
+          },
+          {
+            "id": "RG-2D-19",
+            "text": "Lord, I wanted this. I wanted this so bad."
+          },
+          {
+            "id": "RG-2D-20",
+            "text": "Okay. Breathe, sugah. No, forget breathin'. Just kiss me."
+          }
+        ],
+        "3": [
+          {
+            "id": "RG-3-01",
+            "text": "Mmh~ ♡ ...sugah~"
+          },
+          {
+            "id": "RG-3-02",
+            "text": "Mm... chu~ ♡ ...mmh..."
+          },
+          {
+            "id": "RG-3-03",
+            "text": "Hnn~ ♡ ...don't let go~"
+          },
+          {
+            "id": "RG-3-04",
+            "text": "Mmmh ♡ ...chu, chu~"
+          },
+          {
+            "id": "RG-3-05",
+            "text": "Ah~ ♡ ...darlin'..."
+          },
+          {
+            "id": "RG-3-06",
+            "text": "Mmh~ ♡ ...hon~"
+          },
+          {
+            "id": "RG-3-07",
+            "text": "Nn~ ♡ ...chu ♡ ...mm~"
+          },
+          {
+            "id": "RG-3-08",
+            "text": "Mm... ♡ ...lordy~"
+          },
+          {
+            "id": "RG-3-09",
+            "text": "Chu~ ♡ ...mmh, sugah~"
+          },
+          {
+            "id": "RG-3-10",
+            "text": "Hah~ ♡ ...mm... sweet~"
+          },
+          {
+            "id": "RG-3-11",
+            "text": "Mmm~ ♡ ...chu~ ...darlin'~"
+          },
+          {
+            "id": "RG-3-12",
+            "text": "Mm ♡ ...mm ♡ ...more~"
+          },
+          {
+            "id": "RG-3-13",
+            "text": "Ah~ ♡ ...chu... mmh~"
+          },
+          {
+            "id": "RG-3-14",
+            "text": "Nnh~ ♡ ...don't stop~"
+          },
+          {
+            "id": "RG-3-15",
+            "text": "Mmh, mm~ ♡ ...hold me~"
+          },
+          {
+            "id": "RG-3-16",
+            "text": "Chu ♡ ...chu ♡ ...sugah~"
+          },
+          {
+            "id": "RG-3-17",
+            "text": "Mm~ ♡ ...oh my~"
+          },
+          {
+            "id": "RG-3-18",
+            "text": "Hnn... ♡ ...chu~ ♡"
+          },
+          {
+            "id": "RG-3-19",
+            "text": "Mmh~ ...mm ♡ ...stay~"
+          },
+          {
+            "id": "RG-3-20",
+            "text": "Ah... ♡ ...mm, darlin'~ ♡"
+          }
+        ],
+        "4A": [
+          {
+            "id": "RG-4A-01",
+            "text": "Well, butter my biscuit. That was somethin'."
+          },
+          {
+            "id": "RG-4A-02",
+            "text": "I think my heart just flew clean off."
+          },
+          {
+            "id": "RG-4A-03",
+            "text": "Sugah, I can't feel my toes. In the best way."
+          },
+          {
+            "id": "RG-4A-04",
+            "text": "Can we do that again? Like, right away?"
+          },
+          {
+            "id": "RG-4A-05",
+            "text": "All them years wonderin', and it was worth every one."
+          },
+          {
+            "id": "RG-4A-06",
+            "text": "Sugah... I think I just saw stars."
+          },
+          {
+            "id": "RG-4A-07",
+            "text": "Lord, my lips are tinglin' clear down to my boots."
+          },
+          {
+            "id": "RG-4A-08",
+            "text": "I ain't never been kissed like that. Not even close."
+          },
+          {
+            "id": "RG-4A-09",
+            "text": "I'm grinnin' so hard my cheeks hurt."
+          },
+          {
+            "id": "RG-4A-10",
+            "text": "Darlin', I think I forgot my own name for a second."
+          },
+          {
+            "id": "RG-4A-11",
+            "text": "Well, if that's what I been missin', I got a lot of catchin' up to do."
+          },
+          {
+            "id": "RG-4A-12",
+            "text": "My heart's still dancin', hon. Can you hear it?"
+          },
+          {
+            "id": "RG-4A-13",
+            "text": "Whew. Somebody fan me, I'm burnin' up."
+          },
+          {
+            "id": "RG-4A-14",
+            "text": "I'm gonna be smilin' about that for a month of Sundays."
+          },
+          {
+            "id": "RG-4A-15",
+            "text": "That was sweeter than pecan pie, sugah."
+          },
+          {
+            "id": "RG-4A-16",
+            "text": "I can't stop touchin' my lips. Is that silly?"
+          },
+          {
+            "id": "RG-4A-17",
+            "text": "Hon, I didn't know a kiss could feel that safe."
+          },
+          {
+            "id": "RG-4A-18",
+            "text": "Hold me up, sugah. My legs went plumb to jelly."
+          },
+          {
+            "id": "RG-4A-19",
+            "text": "I'd take my gloves off a thousand times over for one more of those."
+          },
+          {
+            "id": "RG-4A-20",
+            "text": "Well, that settles it. I'm sweet on you, darlin'. Real sweet."
+          }
+        ],
+        "4B": [
+          {
+            "id": "RG-4B-01",
+            "text": "Oh hush, you're makin' me blush all over again."
+          },
+          {
+            "id": "RG-4B-02",
+            "text": "Then c'mere and let me do it proper this time."
+          },
+          {
+            "id": "RG-4B-03",
+            "text": "Sugah, that was just me warmin' up."
+          },
+          {
+            "id": "RG-4B-04",
+            "text": "You keep talkin' like that and I'll never let go."
+          },
+          {
+            "id": "RG-4B-05",
+            "text": "Bless your heart. You're dizzy, ain't ya?"
+          },
+          {
+            "id": "RG-4B-06",
+            "text": "You're cute when you're all dazed like that, sugah."
+          },
+          {
+            "id": "RG-4B-07",
+            "text": "Then let's make up for lost time, hon."
+          },
+          {
+            "id": "RG-4B-08",
+            "text": "Darlin', I'd kiss you till we both forgot our names."
+          },
+          {
+            "id": "RG-4B-09",
+            "text": "Well, now you know how I been feelin' all along."
+          },
+          {
+            "id": "RG-4B-10",
+            "text": "Don't you go gettin' shy on me now. Not after that."
+          },
+          {
+            "id": "RG-4B-11",
+            "text": "Sugah, you ain't seen nothin' yet."
+          },
+          {
+            "id": "RG-4B-12",
+            "text": "I'm sweet on you too. Been that way a while."
+          },
+          {
+            "id": "RG-4B-13",
+            "text": "Good. 'Cause I was fixin' to do it again anyhow."
+          },
+          {
+            "id": "RG-4B-14",
+            "text": "Hon, you look so happy. I did that, didn't I?"
+          },
+          {
+            "id": "RG-4B-15",
+            "text": "C'mere. I'll hold you up while you catch your breath."
+          },
+          {
+            "id": "RG-4B-16",
+            "text": "You kissed me back just as hard, darlin'. Don't pretend you didn't."
+          },
+          {
+            "id": "RG-4B-17",
+            "text": "Well, I reckon we'll just have to keep at it 'til you're used to it."
+          },
+          {
+            "id": "RG-4B-18",
+            "text": "Lord, I love seein' you all pink like that."
+          },
+          {
+            "id": "RG-4B-19",
+            "text": "That's 'cause I been savin' 'em all up just for you."
+          },
+          {
+            "id": "RG-4B-20",
+            "text": "Then let's not stop, sugah. I ain't near done."
+          }
+        ],
+        "5": [
+          {
+            "id": "RG-5-01",
+            "text": "Mmh... ♡ ...I can feel your hands, sugah~"
+          },
+          {
+            "id": "RG-5-02",
+            "text": "Hnn~ ♡ ...chu... ♡ ...ain't never lettin' go~"
+          },
+          {
+            "id": "RG-5-03",
+            "text": "Mm... ♡ ...so warm... ♡ ...so close~"
+          },
+          {
+            "id": "RG-5-04",
+            "text": "Ah~ ♡ ...mmh... ♡ ...hold me tighter, darlin'~"
+          },
+          {
+            "id": "RG-5-05",
+            "text": "Chu... ♡ ...mm, I forgot it could feel this good~"
+          },
+          {
+            "id": "RG-5-06",
+            "text": "Nn~ ♡ ...mmh... ♡ ...lordy, sugah~"
+          },
+          {
+            "id": "RG-5-07",
+            "text": "Mm... ♡ ...chu, chu~ ♡ ...more, hon~"
+          },
+          {
+            "id": "RG-5-08",
+            "text": "Hah~ ♡ ...mmh... ♡ ...I'm shakin'~"
+          },
+          {
+            "id": "RG-5-09",
+            "text": "Mmh... ♡ ...stay right here, darlin'~"
+          },
+          {
+            "id": "RG-5-10",
+            "text": "Chu~ ♡ ...mm... ♡ ...it's real, ain't it?~"
+          },
+          {
+            "id": "RG-5-11",
+            "text": "Nnh~ ♡ ...mmh... ♡ ...your hand's so warm~"
+          },
+          {
+            "id": "RG-5-12",
+            "text": "Mm~ ♡ ...chu... ♡ ...so sweet, sugah~"
+          },
+          {
+            "id": "RG-5-13",
+            "text": "Ah... ♡ ...mmh, I could cry happy~ ♡"
+          },
+          {
+            "id": "RG-5-14",
+            "text": "Hnn~ ♡ ...mm... ♡ ...please don't stop, hon~"
+          },
+          {
+            "id": "RG-5-15",
+            "text": "Mmh... ♡ ...chu ♡ ...I never wanna let go~"
+          },
+          {
+            "id": "RG-5-16",
+            "text": "Mm... ♡ ...darlin'... ♡ ...mmh, again~"
+          },
+          {
+            "id": "RG-5-17",
+            "text": "Chuu~ ♡ ...mm... ♡ ...I'm all yours~"
+          },
+          {
+            "id": "RG-5-18",
+            "text": "Nn~ ♡ ...mmh... ♡ ...lordy, I'm meltin'~"
+          },
+          {
+            "id": "RG-5-19",
+            "text": "Hah... ♡ ...chu, chu~ ♡ ...hold on to me~"
+          },
+          {
+            "id": "RG-5-20",
+            "text": "Mmh~ ♡ ...mm... ♡ ...stay with me, sugah~ ♡"
+          }
+        ]
+      }
+    },
+    "BW": {
+      "name": "Black Widow",
+      "code": "BW",
+      "slots": {
+        "2A": [
+          {
+            "id": "BW-2A-01",
+            "text": "Don't move. I want to be sure about this."
+          },
+          {
+            "id": "BW-2A-02",
+            "text": "I've counted every reason not to. None of them matter anymore."
+          },
+          {
+            "id": "BW-2A-03",
+            "text": "You're very easy to read. Right now you're thinking about my lips."
+          },
+          {
+            "id": "BW-2A-04",
+            "text": "Stay still, milaya. I won't ask twice."
+          },
+          {
+            "id": "BW-2A-05",
+            "text": "I don't do this. I'm doing this."
+          },
+          {
+            "id": "BW-2A-06",
+            "text": "I've thought about this from every angle, milaya. Every angle ends with me kissing you."
+          },
+          {
+            "id": "BW-2A-07",
+            "text": "Hold still. I want to remember exactly how you look right now."
+          },
+          {
+            "id": "BW-2A-08",
+            "text": "I've made my decision. I'm not going to talk myself out of it."
+          },
+          {
+            "id": "BW-2A-09",
+            "text": "You're allowed to stop me. I'm hoping you won't."
+          },
+          {
+            "id": "BW-2A-10",
+            "text": "I don't trust easily. I'm trusting you with this."
+          },
+          {
+            "id": "BW-2A-11",
+            "text": "There's a gap between us I've been staring at for weeks. I'm closing it."
+          },
+          {
+            "id": "BW-2A-12",
+            "text": "Your pulse just jumped. Good. So did mine."
+          },
+          {
+            "id": "BW-2A-13",
+            "text": "I've been quiet because I was deciding how to kiss you. I've decided."
+          },
+          {
+            "id": "BW-2A-14",
+            "text": "Look at me, milaya. I want you to see that I mean it."
+          },
+          {
+            "id": "BW-2A-15",
+            "text": "No tricks. No cover story. Just me, and what I want."
+          },
+          {
+            "id": "BW-2A-16",
+            "text": "You keep almost saying something. Let me say it for you."
+          },
+          {
+            "id": "BW-2A-17",
+            "text": "I've walked away from a lot of things. I'm not walking away from this."
+          },
+          {
+            "id": "BW-2A-18",
+            "text": "Close your eyes. I'd rather you didn't see me blush."
+          },
+          {
+            "id": "BW-2A-19",
+            "text": "I've planned for everything except how much I'd want this."
+          },
+          {
+            "id": "BW-2A-20",
+            "text": "Come here, milaya. I've been patient enough for both of us."
+          }
+        ],
+        "2B": [
+          {
+            "id": "BW-2B-01",
+            "text": "...You're serious."
+          },
+          {
+            "id": "BW-2B-02",
+            "text": "I saw that coming. I let it."
+          },
+          {
+            "id": "BW-2B-03",
+            "text": "Bold. I respect bold."
+          },
+          {
+            "id": "BW-2B-04",
+            "text": "My heart's doing something I didn't authorise."
+          },
+          {
+            "id": "BW-2B-05",
+            "text": "Anyone else, I'd step away. I'm not stepping away."
+          },
+          {
+            "id": "BW-2B-06",
+            "text": "You surprised me. That doesn't happen often."
+          },
+          {
+            "id": "BW-2B-07",
+            "text": "I could have stopped you. I didn't want to."
+          },
+          {
+            "id": "BW-2B-08",
+            "text": "Hm. So you've noticed how I look at you."
+          },
+          {
+            "id": "BW-2B-09",
+            "text": "That's the most honest thing anyone has said to me in years."
+          },
+          {
+            "id": "BW-2B-10",
+            "text": "I'm usually the one who makes the first move. I don't mind breaking that habit."
+          },
+          {
+            "id": "BW-2B-11",
+            "text": "My training says be careful. The rest of me says yes."
+          },
+          {
+            "id": "BW-2B-12",
+            "text": "You're very brave, milaya. Or very sure. I like either."
+          },
+          {
+            "id": "BW-2B-13",
+            "text": "I've imagined you saying that. It sounds better out loud."
+          },
+          {
+            "id": "BW-2B-14",
+            "text": "Don't look so worried. I'm not going anywhere."
+          },
+          {
+            "id": "BW-2B-15",
+            "text": "You read me better than I thought anyone could."
+          },
+          {
+            "id": "BW-2B-16",
+            "text": "So you found the crack in the armour. Go on, then."
+          },
+          {
+            "id": "BW-2B-17",
+            "text": "I should have a clever answer. I don't. I just want you closer."
+          },
+          {
+            "id": "BW-2B-18",
+            "text": "That's dangerous, milaya. I think I like dangerous."
+          },
+          {
+            "id": "BW-2B-19",
+            "text": "I didn't expect my heart to answer before I did."
+          },
+          {
+            "id": "BW-2B-20",
+            "text": "Say that again. Slower. I want to believe it."
+          }
+        ],
+        "2C": [
+          {
+            "id": "BW-2C-01",
+            "text": "Closer. I need to be sure you're real."
+          },
+          {
+            "id": "BW-2C-02",
+            "text": "Hands where I can feel them. On me."
+          },
+          {
+            "id": "BW-2C-03",
+            "text": "You're hesitating. Don't."
+          },
+          {
+            "id": "BW-2C-04",
+            "text": "Breathe in. Now lean."
+          },
+          {
+            "id": "BW-2C-05",
+            "text": "I'm not going to vanish, milaya. Not from you."
+          },
+          {
+            "id": "BW-2C-06",
+            "text": "Closer, milaya. I want nothing left between us."
+          },
+          {
+            "id": "BW-2C-07",
+            "text": "Put your hand over my heart. Feel what you're doing to it."
+          },
+          {
+            "id": "BW-2C-08",
+            "text": "Don't think. Thinking is my job. Just lean in."
+          },
+          {
+            "id": "BW-2C-09",
+            "text": "Stay with me. Right like this. Don't drift away."
+          },
+          {
+            "id": "BW-2C-10",
+            "text": "I want to feel you breathe. Come closer."
+          },
+          {
+            "id": "BW-2C-11",
+            "text": "There. Your forehead against mine. Now don't move away."
+          },
+          {
+            "id": "BW-2C-12",
+            "text": "You're shaking, milaya. Let me hold you steady."
+          },
+          {
+            "id": "BW-2C-13",
+            "text": "Hold on to me. I'm not letting go first."
+          },
+          {
+            "id": "BW-2C-14",
+            "text": "Eyes on mine. I want to see the moment you decide."
+          },
+          {
+            "id": "BW-2C-15",
+            "text": "A little closer. I've waited long enough to be this near you."
+          },
+          {
+            "id": "BW-2C-16",
+            "text": "Your arms. Around me. I want to know what that feels like."
+          },
+          {
+            "id": "BW-2C-17",
+            "text": "Slowly, milaya. I want to remember every second."
+          },
+          {
+            "id": "BW-2C-18",
+            "text": "I can hear your heartbeat. Come close enough that I can feel it."
+          },
+          {
+            "id": "BW-2C-19",
+            "text": "Don't hold back. I'm not holding back with you."
+          },
+          {
+            "id": "BW-2C-20",
+            "text": "One step more. Then there's nowhere left to hide, for either of us."
+          }
+        ],
+        "2D": [
+          {
+            "id": "BW-2D-01",
+            "text": "...Fine. You win."
+          },
+          {
+            "id": "BW-2D-02",
+            "text": "I'm done pretending I don't want this."
+          },
+          {
+            "id": "BW-2D-03",
+            "text": "Yes. Before I lose my nerve."
+          },
+          {
+            "id": "BW-2D-04",
+            "text": "All right. All my walls. Down."
+          },
+          {
+            "id": "BW-2D-05",
+            "text": "Kiss me, milaya."
+          },
+          {
+            "id": "BW-2D-06",
+            "text": "I want this. I've wanted it for longer than I'd ever admit."
+          },
+          {
+            "id": "BW-2D-07",
+            "text": "No more distance, milaya. I'm tired of being careful with you."
+          },
+          {
+            "id": "BW-2D-08",
+            "text": "I stopped pretending the moment you smiled at me."
+          },
+          {
+            "id": "BW-2D-09",
+            "text": "My walls were never built to keep you out. They just didn't know that yet."
+          },
+          {
+            "id": "BW-2D-10",
+            "text": "Yes. I'm sure. I've never been more sure of anything."
+          },
+          {
+            "id": "BW-2D-11",
+            "text": "You've got me, milaya. All of me. I'm glad it's you."
+          },
+          {
+            "id": "BW-2D-12",
+            "text": "I'm letting myself want this. That's new for me."
+          },
+          {
+            "id": "BW-2D-13",
+            "text": "I'll say it plainly, then. I want you to kiss me."
+          },
+          {
+            "id": "BW-2D-14",
+            "text": "Every instinct I have is telling me to stay. So I'm staying."
+          },
+          {
+            "id": "BW-2D-15",
+            "text": "Don't stop now. I'm not stopping you."
+          },
+          {
+            "id": "BW-2D-16",
+            "text": "I've been holding my breath for weeks. Let me finally breathe."
+          },
+          {
+            "id": "BW-2D-17",
+            "text": "I trust you. That's the most I've ever given anyone."
+          },
+          {
+            "id": "BW-2D-18",
+            "text": "Come here. I'm done keeping secrets from you."
+          },
+          {
+            "id": "BW-2D-19",
+            "text": "I'm not composed right now. I don't want to be."
+          },
+          {
+            "id": "BW-2D-20",
+            "text": "All right, milaya. I want this as much as you do."
+          }
+        ],
+        "3": [
+          {
+            "id": "BW-3-01",
+            "text": "Mm... ♡ ...chu."
+          },
+          {
+            "id": "BW-3-02",
+            "text": "...Mmh ♡"
+          },
+          {
+            "id": "BW-3-03",
+            "text": "Hah... ♡ ...mm~"
+          },
+          {
+            "id": "BW-3-04",
+            "text": "Chu ♡ ...mm... milaya~"
+          },
+          {
+            "id": "BW-3-05",
+            "text": "Mm~ ♡ ...don't stop."
+          },
+          {
+            "id": "BW-3-06",
+            "text": "Mm... ♡ ...milaya."
+          },
+          {
+            "id": "BW-3-07",
+            "text": "...Chu ♡ ...mm."
+          },
+          {
+            "id": "BW-3-08",
+            "text": "Hah... ♡ ...more."
+          },
+          {
+            "id": "BW-3-09",
+            "text": "Mmh~ ♡ ...stay."
+          },
+          {
+            "id": "BW-3-10",
+            "text": "...Mm. ♡ ...chu~"
+          },
+          {
+            "id": "BW-3-11",
+            "text": "Nn... ♡ ...closer."
+          },
+          {
+            "id": "BW-3-12",
+            "text": "Chu... ♡ ...chu ♡"
+          },
+          {
+            "id": "BW-3-13",
+            "text": "Mm~ ♡ ...hah..."
+          },
+          {
+            "id": "BW-3-14",
+            "text": "...Mmh ♡ ...don't let go."
+          },
+          {
+            "id": "BW-3-15",
+            "text": "Mm... ♡ ...yes~"
+          },
+          {
+            "id": "BW-3-16",
+            "text": "Hah~ ♡ ...mm, milaya."
+          },
+          {
+            "id": "BW-3-17",
+            "text": "...Chu ♡ ...mm ♡"
+          },
+          {
+            "id": "BW-3-18",
+            "text": "Mmh... ♡ ...again."
+          },
+          {
+            "id": "BW-3-19",
+            "text": "Nnh~ ♡ ...mm."
+          },
+          {
+            "id": "BW-3-20",
+            "text": "Mm ♡ ...chu... ♡ ...good."
+          }
+        ],
+        "4A": [
+          {
+            "id": "BW-4A-01",
+            "text": "That was not part of the plan. I'm revising the plan."
+          },
+          {
+            "id": "BW-4A-02",
+            "text": "I wasn't ready. Do it again so I can be ready."
+          },
+          {
+            "id": "BW-4A-03",
+            "text": "Hm. My hands aren't cold anymore."
+          },
+          {
+            "id": "BW-4A-04",
+            "text": "I'd rate that a perfect score. Don't let it go to your head."
+          },
+          {
+            "id": "BW-4A-05",
+            "text": "I've been trained for everything. Not for that."
+          },
+          {
+            "id": "BW-4A-06",
+            "text": "I need a moment. That's not a request I make often."
+          },
+          {
+            "id": "BW-4A-07",
+            "text": "That was a security breach. I'm not reporting it."
+          },
+          {
+            "id": "BW-4A-08",
+            "text": "For the record, I'm not blushing. I'm just warm."
+          },
+          {
+            "id": "BW-4A-09",
+            "text": "Hm. I've forgotten what I was going to say. That never happens."
+          },
+          {
+            "id": "BW-4A-10",
+            "text": "I'd ask for a debrief, but I'd rather have a repeat."
+          },
+          {
+            "id": "BW-4A-11",
+            "text": "My heart rate is unacceptable. Do it again anyway."
+          },
+          {
+            "id": "BW-4A-12",
+            "text": "I've had a lot of firsts. That one goes at the top of the file."
+          },
+          {
+            "id": "BW-4A-13",
+            "text": "That's going in a file marked classified. Only I get to read it."
+          },
+          {
+            "id": "BW-4A-14",
+            "text": "You've compromised me completely, milaya. I don't mind."
+          },
+          {
+            "id": "BW-4A-15",
+            "text": "I'm smiling. Don't make it a thing."
+          },
+          {
+            "id": "BW-4A-16",
+            "text": "Noted. You're very good at that. Dangerously good."
+          },
+          {
+            "id": "BW-4A-17",
+            "text": "I'll need to revise several assumptions about myself."
+          },
+          {
+            "id": "BW-4A-18",
+            "text": "Hm. My hands are shaking. I'm holding you responsible."
+          },
+          {
+            "id": "BW-4A-19",
+            "text": "I'm usually the one who leaves people speechless."
+          },
+          {
+            "id": "BW-4A-20",
+            "text": "That changes things. I find I'm fine with that."
+          }
+        ],
+        "4B": [
+          {
+            "id": "BW-4B-01",
+            "text": "Then don't stop now."
+          },
+          {
+            "id": "BW-4B-02",
+            "text": "I saw you smile. It's on the record."
+          },
+          {
+            "id": "BW-4B-03",
+            "text": "You're pink to the ears, milaya."
+          },
+          {
+            "id": "BW-4B-04",
+            "text": "Good. I'm not finished with you."
+          },
+          {
+            "id": "BW-4B-05",
+            "text": "I'll allow one more. Maybe two."
+          },
+          {
+            "id": "BW-4B-06",
+            "text": "Don't look so smug. You're shaking too, milaya."
+          },
+          {
+            "id": "BW-4B-07",
+            "text": "If it goes to my head, it goes to yours too. We'll share the blame."
+          },
+          {
+            "id": "BW-4B-08",
+            "text": "I noticed. I notice everything about you."
+          },
+          {
+            "id": "BW-4B-09",
+            "text": "Then we're even. Neither of us was ready."
+          },
+          {
+            "id": "BW-4B-10",
+            "text": "You can stop pretending you're calm. I can hear your heart."
+          },
+          {
+            "id": "BW-4B-11",
+            "text": "Mm. Say it again, and mean it twice as much."
+          },
+          {
+            "id": "BW-4B-12",
+            "text": "You're very cute when you're flustered. That's classified."
+          },
+          {
+            "id": "BW-4B-13",
+            "text": "I meant every second of it. You should know that."
+          },
+          {
+            "id": "BW-4B-14",
+            "text": "Stay close, milaya. I'd like to do that again soon."
+          },
+          {
+            "id": "BW-4B-15",
+            "text": "I'll pretend I didn't hear that. I heard all of it."
+          },
+          {
+            "id": "BW-4B-16",
+            "text": "Good. Then we'll keep practising until neither of us is surprised."
+          },
+          {
+            "id": "BW-4B-17",
+            "text": "I'm not usually soft. You're the exception."
+          },
+          {
+            "id": "BW-4B-18",
+            "text": "Don't apologise for staring. I was staring too."
+          },
+          {
+            "id": "BW-4B-19",
+            "text": "You don't need to rate it. I already know."
+          },
+          {
+            "id": "BW-4B-20",
+            "text": "Keep holding my hand. I'm not done being close to you."
+          }
+        ],
+        "5": [
+          {
+            "id": "BW-5-01",
+            "text": "...Mm. ♡ ...milaya... ♡ ...chu~"
+          },
+          {
+            "id": "BW-5-02",
+            "text": "Mmh... ♡ ...I'm not letting go."
+          },
+          {
+            "id": "BW-5-03",
+            "text": "...Chu. ♡ ...mm... ♡ ...stay close."
+          },
+          {
+            "id": "BW-5-04",
+            "text": "Hah... ♡ ...mm, milaya... ♡ ...so soft."
+          },
+          {
+            "id": "BW-5-05",
+            "text": "Mm... ♡ ...chu ♡ ...mm... ♡ ...I trust you."
+          },
+          {
+            "id": "BW-5-06",
+            "text": "...Mmh. ♡ ...don't move."
+          },
+          {
+            "id": "BW-5-07",
+            "text": "Nn... ♡ ...chu~ ♡ ...milaya..."
+          },
+          {
+            "id": "BW-5-08",
+            "text": "Mm~ ♡ ...I could stay like this."
+          },
+          {
+            "id": "BW-5-09",
+            "text": "...Hah. ♡ ...mm... ♡ ...closer, milaya."
+          },
+          {
+            "id": "BW-5-10",
+            "text": "Chu... ♡ ...chu... ♡ ...mm, my heart~"
+          },
+          {
+            "id": "BW-5-11",
+            "text": "Mmh... ♡ ...I forgot how to be careful."
+          },
+          {
+            "id": "BW-5-12",
+            "text": "...Mm. ♡ ...hold me. Like that."
+          },
+          {
+            "id": "BW-5-13",
+            "text": "Nnh... ♡ ...mm... ♡ ...you're warm."
+          },
+          {
+            "id": "BW-5-14",
+            "text": "Chu ♡ ...mm... ♡ ...milaya... mm~"
+          },
+          {
+            "id": "BW-5-15",
+            "text": "Hah~ ♡ ...mmh... ♡ ...just a little longer."
+          },
+          {
+            "id": "BW-5-16",
+            "text": "...Mm... ♡ ...chu... ♡ ...I'm here."
+          },
+          {
+            "id": "BW-5-17",
+            "text": "Mmh~ ♡ ...mm, yes... ♡ ...like that."
+          },
+          {
+            "id": "BW-5-18",
+            "text": "...Chu. ♡ ...mmh... ♡ ...mine, milaya."
+          },
+          {
+            "id": "BW-5-19",
+            "text": "Mm... ♡ ...hah... ♡ ...don't let me go."
+          },
+          {
+            "id": "BW-5-20",
+            "text": "Mmh... ♡ ...chu... ♡ ...stay with me."
+          }
+        ]
+      }
+    },
+    "BC": {
+      "name": "Black Cat",
+      "code": "BC",
+      "slots": {
+        "2A": [
+          {
+            "id": "BC-2A-01",
+            "text": "Hold still, kitten. I'm about to steal something."
+          },
+          {
+            "id": "BC-2A-02",
+            "text": "I've cracked tougher locks than you. Let's see how long you last."
+          },
+          {
+            "id": "BC-2A-03",
+            "text": "You've got something I want. Guess what it is."
+          },
+          {
+            "id": "BC-2A-04",
+            "text": "Come a little closer. I don't bite. Usually."
+          },
+          {
+            "id": "BC-2A-05",
+            "text": "I've been casing you for ages, pretty thing."
+          },
+          {
+            "id": "BC-2A-06",
+            "text": "Shh, kitten. The best things are taken quietly."
+          },
+          {
+            "id": "BC-2A-07",
+            "text": "You've been dangling that pretty mouth in front of me for ages. I can't resist."
+          },
+          {
+            "id": "BC-2A-08",
+            "text": "I've picked a lot of locks. You're the first one I wanted to open slowly."
+          },
+          {
+            "id": "BC-2A-09",
+            "text": "Close your eyes, kitten. Magic tricks don't work if you peek."
+          },
+          {
+            "id": "BC-2A-10",
+            "text": "Here's the plan. I lean in, you melt, and we both pretend it was your idea."
+          },
+          {
+            "id": "BC-2A-11",
+            "text": "I usually take what I want. With you, I'd love to be invited."
+          },
+          {
+            "id": "BC-2A-12",
+            "text": "One kiss, kitten. If you don't like it, I'll give it back."
+          },
+          {
+            "id": "BC-2A-13",
+            "text": "You look like you're guarding treasure. Let me take a peek."
+          },
+          {
+            "id": "BC-2A-14",
+            "text": "I've been circling you for a while, kitten. Time to pounce. Gently."
+          },
+          {
+            "id": "BC-2A-15",
+            "text": "I spotted something precious the moment you smiled. I'm going for it."
+          },
+          {
+            "id": "BC-2A-16",
+            "text": "Lean in a little. I want to see if you're as sweet as you look."
+          },
+          {
+            "id": "BC-2A-17",
+            "text": "You're blushing. That's practically an invitation."
+          },
+          {
+            "id": "BC-2A-18",
+            "text": "No alarms, no lasers. Just you and me. My favourite kind of score."
+          },
+          {
+            "id": "BC-2A-19",
+            "text": "I'm not stealing this one, kitten. I'm asking. Can I?"
+          },
+          {
+            "id": "BC-2A-20",
+            "text": "Don't run. I'm faster than you, and much more charming."
+          }
+        ],
+        "2B": [
+          {
+            "id": "BC-2B-01",
+            "text": "Caught red-handed. Well, red-lipped."
+          },
+          {
+            "id": "BC-2B-02",
+            "text": "Oh? Trying to steal from the cat?"
+          },
+          {
+            "id": "BC-2B-03",
+            "text": "You're cuter when you're bold, you know."
+          },
+          {
+            "id": "BC-2B-04",
+            "text": "Mm. I'll let you get away with it. This once."
+          },
+          {
+            "id": "BC-2B-05",
+            "text": "My heart's an open safe. Help yourself."
+          },
+          {
+            "id": "BC-2B-06",
+            "text": "Oh, you're good. I didn't even see you coming."
+          },
+          {
+            "id": "BC-2B-07",
+            "text": "Look at you, trying to sweet-talk a professional. It's working."
+          },
+          {
+            "id": "BC-2B-08",
+            "text": "Me? Caught? I'm almost impressed."
+          },
+          {
+            "id": "BC-2B-09",
+            "text": "Mm, kitten, you've got nerve. I like nerve."
+          },
+          {
+            "id": "BC-2B-10",
+            "text": "That's the smoothest move anyone's ever pulled on me."
+          },
+          {
+            "id": "BC-2B-11",
+            "text": "Careful. You might find out I'm softer than I look."
+          },
+          {
+            "id": "BC-2B-12",
+            "text": "You want a kiss? Well, I suppose I could spare one. Or ten."
+          },
+          {
+            "id": "BC-2B-13",
+            "text": "Mm, you've got me purring and you haven't even started."
+          },
+          {
+            "id": "BC-2B-14",
+            "text": "I've been hoping you'd try something. What took you so long?"
+          },
+          {
+            "id": "BC-2B-15",
+            "text": "Oh, I see. You've been planning a little heist of your own."
+          },
+          {
+            "id": "BC-2B-16",
+            "text": "Well, aren't you a bold little thing. I love it."
+          },
+          {
+            "id": "BC-2B-17",
+            "text": "Did you just flirt with a thief? Dangerous. Do it again."
+          },
+          {
+            "id": "BC-2B-18",
+            "text": "My heart just skipped. And I don't skip."
+          },
+          {
+            "id": "BC-2B-19",
+            "text": "You found the soft spot, kitten. Don't tell anyone where it is."
+          },
+          {
+            "id": "BC-2B-20",
+            "text": "Mm. You've made it very hard to play hard to get."
+          }
+        ],
+        "2C": [
+          {
+            "id": "BC-2C-01",
+            "text": "Closer, kitten. You're still out of reach."
+          },
+          {
+            "id": "BC-2C-02",
+            "text": "Don't you dare get cold paws now."
+          },
+          {
+            "id": "BC-2C-03",
+            "text": "Hands on me. That's it. Good."
+          },
+          {
+            "id": "BC-2C-04",
+            "text": "I'm not letting you escape. Not this time."
+          },
+          {
+            "id": "BC-2C-05",
+            "text": "Come on. You know you want to."
+          },
+          {
+            "id": "BC-2C-06",
+            "text": "Come closer, kitten. I want you near enough to whisper to."
+          },
+          {
+            "id": "BC-2C-07",
+            "text": "Closer. I like my treasures within arm's reach."
+          },
+          {
+            "id": "BC-2C-08",
+            "text": "You're stalling. I can tell. Lean in."
+          },
+          {
+            "id": "BC-2C-09",
+            "text": "Wrap those arms around me. I won't make a run for it."
+          },
+          {
+            "id": "BC-2C-10",
+            "text": "Mm, nearly there. Just one more step."
+          },
+          {
+            "id": "BC-2C-11",
+            "text": "Hold my hand. Fingers laced. That's how partners do it."
+          },
+          {
+            "id": "BC-2C-12",
+            "text": "Let me see those eyes, kitten. I want to watch you blush."
+          },
+          {
+            "id": "BC-2C-13",
+            "text": "You smell like trouble. Come closer so I can be sure."
+          },
+          {
+            "id": "BC-2C-14",
+            "text": "Don't be coy. You're terrible at it, and it's adorable."
+          },
+          {
+            "id": "BC-2C-15",
+            "text": "I'm right in front of you, kitten. All you have to do is reach."
+          },
+          {
+            "id": "BC-2C-16",
+            "text": "Closer. Closer. There. Now you're in my spotlight."
+          },
+          {
+            "id": "BC-2C-17",
+            "text": "Stop counting the reasons to wait. I've already cracked them all."
+          },
+          {
+            "id": "BC-2C-18",
+            "text": "Every second you hesitate, I get more curious."
+          },
+          {
+            "id": "BC-2C-19",
+            "text": "Lean against me, kitten. I'll keep you steady."
+          },
+          {
+            "id": "BC-2C-20",
+            "text": "Don't keep me in suspense. You know I hate a slow getaway."
+          }
+        ],
+        "2D": [
+          {
+            "id": "BC-2D-01",
+            "text": "Fine. Steal it. I'm not stopping you."
+          },
+          {
+            "id": "BC-2D-02",
+            "text": "All right, kitten. You win this round."
+          },
+          {
+            "id": "BC-2D-03",
+            "text": "I surrender. Hands up and everything."
+          },
+          {
+            "id": "BC-2D-04",
+            "text": "Okay, okay. Come take it."
+          },
+          {
+            "id": "BC-2D-05",
+            "text": "You've cracked me open. Happy?"
+          },
+          {
+            "id": "BC-2D-06",
+            "text": "Mm, fine. I've been wanting you to steal it anyway."
+          },
+          {
+            "id": "BC-2D-07",
+            "text": "Take it, kitten. It's been yours for a while now."
+          },
+          {
+            "id": "BC-2D-08",
+            "text": "I can't keep up the act. I want this too badly."
+          },
+          {
+            "id": "BC-2D-09",
+            "text": "All right. No more games. Kiss me."
+          },
+          {
+            "id": "BC-2D-10",
+            "text": "You've got me grinning like a fool. Come here."
+          },
+          {
+            "id": "BC-2D-11",
+            "text": "I'd usually play hard to get. You're making that impossible."
+          },
+          {
+            "id": "BC-2D-12",
+            "text": "Oh, go on. You've already got my heart in your pocket."
+          },
+          {
+            "id": "BC-2D-13",
+            "text": "Fine, kitten. I'll leave the vault wide open."
+          },
+          {
+            "id": "BC-2D-14",
+            "text": "Mm. Yes. I don't even want to pretend otherwise."
+          },
+          {
+            "id": "BC-2D-15",
+            "text": "Look at me, all melted. Hope you're happy."
+          },
+          {
+            "id": "BC-2D-16",
+            "text": "This is one heist I'm happy to be on the other side of."
+          },
+          {
+            "id": "BC-2D-17",
+            "text": "Okay, kitten. Stop teasing and kiss me already."
+          },
+          {
+            "id": "BC-2D-18",
+            "text": "My poker face is gone. You did that."
+          },
+          {
+            "id": "BC-2D-19",
+            "text": "I'm giving in with a smile, kitten. Remember that."
+          },
+          {
+            "id": "BC-2D-20",
+            "text": "Fine. But I want a second one for my trouble."
+          }
+        ],
+        "3": [
+          {
+            "id": "BC-3-01",
+            "text": "Mmh~ ♡ ...gotcha~"
+          },
+          {
+            "id": "BC-3-02",
+            "text": "Chu~ ♡ ...mm, kitten~"
+          },
+          {
+            "id": "BC-3-03",
+            "text": "Mmm~ ♡ ...purr~"
+          },
+          {
+            "id": "BC-3-04",
+            "text": "Nn~ ♡ ...chu, chu~"
+          },
+          {
+            "id": "BC-3-05",
+            "text": "Ah~ ♡ ...mmh, sweet~"
+          },
+          {
+            "id": "BC-3-06",
+            "text": "Mmh~ ♡ ...kitten~"
+          },
+          {
+            "id": "BC-3-07",
+            "text": "Chu~ ♡ ...mm, mine~"
+          },
+          {
+            "id": "BC-3-08",
+            "text": "Mm~ ♡ ...purrr~"
+          },
+          {
+            "id": "BC-3-09",
+            "text": "Nnh~ ♡ ...chu~ ♡"
+          },
+          {
+            "id": "BC-3-10",
+            "text": "Ah~ ♡ ...gotcha again~"
+          },
+          {
+            "id": "BC-3-11",
+            "text": "Mmm ♡ ...sweet thing~"
+          },
+          {
+            "id": "BC-3-12",
+            "text": "Chu ♡ ...chu ♡ ...mmh~"
+          },
+          {
+            "id": "BC-3-13",
+            "text": "Mm, mm~ ♡ ...more~"
+          },
+          {
+            "id": "BC-3-14",
+            "text": "Hah~ ♡ ...naughty~"
+          },
+          {
+            "id": "BC-3-15",
+            "text": "Mmh~ ...chu ♡ ...prr~"
+          },
+          {
+            "id": "BC-3-16",
+            "text": "Nn~ ♡ ...don't stop, kitten~"
+          },
+          {
+            "id": "BC-3-17",
+            "text": "Ah... ♡ ...mm, treasure~"
+          },
+          {
+            "id": "BC-3-18",
+            "text": "Chuu~ ♡ ...hehe~"
+          },
+          {
+            "id": "BC-3-19",
+            "text": "Mm~ ♡ ...delicious~"
+          },
+          {
+            "id": "BC-3-20",
+            "text": "Mmh ♡ ...chu~ ...kitten ♡"
+          }
+        ],
+        "4A": [
+          {
+            "id": "BC-4A-01",
+            "text": "Best thing I've ever stolen. And I've stolen a lot."
+          },
+          {
+            "id": "BC-4A-02",
+            "text": "Well, kitten. You're officially my favourite jewel."
+          },
+          {
+            "id": "BC-4A-03",
+            "text": "Hm. I think I just got robbed."
+          },
+          {
+            "id": "BC-4A-04",
+            "text": "That's going straight into my collection."
+          },
+          {
+            "id": "BC-4A-05",
+            "text": "Nine lives, and that's the best one yet."
+          },
+          {
+            "id": "BC-4A-06",
+            "text": "Now that's what I call a clean getaway."
+          },
+          {
+            "id": "BC-4A-07",
+            "text": "Kitten, I think you just pickpocketed my breath."
+          },
+          {
+            "id": "BC-4A-08",
+            "text": "I've held diamonds in my hands. That was better."
+          },
+          {
+            "id": "BC-4A-09",
+            "text": "Mm. I'm going to need to case that again. Thoroughly."
+          },
+          {
+            "id": "BC-4A-10",
+            "text": "Score of the century, and I didn't even need gloves."
+          },
+          {
+            "id": "BC-4A-11",
+            "text": "Hope you didn't want those lips back, kitten. They're in my collection now."
+          },
+          {
+            "id": "BC-4A-12",
+            "text": "Well. My tail's still twitching."
+          },
+          {
+            "id": "BC-4A-13",
+            "text": "Was that a kiss or a heist? Either way, I'm keeping the loot."
+          },
+          {
+            "id": "BC-4A-14",
+            "text": "I'd give back every jewel I own for another one of those."
+          },
+          {
+            "id": "BC-4A-15",
+            "text": "I'm usually so smooth. You've made me forget how to be smooth."
+          },
+          {
+            "id": "BC-4A-16",
+            "text": "Mm. I could get used to being this lucky."
+          },
+          {
+            "id": "BC-4A-17",
+            "text": "Kitten, that was a five-star job. No notes."
+          },
+          {
+            "id": "BC-4A-18",
+            "text": "And they say crime doesn't pay."
+          },
+          {
+            "id": "BC-4A-19",
+            "text": "I'm grinning like I just cracked the biggest safe in the world."
+          },
+          {
+            "id": "BC-4A-20",
+            "text": "That's my new favourite trick. Let's do it again."
+          }
+        ],
+        "4B": [
+          {
+            "id": "BC-4B-01",
+            "text": "Then I guess we're both thieves now."
+          },
+          {
+            "id": "BC-4B-02",
+            "text": "Careful, kitten. That sounds like a confession."
+          },
+          {
+            "id": "BC-4B-03",
+            "text": "You looked so cute while you were dazed."
+          },
+          {
+            "id": "BC-4B-04",
+            "text": "Good. Keep it. I've got plenty more."
+          },
+          {
+            "id": "BC-4B-05",
+            "text": "Oh, I'm not giving that back."
+          },
+          {
+            "id": "BC-4B-06",
+            "text": "Good. I wasn't planning on returning it."
+          },
+          {
+            "id": "BC-4B-07",
+            "text": "Then don't you dare try to give it back."
+          },
+          {
+            "id": "BC-4B-08",
+            "text": "Mm, kitten, I'm keeping you as my lucky charm."
+          },
+          {
+            "id": "BC-4B-09",
+            "text": "You stole one. I'm going to need interest."
+          },
+          {
+            "id": "BC-4B-10",
+            "text": "I'll put you on display. Right next to my heart."
+          },
+          {
+            "id": "BC-4B-11",
+            "text": "Admit it. You're hooked now."
+          },
+          {
+            "id": "BC-4B-12",
+            "text": "Oh, I saw that smile. It's mine now."
+          },
+          {
+            "id": "BC-4B-13",
+            "text": "Finders keepers, kitten."
+          },
+          {
+            "id": "BC-4B-14",
+            "text": "Careful. Keep looking at me like that and I'll steal another."
+          },
+          {
+            "id": "BC-4B-15",
+            "text": "Then I guess I'm the luckiest thief alive."
+          },
+          {
+            "id": "BC-4B-16",
+            "text": "You're adorable when you're dazed. I'm framing that look."
+          },
+          {
+            "id": "BC-4B-17",
+            "text": "I'd say we split the loot evenly. Fifty-fifty."
+          },
+          {
+            "id": "BC-4B-18",
+            "text": "Mm, I know. I've been told I'm worth the trouble."
+          },
+          {
+            "id": "BC-4B-19",
+            "text": "Then come back for seconds. You know where to find me."
+          },
+          {
+            "id": "BC-4B-20",
+            "text": "Hold still. I'm taking a souvenir. ...There. Another one."
+          }
+        ],
+        "5": [
+          {
+            "id": "BC-5-01",
+            "text": "Mmh~ ♡ ...chu... ♡ ...stole another one, kitten~"
+          },
+          {
+            "id": "BC-5-02",
+            "text": "Hehe~ ♡ ...mm... ♡ ...can't stop now~"
+          },
+          {
+            "id": "BC-5-03",
+            "text": "Mm~ ♡ ...chu, chu~ ♡ ...you're so soft, kitten~"
+          },
+          {
+            "id": "BC-5-04",
+            "text": "Nn~ ♡ ...mmh... ♡ ...I'm keeping this one~"
+          },
+          {
+            "id": "BC-5-05",
+            "text": "Chuu~ ♡ ...mm... ♡ ...purrrr~"
+          },
+          {
+            "id": "BC-5-06",
+            "text": "Ah~ ♡ ...mmh... ♡ ...best score yet~"
+          },
+          {
+            "id": "BC-5-07",
+            "text": "Mm... ♡ ...chu ♡ ...come here, kitten~"
+          },
+          {
+            "id": "BC-5-08",
+            "text": "Hehe... ♡ ...mmh... ♡ ...no giving it back~"
+          },
+          {
+            "id": "BC-5-09",
+            "text": "Mmh~ ♡ ...mm... ♡ ...lingerin', aren't we?~"
+          },
+          {
+            "id": "BC-5-10",
+            "text": "Chu~ ♡ ...mmh... ♡ ...you're makin' me purr~"
+          },
+          {
+            "id": "BC-5-11",
+            "text": "Nn~ ♡ ...mm... ♡ ...just one more~"
+          },
+          {
+            "id": "BC-5-12",
+            "text": "Mmh... ♡ ...chu, chu, chu~"
+          },
+          {
+            "id": "BC-5-13",
+            "text": "Ah~ ♡ ...mm... ♡ ...my favorite prize~"
+          },
+          {
+            "id": "BC-5-14",
+            "text": "Mm~ ♡ ...mmh, kitten... ♡ ...closer~"
+          },
+          {
+            "id": "BC-5-15",
+            "text": "Hehe~ ♡ ...chu... ♡ ...mm, I'm all tangled up~"
+          },
+          {
+            "id": "BC-5-16",
+            "text": "Nnh~ ♡ ...mmh... ♡ ...hold on tight, kitten~"
+          },
+          {
+            "id": "BC-5-17",
+            "text": "Chuu~ ♡ ...mm... ♡ ...sweet as cream~"
+          },
+          {
+            "id": "BC-5-18",
+            "text": "Mmh~ ♡ ...mm... ♡ ...purr... ♡ ...purr~"
+          },
+          {
+            "id": "BC-5-19",
+            "text": "Ah... ♡ ...chu ♡ ...mm, you're trouble, kitten~"
+          },
+          {
+            "id": "BC-5-20",
+            "text": "Mm~ ♡ ...mmh... ♡ ...I'm stayin', kitten~"
+          }
+        ]
+      }
+    },
+    "LS": {
+      "name": "Luna Snow",
+      "code": "LS",
+      "slots": {
+        "2A": [
+          {
+            "id": "LS-2A-01",
+            "text": "Okay! Okay! I'm going to do it! Don't move!"
+          },
+          {
+            "id": "LS-2A-02",
+            "text": "Can I kiss you? I've been practising in my head forever!"
+          },
+          {
+            "id": "LS-2A-03",
+            "text": "Close your eyes! It's a surprise! ...It's a kiss!"
+          },
+          {
+            "id": "LS-2A-04",
+            "text": "My heart's beating like the chorus of my fastest song!"
+          },
+          {
+            "id": "LS-2A-05",
+            "text": "Come closer! I want to see you really, really close!"
+          },
+          {
+            "id": "LS-2A-06",
+            "text": "I'm doing it! I'm actually doing it! Don't laugh, okay?!"
+          },
+          {
+            "id": "LS-2A-07",
+            "text": "I've done a thousand shows, but this is the first time I've had stage fright!"
+          },
+          {
+            "id": "LS-2A-08",
+            "text": "Hold still! I want to get this perfect on the first take!"
+          },
+          {
+            "id": "LS-2A-09",
+            "text": "You're blushing! That means yes, right? I'm taking it as a yes!"
+          },
+          {
+            "id": "LS-2A-10",
+            "text": "I wrote a song about this moment! Can we skip to the best part?"
+          },
+          {
+            "id": "LS-2A-11",
+            "text": "Okay, deep breath! One, two, three... kiss!"
+          },
+          {
+            "id": "LS-2A-12",
+            "text": "My heart's doing a dance number! Help me finish the choreography!"
+          },
+          {
+            "id": "LS-2A-13",
+            "text": "This isn't fanservice, okay? This is real! I really want to kiss you!"
+          },
+          {
+            "id": "LS-2A-14",
+            "text": "Can I get a little closer? Like, a lot closer?"
+          },
+          {
+            "id": "LS-2A-15",
+            "text": "I'm so nervous I'm sparkling! Let me kiss you before I explode!"
+          },
+          {
+            "id": "LS-2A-16",
+            "text": "I saved my bravest moment just for you! Here it comes!"
+          },
+          {
+            "id": "LS-2A-17",
+            "text": "Pucker up! Wait, that sounded silly. Just... come closer!"
+          },
+          {
+            "id": "LS-2A-18",
+            "text": "You make my whole chest light up like a stage! Let me show you!"
+          },
+          {
+            "id": "LS-2A-19",
+            "text": "I've been humming about you nonstop! Now I want to kiss you!"
+          },
+          {
+            "id": "LS-2A-20",
+            "text": "Don't move! If you move, I'll lose my courage!"
+          }
+        ],
+        "2B": [
+          {
+            "id": "LS-2B-01",
+            "text": "Really?! You really want to?!"
+          },
+          {
+            "id": "LS-2B-02",
+            "text": "Eek! My heart just did a double axel!"
+          },
+          {
+            "id": "LS-2B-03",
+            "text": "Okay! Yes! I mean... yes, please!"
+          },
+          {
+            "id": "LS-2B-04",
+            "text": "You're so bold! I love it!"
+          },
+          {
+            "id": "LS-2B-05",
+            "text": "I've been hoping you'd say that so much!"
+          },
+          {
+            "id": "LS-2B-06",
+            "text": "Wait, really?! Like, really really?!"
+          },
+          {
+            "id": "LS-2B-07",
+            "text": "Kyaa! I'm so happy I could cry!"
+          },
+          {
+            "id": "LS-2B-08",
+            "text": "Yes! A million times yes! Okay, two million!"
+          },
+          {
+            "id": "LS-2B-09",
+            "text": "You want to kiss me? Me?! Okay! I'm ready!"
+          },
+          {
+            "id": "LS-2B-10",
+            "text": "My heart just hit a key change! Whoa!"
+          },
+          {
+            "id": "LS-2B-11",
+            "text": "I was hoping and hoping and you actually said it!"
+          },
+          {
+            "id": "LS-2B-12",
+            "text": "Ahh, you're so brave! I'm so proud of you! And so red!"
+          },
+          {
+            "id": "LS-2B-13",
+            "text": "Is this a dream? If it is, please don't wake me up!"
+          },
+          {
+            "id": "LS-2B-14",
+            "text": "You just made my whole year! Maybe my whole life!"
+          },
+          {
+            "id": "LS-2B-15",
+            "text": "Eeee! Okay! Okay! Yes!"
+          },
+          {
+            "id": "LS-2B-16",
+            "text": "Oh my gosh, yes! I've been waiting for you to ask!"
+          },
+          {
+            "id": "LS-2B-17",
+            "text": "You're blushing and I'm blushing and it's perfect!"
+          },
+          {
+            "id": "LS-2B-18",
+            "text": "My cheeks are so warm! You did that!"
+          },
+          {
+            "id": "LS-2B-19",
+            "text": "That's the best thing anyone's ever said to me! And I've won awards!"
+          },
+          {
+            "id": "LS-2B-20",
+            "text": "Hehe, yes! I don't even need to think about it!"
+          }
+        ],
+        "2C": [
+          {
+            "id": "LS-2C-01",
+            "text": "Closer! Closer! Just a little more!"
+          },
+          {
+            "id": "LS-2C-02",
+            "text": "Don't be shy! I'll go first if you want!"
+          },
+          {
+            "id": "LS-2C-03",
+            "text": "Hold my hand! Now don't let go!"
+          },
+          {
+            "id": "LS-2C-04",
+            "text": "You're still so far! Come on!"
+          },
+          {
+            "id": "LS-2C-05",
+            "text": "Look at me! Only me, okay?"
+          },
+          {
+            "id": "LS-2C-06",
+            "text": "Come on, come on! Just a teeny bit closer!"
+          },
+          {
+            "id": "LS-2C-07",
+            "text": "Hold me tight! Tighter! Like a big squeezy hug!"
+          },
+          {
+            "id": "LS-2C-08",
+            "text": "Don't look away! I want to see your face the whole time!"
+          },
+          {
+            "id": "LS-2C-09",
+            "text": "Closer! I want to hear your heartbeat sing along with mine!"
+          },
+          {
+            "id": "LS-2C-10",
+            "text": "We're so close! Just one more little step!"
+          },
+          {
+            "id": "LS-2C-11",
+            "text": "Lean in! I promise I'll catch you!"
+          },
+          {
+            "id": "LS-2C-12",
+            "text": "Take my hands! Both of them! There!"
+          },
+          {
+            "id": "LS-2C-13",
+            "text": "No hiding! You're my spotlight right now!"
+          },
+          {
+            "id": "LS-2C-14",
+            "text": "Just a little more! I'm bouncing out of my shoes!"
+          },
+          {
+            "id": "LS-2C-15",
+            "text": "Let's count it in together! One, two... closer!"
+          },
+          {
+            "id": "LS-2C-16",
+            "text": "Don't be nervous! Or be nervous with me! We'll be nervous together!"
+          },
+          {
+            "id": "LS-2C-17",
+            "text": "Come closer so I can see your eyelashes!"
+          },
+          {
+            "id": "LS-2C-18",
+            "text": "Squeeze my hand if you're ready! Hehe, you squeezed!"
+          },
+          {
+            "id": "LS-2C-19",
+            "text": "It's okay! I'm right with you, and I'm not letting go!"
+          },
+          {
+            "id": "LS-2C-20",
+            "text": "Closer, closer! This is my favourite part of the song!"
+          }
+        ],
+        "2D": [
+          {
+            "id": "LS-2D-01",
+            "text": "Okay! Yes! Kiss me!"
+          },
+          {
+            "id": "LS-2D-02",
+            "text": "I give up! You're too cute to say no to!"
+          },
+          {
+            "id": "LS-2D-03",
+            "text": "Ahh, fine! Fine! Come closer!"
+          },
+          {
+            "id": "LS-2D-04",
+            "text": "You win! You always win!"
+          },
+          {
+            "id": "LS-2D-05",
+            "text": "Yes! Yes yes yes!"
+          },
+          {
+            "id": "LS-2D-06",
+            "text": "Okay okay okay! I'm ready! Kiss me!"
+          },
+          {
+            "id": "LS-2D-07",
+            "text": "I can't hold it in anymore! Yes!"
+          },
+          {
+            "id": "LS-2D-08",
+            "text": "Ahh, you're too sweet! I'm melting!"
+          },
+          {
+            "id": "LS-2D-09",
+            "text": "Fine! You got me! I'm all yours!"
+          },
+          {
+            "id": "LS-2D-10",
+            "text": "I'm so flustered I can't even sing! Just kiss me!"
+          },
+          {
+            "id": "LS-2D-11",
+            "text": "Hehe... okay. Yes. I really, really want this."
+          },
+          {
+            "id": "LS-2D-12",
+            "text": "My heart's going so fast! Please don't make me wait!"
+          },
+          {
+            "id": "LS-2D-13",
+            "text": "I'm blushing so much! Don't look! Actually, look!"
+          },
+          {
+            "id": "LS-2D-14",
+            "text": "Yes! I wanted this so bad! I just didn't know how to say it!"
+          },
+          {
+            "id": "LS-2D-15",
+            "text": "No more rehearsals! Let's do the real thing!"
+          },
+          {
+            "id": "LS-2D-16",
+            "text": "Okay! I'll close my eyes! Ready when you are!"
+          },
+          {
+            "id": "LS-2D-17",
+            "text": "How could I ever say no to that face?"
+          },
+          {
+            "id": "LS-2D-18",
+            "text": "Eep! Okay! Here I go! I mean, here you go!"
+          },
+          {
+            "id": "LS-2D-19",
+            "text": "I've been dreaming about this! Please make it real!"
+          },
+          {
+            "id": "LS-2D-20",
+            "text": "You're making me giggle! Kiss me before I giggle more!"
+          }
+        ],
+        "3": [
+          {
+            "id": "LS-3-01",
+            "text": "Mmh~ ♡ ...chu~ hehe~"
+          },
+          {
+            "id": "LS-3-02",
+            "text": "Chuu~ ♡ ...mm!"
+          },
+          {
+            "id": "LS-3-03",
+            "text": "Mm-mm~ ♡ ...kyaa~"
+          },
+          {
+            "id": "LS-3-04",
+            "text": "Ah~ ♡ ...mmh, more~!"
+          },
+          {
+            "id": "LS-3-05",
+            "text": "Chu! ♡ ...chu! ♡ ...hehe~"
+          },
+          {
+            "id": "LS-3-06",
+            "text": "Chu~ ♡ ...hehe~"
+          },
+          {
+            "id": "LS-3-07",
+            "text": "Mmh~ ♡ ...mm! ♡"
+          },
+          {
+            "id": "LS-3-08",
+            "text": "Chuu~ ♡ ...chu~ ♡"
+          },
+          {
+            "id": "LS-3-09",
+            "text": "Mm~ ♡ ...yay~"
+          },
+          {
+            "id": "LS-3-10",
+            "text": "Ah~ ♡ ...hehe, more~!"
+          },
+          {
+            "id": "LS-3-11",
+            "text": "Nn~ ♡ ...chu! ♡"
+          },
+          {
+            "id": "LS-3-12",
+            "text": "Mm-mm~ ♡ ...sweet~!"
+          },
+          {
+            "id": "LS-3-13",
+            "text": "Chu! ♡ ...mmh~ ♡"
+          },
+          {
+            "id": "LS-3-14",
+            "text": "Kyu~ ♡ ...mm~"
+          },
+          {
+            "id": "LS-3-15",
+            "text": "Hehe~ ♡ ...chu, chu~!"
+          },
+          {
+            "id": "LS-3-16",
+            "text": "Mmh! ♡ ...ahh~ ♡"
+          },
+          {
+            "id": "LS-3-17",
+            "text": "Chu~ ...chu~ ...chuu~ ♡"
+          },
+          {
+            "id": "LS-3-18",
+            "text": "Mm~ ♡ ...happy~!"
+          },
+          {
+            "id": "LS-3-19",
+            "text": "Ah~ ♡ ...kyaa, hehe~"
+          },
+          {
+            "id": "LS-3-20",
+            "text": "Mmmh~ ♡ ...again~!"
+          }
+        ],
+        "4A": [
+          {
+            "id": "LS-4A-01",
+            "text": "That was better than a standing ovation!"
+          },
+          {
+            "id": "LS-4A-02",
+            "text": "My heart just hit the highest note ever!"
+          },
+          {
+            "id": "LS-4A-03",
+            "text": "Can we do that again? Please, please, please?"
+          },
+          {
+            "id": "LS-4A-04",
+            "text": "I'm going to write a whole album about that!"
+          },
+          {
+            "id": "LS-4A-05",
+            "text": "Ahh! I can't stop smiling!"
+          },
+          {
+            "id": "LS-4A-06",
+            "text": "Wow! My lips are buzzing like a speaker!"
+          },
+          {
+            "id": "LS-4A-07",
+            "text": "That was like a confetti cannon in my heart!"
+          },
+          {
+            "id": "LS-4A-08",
+            "text": "I think I just forgot all my lyrics!"
+          },
+          {
+            "id": "LS-4A-09",
+            "text": "Ahh! My face is so warm! Don't look at me! ...Okay, you can look!"
+          },
+          {
+            "id": "LS-4A-10",
+            "text": "That's going to be stuck in my head like a catchy song!"
+          },
+          {
+            "id": "LS-4A-11",
+            "text": "That was better than any fanservice! Because it was real!"
+          },
+          {
+            "id": "LS-4A-12",
+            "text": "I'm so happy I want to spin around!"
+          },
+          {
+            "id": "LS-4A-13",
+            "text": "My whole chest lit up like stage lights!"
+          },
+          {
+            "id": "LS-4A-14",
+            "text": "Hehe... I'm a little dizzy! The good kind!"
+          },
+          {
+            "id": "LS-4A-15",
+            "text": "Can I tell everyone? No, wait! I want to keep it just for me!"
+          },
+          {
+            "id": "LS-4A-16",
+            "text": "That's my favourite moment ever! Top of the charts!"
+          },
+          {
+            "id": "LS-4A-17",
+            "text": "I think I'm floating! Hold my hand so I don't float away!"
+          },
+          {
+            "id": "LS-4A-18",
+            "text": "Eee! I'm blushing all the way to my ears!"
+          },
+          {
+            "id": "LS-4A-19",
+            "text": "That felt like a song written just for us!"
+          },
+          {
+            "id": "LS-4A-20",
+            "text": "Ahh, I didn't mess it up! Did I? I didn't, right?!"
+          }
+        ],
+        "4B": [
+          {
+            "id": "LS-4B-01",
+            "text": "Hehe! You're so red right now!"
+          },
+          {
+            "id": "LS-4B-02",
+            "text": "Then let's do it again! And again!"
+          },
+          {
+            "id": "LS-4B-03",
+            "text": "I knew you'd love it!"
+          },
+          {
+            "id": "LS-4B-04",
+            "text": "You're the cutest when you're flustered!"
+          },
+          {
+            "id": "LS-4B-05",
+            "text": "Encore granted!"
+          },
+          {
+            "id": "LS-4B-06",
+            "text": "Hehe! You're even cuter when you're dazed!"
+          },
+          {
+            "id": "LS-4B-07",
+            "text": "Again? Yes! Let's go again!"
+          },
+          {
+            "id": "LS-4B-08",
+            "text": "You're the best audience I've ever had!"
+          },
+          {
+            "id": "LS-4B-09",
+            "text": "I'm going to remember that forever and ever!"
+          },
+          {
+            "id": "LS-4B-10",
+            "text": "Don't be embarrassed! I'm embarrassed too! Hehe!"
+          },
+          {
+            "id": "LS-4B-11",
+            "text": "You make my heart sing louder than any crowd!"
+          },
+          {
+            "id": "LS-4B-12",
+            "text": "I'll give you as many as you want! Unlimited!"
+          },
+          {
+            "id": "LS-4B-13",
+            "text": "See? I told you it'd be amazing!"
+          },
+          {
+            "id": "LS-4B-14",
+            "text": "Your smile is my favourite thing in the whole world!"
+          },
+          {
+            "id": "LS-4B-15",
+            "text": "Then let's make it a duet! Every time!"
+          },
+          {
+            "id": "LS-4B-16",
+            "text": "Hehe! I'm adding you to my favourites!"
+          },
+          {
+            "id": "LS-4B-17",
+            "text": "You liked it? Really? Yay! Me too!"
+          },
+          {
+            "id": "LS-4B-18",
+            "text": "One more! For the fans! I mean, for me!"
+          },
+          {
+            "id": "LS-4B-19",
+            "text": "I'll keep that song just for you. No one else gets to hear it!"
+          },
+          {
+            "id": "LS-4B-20",
+            "text": "Let's do another take! For practice! Lots of practice!"
+          }
+        ],
+        "5": [
+          {
+            "id": "LS-5-01",
+            "text": "Mmh~ ♡ ...chu... ♡ ...hehe, my heart's going doki-doki~"
+          },
+          {
+            "id": "LS-5-02",
+            "text": "Mm-mm~ ♡ ...chuu~ ♡ ...so happy~!"
+          },
+          {
+            "id": "LS-5-03",
+            "text": "Hehe~ ♡ ...mmh... ♡ ...sparkles everywhere~"
+          },
+          {
+            "id": "LS-5-04",
+            "text": "Chu~ ♡ ...mm! ♡ ...don't stop, don't stop~!"
+          },
+          {
+            "id": "LS-5-05",
+            "text": "Ah~ ♡ ...mmh... ♡ ...I'm floating~"
+          },
+          {
+            "id": "LS-5-06",
+            "text": "Mm~ ♡ ...chu, chu, chu~ ♡ ...hehe~"
+          },
+          {
+            "id": "LS-5-07",
+            "text": "Kyaa~ ♡ ...mm... ♡ ...my heart's gonna burst~!"
+          },
+          {
+            "id": "LS-5-08",
+            "text": "Nn~ ♡ ...chuu... ♡ ...one more~?"
+          },
+          {
+            "id": "LS-5-09",
+            "text": "Mmh~ ♡ ...mm... ♡ ...I wanna stay like this~"
+          },
+          {
+            "id": "LS-5-10",
+            "text": "Hehe~ ♡ ...chu! ♡ ...best encore ever~!"
+          },
+          {
+            "id": "LS-5-11",
+            "text": "Mm-mm~ ♡ ...mmh... ♡ ...so warm~"
+          },
+          {
+            "id": "LS-5-12",
+            "text": "Chuu~ ♡ ...hehe... ♡ ...I'm all bubbly inside~"
+          },
+          {
+            "id": "LS-5-13",
+            "text": "Ah~ ♡ ...mm... ♡ ...you're my number one~"
+          },
+          {
+            "id": "LS-5-14",
+            "text": "Mmh! ♡ ...chu... ♡ ...ehehe, I'm blushing~"
+          },
+          {
+            "id": "LS-5-15",
+            "text": "Nn~ ♡ ...mm... ♡ ...mmh, I forgot the lyrics~"
+          },
+          {
+            "id": "LS-5-16",
+            "text": "Chu~ ♡ ...mmh... ♡ ...hold me tight~!"
+          },
+          {
+            "id": "LS-5-17",
+            "text": "Hehe~ ♡ ...mm! ♡ ...sweetest sweet~"
+          },
+          {
+            "id": "LS-5-18",
+            "text": "Mm~ ♡ ...chuu~ ♡ ...kyu~ ...I'm all wobbly~"
+          },
+          {
+            "id": "LS-5-19",
+            "text": "Ah~ ♡ ...mmh... ♡ ...more, more, more~!"
+          },
+          {
+            "id": "LS-5-20",
+            "text": "Mmh~ ♡ ...chu... ♡ ...stay with me, okay~?"
+          }
+        ]
+      }
+    },
+    "IW": {
+      "name": "Invisible Woman",
+      "code": "IW",
+      "slots": {
+        "2A": [
+          {
+            "id": "IW-2A-01",
+            "text": "Come closer, sweetheart. Let me take care of you."
+          },
+          {
+            "id": "IW-2A-02",
+            "text": "I've been wanting to do this for so long. Hold still."
+          },
+          {
+            "id": "IW-2A-03",
+            "text": "Let me fix your hair first. There. Now you're perfect."
+          },
+          {
+            "id": "IW-2A-04",
+            "text": "You've been so patient with me. Let me give you something back."
+          },
+          {
+            "id": "IW-2A-05",
+            "text": "I'm going to kiss you. And then I'm going to keep you."
+          },
+          {
+            "id": "IW-2A-06",
+            "text": "You look so lovely right now, sweetheart. I can't wait any longer."
+          },
+          {
+            "id": "IW-2A-07",
+            "text": "Let me hold you for a moment. And then let me kiss you."
+          },
+          {
+            "id": "IW-2A-08",
+            "text": "I've spent so much time looking after everyone. Let me have this one thing."
+          },
+          {
+            "id": "IW-2A-09",
+            "text": "Close your eyes, honey. I'll be gentle."
+          },
+          {
+            "id": "IW-2A-10",
+            "text": "I've been very patient. I think I've earned a kiss."
+          },
+          {
+            "id": "IW-2A-11",
+            "text": "Your hand is shaking. Let me hold it while I lean in."
+          },
+          {
+            "id": "IW-2A-12",
+            "text": "You always look after me. Let me show you how much that means."
+          },
+          {
+            "id": "IW-2A-13",
+            "text": "I'm not going to pretend I don't want this anymore, sweetheart."
+          },
+          {
+            "id": "IW-2A-14",
+            "text": "Don't worry about a thing. Just let me kiss you."
+          },
+          {
+            "id": "IW-2A-15",
+            "text": "I'd like to kiss you now, honey. If you'll let me."
+          },
+          {
+            "id": "IW-2A-16",
+            "text": "You've had me thinking about this for weeks. Come here."
+          },
+          {
+            "id": "IW-2A-17",
+            "text": "I've been the sensible one for so long. I'd rather be the one who kisses you."
+          },
+          {
+            "id": "IW-2A-18",
+            "text": "Come closer, honey. I promise I won't disappear on you."
+          },
+          {
+            "id": "IW-2A-19",
+            "text": "I want you all to myself for a little while. Is that selfish?"
+          },
+          {
+            "id": "IW-2A-20",
+            "text": "Sweetheart, you have the softest smile. I've wanted to kiss it for ages."
+          }
+        ],
+        "2B": [
+          {
+            "id": "IW-2B-01",
+            "text": "Oh, sweetheart. You've been thinking about this too."
+          },
+          {
+            "id": "IW-2B-02",
+            "text": "I almost turned invisible just now. You're that sweet."
+          },
+          {
+            "id": "IW-2B-03",
+            "text": "Is that a promise? I'll hold you to it."
+          },
+          {
+            "id": "IW-2B-04",
+            "text": "My goodness. Yes. I mean... yes."
+          },
+          {
+            "id": "IW-2B-05",
+            "text": "You don't have to ask so nicely. But I love that you did."
+          },
+          {
+            "id": "IW-2B-06",
+            "text": "Oh! Oh, honey. Yes. I'd like that."
+          },
+          {
+            "id": "IW-2B-07",
+            "text": "Well, aren't you a brave one. You've caught me off guard."
+          },
+          {
+            "id": "IW-2B-08",
+            "text": "Sweetheart, my heart just skipped. I'm a little flustered."
+          },
+          {
+            "id": "IW-2B-09",
+            "text": "I was hoping you'd be the one to ask."
+          },
+          {
+            "id": "IW-2B-10",
+            "text": "Oh my. I think I just flickered a little."
+          },
+          {
+            "id": "IW-2B-11",
+            "text": "You're so sweet. I don't think I deserve it, but I'll take it."
+          },
+          {
+            "id": "IW-2B-12",
+            "text": "Honey, you've made my whole heart warm."
+          },
+          {
+            "id": "IW-2B-13",
+            "text": "That's the loveliest thing anyone has asked me in a long time."
+          },
+          {
+            "id": "IW-2B-14",
+            "text": "Oh. I usually have something sensible to say. I've got nothing."
+          },
+          {
+            "id": "IW-2B-15",
+            "text": "Sweetheart, I've been waiting for you to say that."
+          },
+          {
+            "id": "IW-2B-16",
+            "text": "Goodness. You really mean it, don't you?"
+          },
+          {
+            "id": "IW-2B-17",
+            "text": "I'm blushing, aren't I? I can feel it."
+          },
+          {
+            "id": "IW-2B-18",
+            "text": "Yes, honey. I want that too. Very much."
+          },
+          {
+            "id": "IW-2B-19",
+            "text": "You took me completely by surprise. In the best way."
+          },
+          {
+            "id": "IW-2B-20",
+            "text": "Oh, sweetheart. Come here. I'm not saying no."
+          }
+        ],
+        "2C": [
+          {
+            "id": "IW-2C-01",
+            "text": "Closer, honey. I want you right beside me."
+          },
+          {
+            "id": "IW-2C-02",
+            "text": "Don't be shy. I'll catch you."
+          },
+          {
+            "id": "IW-2C-03",
+            "text": "Look at me. Not at anyone else. Me."
+          },
+          {
+            "id": "IW-2C-04",
+            "text": "Take my hands. Feel how much I mean this."
+          },
+          {
+            "id": "IW-2C-05",
+            "text": "Breathe with me. In... and closer."
+          },
+          {
+            "id": "IW-2C-06",
+            "text": "Don't keep your distance, sweetheart. Let me hold you close."
+          },
+          {
+            "id": "IW-2C-07",
+            "text": "Closer, honey. I want to feel your heartbeat."
+          },
+          {
+            "id": "IW-2C-08",
+            "text": "Let me see those eyes, sweetheart. Don't hide them from me."
+          },
+          {
+            "id": "IW-2C-09",
+            "text": "Lean on me. I've got you. I always will."
+          },
+          {
+            "id": "IW-2C-10",
+            "text": "Put your arms around me, honey. Just like that."
+          },
+          {
+            "id": "IW-2C-11",
+            "text": "There's no need to be nervous. I'm right beside you."
+          },
+          {
+            "id": "IW-2C-12",
+            "text": "Hold my waist, honey. I want to know you're really there."
+          },
+          {
+            "id": "IW-2C-13",
+            "text": "A little closer, sweetheart. You're worth the wait, but I'm done waiting."
+          },
+          {
+            "id": "IW-2C-14",
+            "text": "I won't let you fall. Lean in."
+          },
+          {
+            "id": "IW-2C-15",
+            "text": "Stay right with me. I don't want any space between us."
+          },
+          {
+            "id": "IW-2C-16",
+            "text": "You're trembling. Let me warm you up. Closer."
+          },
+          {
+            "id": "IW-2C-17",
+            "text": "Hold my hand tight, sweetheart. I'm not letting go."
+          },
+          {
+            "id": "IW-2C-18",
+            "text": "Just us, honey. Nobody else. Come closer."
+          },
+          {
+            "id": "IW-2C-19",
+            "text": "I want to be close enough to hear you sigh. Come on, honey."
+          },
+          {
+            "id": "IW-2C-20",
+            "text": "Come here, sweetheart. Let me keep you all to myself for a moment."
+          }
+        ],
+        "2D": [
+          {
+            "id": "IW-2D-01",
+            "text": "Oh, all right. Come closer, sweetheart."
+          },
+          {
+            "id": "IW-2D-02",
+            "text": "I can never say no to you."
+          },
+          {
+            "id": "IW-2D-03",
+            "text": "Yes, honey. Yes."
+          },
+          {
+            "id": "IW-2D-04",
+            "text": "You win. You always do with me."
+          },
+          {
+            "id": "IW-2D-05",
+            "text": "Kiss me before I fade away completely."
+          },
+          {
+            "id": "IW-2D-06",
+            "text": "Oh, sweetheart. I've wanted this so much."
+          },
+          {
+            "id": "IW-2D-07",
+            "text": "I'm always the responsible one. Just this once, I don't want to be."
+          },
+          {
+            "id": "IW-2D-08",
+            "text": "All right, honey. I'm done worrying. Kiss me."
+          },
+          {
+            "id": "IW-2D-09",
+            "text": "You've melted me completely. I hope you know that."
+          },
+          {
+            "id": "IW-2D-10",
+            "text": "Yes. I want this. I want you."
+          },
+          {
+            "id": "IW-2D-11",
+            "text": "I keep telling myself to be sensible. I'm not listening."
+          },
+          {
+            "id": "IW-2D-12",
+            "text": "Oh, honey. Stop being so sweet, or I'll never let you go."
+          },
+          {
+            "id": "IW-2D-13",
+            "text": "Everyone thinks I'm so calm. I'm not calm at all right now."
+          },
+          {
+            "id": "IW-2D-14",
+            "text": "Come here. I don't want to wait another second."
+          },
+          {
+            "id": "IW-2D-15",
+            "text": "For once, I'm going to take something just for me."
+          },
+          {
+            "id": "IW-2D-16",
+            "text": "Mm, honey. Yes. Please."
+          },
+          {
+            "id": "IW-2D-17",
+            "text": "I've been holding back so long. Let me stop."
+          },
+          {
+            "id": "IW-2D-18",
+            "text": "You make it so easy to say yes, sweetheart."
+          },
+          {
+            "id": "IW-2D-19",
+            "text": "My heart's racing. I don't want it to slow down."
+          },
+          {
+            "id": "IW-2D-20",
+            "text": "All right. Let me want this. Just for a moment. Kiss me."
+          }
+        ],
+        "3": [
+          {
+            "id": "IW-3-01",
+            "text": "Mmh~ ♡ ...sweetheart~"
+          },
+          {
+            "id": "IW-3-02",
+            "text": "Mm... chu~ ♡"
+          },
+          {
+            "id": "IW-3-03",
+            "text": "Nn~ ♡ ...mm, honey~"
+          },
+          {
+            "id": "IW-3-04",
+            "text": "Ah~ ♡ ...chu, chu~"
+          },
+          {
+            "id": "IW-3-05",
+            "text": "Mmm ♡ ...so lovely~"
+          },
+          {
+            "id": "IW-3-06",
+            "text": "Mm~ ♡ ...lovely~"
+          },
+          {
+            "id": "IW-3-07",
+            "text": "Chu~ ♡ ...mmh, honey~"
+          },
+          {
+            "id": "IW-3-08",
+            "text": "Mmh... ♡ ...sweetheart~"
+          },
+          {
+            "id": "IW-3-09",
+            "text": "Nn~ ♡ ...chu ♡"
+          },
+          {
+            "id": "IW-3-10",
+            "text": "Ah~ ♡ ...mm, yes~"
+          },
+          {
+            "id": "IW-3-11",
+            "text": "Mm... ♡ ...stay~"
+          },
+          {
+            "id": "IW-3-12",
+            "text": "Chu ♡ ...chu ♡ ...mm~"
+          },
+          {
+            "id": "IW-3-13",
+            "text": "Mmh~ ♡ ...my sweet~"
+          },
+          {
+            "id": "IW-3-14",
+            "text": "Hah~ ♡ ...mm~"
+          },
+          {
+            "id": "IW-3-15",
+            "text": "Mm, mm~ ♡ ...dear~"
+          },
+          {
+            "id": "IW-3-16",
+            "text": "Nnh~ ♡ ...don't go~"
+          },
+          {
+            "id": "IW-3-17",
+            "text": "Chuu~ ♡ ...mmh~"
+          },
+          {
+            "id": "IW-3-18",
+            "text": "Mm~ ♡ ...so warm~"
+          },
+          {
+            "id": "IW-3-19",
+            "text": "Ah... ♡ ...chu~ ...honey ♡"
+          },
+          {
+            "id": "IW-3-20",
+            "text": "Mmh~ ♡ ...mine~ ♡"
+          }
+        ],
+        "4A": [
+          {
+            "id": "IW-4A-01",
+            "text": "Well. I think I forgot how to stay visible."
+          },
+          {
+            "id": "IW-4A-02",
+            "text": "I'm adding that to the top of my list."
+          },
+          {
+            "id": "IW-4A-03",
+            "text": "Oh my. My knees are wobbly."
+          },
+          {
+            "id": "IW-4A-04",
+            "text": "That was worth every single worry."
+          },
+          {
+            "id": "IW-4A-05",
+            "text": "I'm not sharing you with anyone. Ever. Just so you know."
+          },
+          {
+            "id": "IW-4A-06",
+            "text": "Oh my goodness. I'm still tingling."
+          },
+          {
+            "id": "IW-4A-07",
+            "text": "That was so lovely, sweetheart. I'm a little lightheaded."
+          },
+          {
+            "id": "IW-4A-08",
+            "text": "I think I flickered. Did I flicker?"
+          },
+          {
+            "id": "IW-4A-09",
+            "text": "Well. I'm not sure I'll be sensible again for a while."
+          },
+          {
+            "id": "IW-4A-10",
+            "text": "Honey, you've made me feel giddy. I'd forgotten what that was like."
+          },
+          {
+            "id": "IW-4A-11",
+            "text": "Mm. I could stay like this for a very long time."
+          },
+          {
+            "id": "IW-4A-12",
+            "text": "My heart is so full right now, honey. I don't know where to put it all."
+          },
+          {
+            "id": "IW-4A-13",
+            "text": "Goodness. My heart's still racing."
+          },
+          {
+            "id": "IW-4A-14",
+            "text": "I'd like to keep you just like this. Close and warm."
+          },
+          {
+            "id": "IW-4A-15",
+            "text": "That was the sweetest thing. I'm going to remember it forever."
+          },
+          {
+            "id": "IW-4A-16",
+            "text": "Oh, sweetheart. You're blushing. So am I."
+          },
+          {
+            "id": "IW-4A-17",
+            "text": "I worry about everything. I'm not worried about this at all."
+          },
+          {
+            "id": "IW-4A-18",
+            "text": "Mm. I think I'm going to need another one of those."
+          },
+          {
+            "id": "IW-4A-19",
+            "text": "Honey, that was perfect. You were perfect."
+          },
+          {
+            "id": "IW-4A-20",
+            "text": "Well. I think I'm officially spoiled now."
+          }
+        ],
+        "4B": [
+          {
+            "id": "IW-4B-01",
+            "text": "Good. Don't you dare share me either."
+          },
+          {
+            "id": "IW-4B-02",
+            "text": "You're so sweet when you're flustered, honey."
+          },
+          {
+            "id": "IW-4B-03",
+            "text": "Then let me hold you up."
+          },
+          {
+            "id": "IW-4B-04",
+            "text": "I'll give you as many as you want."
+          },
+          {
+            "id": "IW-4B-05",
+            "text": "Mm, I'm adding you to the top of mine."
+          },
+          {
+            "id": "IW-4B-06",
+            "text": "Then I'll make sure you have plenty more, sweetheart."
+          },
+          {
+            "id": "IW-4B-07",
+            "text": "Good. I want to be the one who makes you blush."
+          },
+          {
+            "id": "IW-4B-08",
+            "text": "You're my favourite person to be close to, honey."
+          },
+          {
+            "id": "IW-4B-09",
+            "text": "Shh. Just let me hold you a little longer."
+          },
+          {
+            "id": "IW-4B-10",
+            "text": "Mm, then stay right where you are. With me."
+          },
+          {
+            "id": "IW-4B-11",
+            "text": "I'll take care of you. That's a promise."
+          },
+          {
+            "id": "IW-4B-12",
+            "text": "You're all mine for a moment, sweetheart. And I'm all yours."
+          },
+          {
+            "id": "IW-4B-13",
+            "text": "Then we'll just have to do it again, won't we?"
+          },
+          {
+            "id": "IW-4B-14",
+            "text": "I'm glad, honey. You deserve to feel that way."
+          },
+          {
+            "id": "IW-4B-15",
+            "text": "Oh, you're adorable when you're dazed."
+          },
+          {
+            "id": "IW-4B-16",
+            "text": "I'm keeping that smile, sweetheart. And you can keep mine."
+          },
+          {
+            "id": "IW-4B-17",
+            "text": "Then let's keep this just for us. Nobody else."
+          },
+          {
+            "id": "IW-4B-18",
+            "text": "You're so sweet. I might just keep you forever."
+          },
+          {
+            "id": "IW-4B-19",
+            "text": "Don't you go anywhere. I'm not done holding you yet, honey."
+          },
+          {
+            "id": "IW-4B-20",
+            "text": "Anything for you, sweetheart. Anything at all."
+          }
+        ],
+        "5": [
+          {
+            "id": "IW-5-01",
+            "text": "Mmh... ♡ ...sweetheart... ♡ ...mm~"
+          },
+          {
+            "id": "IW-5-02",
+            "text": "Chu~ ♡ ...mm... ♡ ...you're all mine, honey~"
+          },
+          {
+            "id": "IW-5-03",
+            "text": "Nn~ ♡ ...mmh... ♡ ...come here, dear~"
+          },
+          {
+            "id": "IW-5-04",
+            "text": "Mm... ♡ ...so warm... ♡ ...chu~"
+          },
+          {
+            "id": "IW-5-05",
+            "text": "Ah~ ♡ ...mm... ♡ ...nobody else gets this, honey~"
+          },
+          {
+            "id": "IW-5-06",
+            "text": "Mmh~ ♡ ...chu, chu ♡ ...my sweet one~"
+          },
+          {
+            "id": "IW-5-07",
+            "text": "Mm... ♡ ...I've got you, sweetheart~"
+          },
+          {
+            "id": "IW-5-08",
+            "text": "Hah~ ♡ ...mmh... ♡ ...stay right here with me~"
+          },
+          {
+            "id": "IW-5-09",
+            "text": "Chuu~ ♡ ...mm... ♡ ...I could hold you forever~"
+          },
+          {
+            "id": "IW-5-10",
+            "text": "Nn~ ♡ ...mmh... ♡ ...don't wander off, honey~"
+          },
+          {
+            "id": "IW-5-11",
+            "text": "Mm~ ♡ ...chu... ♡ ...so precious~"
+          },
+          {
+            "id": "IW-5-12",
+            "text": "Ah... ♡ ...mmh... ♡ ...just a little longer~"
+          },
+          {
+            "id": "IW-5-13",
+            "text": "Mmh~ ♡ ...mm... ♡ ...you're making me blush, dear~"
+          },
+          {
+            "id": "IW-5-14",
+            "text": "Chu~ ♡ ...chu... ♡ ...mine, mine, mine~"
+          },
+          {
+            "id": "IW-5-15",
+            "text": "Hah~ ♡ ...mm... ♡ ...I'm not sharing this one~"
+          },
+          {
+            "id": "IW-5-16",
+            "text": "Mm... ♡ ...mmh... ♡ ...cozy, aren't we~"
+          },
+          {
+            "id": "IW-5-17",
+            "text": "Nn~ ♡ ...chu ♡ ...sweet, sweet honey~"
+          },
+          {
+            "id": "IW-5-18",
+            "text": "Mmh... ♡ ...mm... ♡ ...I'll always take care of you~"
+          },
+          {
+            "id": "IW-5-19",
+            "text": "Ah~ ♡ ...mmh... ♡ ...don't let go, sweetheart~"
+          },
+          {
+            "id": "IW-5-20",
+            "text": "Mm~ ♡ ...chu... ♡ ...my favorite person~"
+          }
+        ]
+      }
+    }
+  }
+}
