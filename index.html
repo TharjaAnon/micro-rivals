@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><title>MICRO RIVALS 9.7</title>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><title>MICRO RIVALS 9.8</title>
 <style>html,body{margin:0;height:100%;background:#3a3b3d;overflow:hidden}canvas{display:block;width:100vw;height:100vh;cursor:crosshair;touch-action:none;-webkit-user-select:none;user-select:none;-webkit-touch-callout:none}html,body{touch-action:none;overscroll-behavior:none}</style>
 <meta name="theme-color" content="#3a3b3d">
 <meta name="apple-mobile-web-app-title" content="Micro Rivals">
@@ -1819,7 +1819,7 @@ function drawStairs(x,y,open,down){const X=x-T,Y=y-T,S=2*T;ctx.fillStyle=down?'#
  if(open){const t=Date.now()/180;ctx.strokeStyle='rgba(125,255,168,'+(.5+.3*Math.sin(t)).toFixed(2)+')';ctx.lineWidth=3;ctx.strokeRect(X-2+Math.sin(t)*1.5,Y-2+Math.sin(t)*1.5,S+4-Math.sin(t)*3,S+4-Math.sin(t)*3);ctx.fillStyle='#7dffa8';ctx.font='bold 18px monospace';ctx.fillText('▲',x,y+6);}}
 function txt(s,x,y,sz,c,al){ctx.font='bold '+sz+'px monospace';ctx.textAlign=al||'left';ctx.fillStyle='#000';ctx.fillText(s,x+2,y+2);ctx.fillStyle=c;ctx.fillText(s,x,y);}
 function hud(L,clear){if(TCH.on){hudTouch(L,clear);return;}ctx.setTransform(1,0,0,1,0,0);ctx.fillStyle='rgba(20,20,22,.55)';ctx.fillRect(0,0,W,62);ctx.fillRect(0,H-66,W,66);
- txt('MICRO RIVALS 9.7',16,26,14,'#ff4fd8');txt('FLOOR '+(G.li+1)+' — '+L.name,16,46,13,'#dddddd');ctx.fillStyle='#300';ctx.fillRect(16,H-58,250,14);ctx.fillStyle=player.hp>player.maxhp*.3?'#39ff88':'#ff2e63';ctx.fillRect(16,H-58,250*Math.max(0,player.hp)/player.maxhp,14);txt('HP '+Math.max(0,Math.ceil(player.hp))+'/'+player.maxhp,272,H-46,13,'#fff');
+ txt('MICRO RIVALS 9.8',16,26,14,'#ff4fd8');txt('FLOOR '+(G.li+1)+' — '+L.name,16,46,13,'#dddddd');ctx.fillStyle='#300';ctx.fillRect(16,H-58,250,14);ctx.fillStyle=player.hp>player.maxhp*.3?'#39ff88':'#ff2e63';ctx.fillRect(16,H-58,250*Math.max(0,player.hp)/player.maxhp,14);txt('HP '+Math.max(0,Math.ceil(player.hp))+'/'+player.maxhp,272,H-46,13,'#fff');
  txt('SCORE '+G.score,W-16,30,20,'#fff','right');txt((G.heist?'SAFE $':'LOOT $')+Math.round(G.lootDisp||0).toLocaleString(),W-16,54,16,'#7dff9a','right');if(combo>1)txt('x'+combo+' COMBO',W-16,80,16,'#ffe600','right');if(G.toasts){let ty=combo>1?100:82;for(const q of G.toasts){ctx.globalAlpha=Math.min(1,q.t*2);txt(q.s,W-16,ty,12,q.c,'right');ty+=16;}ctx.globalAlpha=1;}
  const wp=WEAP[player.w];txt(wp.name+(wp.melee?'':'  '+player.ammo+' / ∞'),16,H-20,18,'#7fffd4');if(player.rl>0)txt('RELOADING',230,H-20,16,'#ffe600');
  if(G.god)txt('GOD',300,26,14,'#ffe600');
@@ -1850,7 +1850,7 @@ function selKey(c){const L=selLay(),n=THEMES.length+1;let d=0;if(c==='ArrowRight
 function title(){ctx.setTransform(1,0,0,1,0,0);const t=Date.now()/400;if(G.sel==null)G.sel=0;
  for(let i=0;i<20;i++){ctx.strokeStyle='rgba(200,200,205,'+(.08+.04*Math.sin(t+i))+')';ctx.beginPath();ctx.moveTo(0,H*.6+i*i*2);ctx.lineTo(W,H*.6+i*i*2);ctx.stroke();}
  const L=selLay();const ty=Math.max(54,L.top-96);
- txt('URBAN WARDS',W/2,ty,Math.min(64,W/12),'#ff4fd8','center');txt('MICRO RIVALS 9.7',W/2,ty+32,16,'#2ec5ff','center');
+ txt('URBAN WARDS',W/2,ty,Math.min(64,W/12),'#ff4fd8','center');txt('MICRO RIVALS 9.8',W/2,ty+32,16,'#2ec5ff','center');
  txt(TCH.on?'Touch: left stick move · right stick aim+fire · GREN/KNIFE buttons':'Arrows/WASD move · Mouse aim · Click shoot/swing · Right-click grenade · Numpad0 knife · E pick up',W/2,ty+56,12,'#ddd','center');
  txt('SELECT STAGE'+(TCH.on?'  (tap to select, tap again or START to play · drag to scroll)':'  (arrows/click to select · Enter/double-click to play · wheel scroll)'),W/2,L.top-10,12,'#ffe600','center');
  ctx.save();ctx.beginPath();ctx.rect(0,L.top,W,L.bot-L.top);ctx.clip();const sc=G.selScroll||0;
@@ -2172,7 +2172,7 @@ tBtns=function(){const f=fireGeom(),b={};b.fire={x:f.fx,y:f.fy,r:f.fr,label:'FIR
  if(G.hideUI){for(const k in b)if(k!=='fire'&&k!=='hide')delete b[k];}return b;};
 function hudTouch(L,clear){ctx.setTransform(1,0,0,1,0,0);HUDR=[];const u=hu();
  // top-left
- let y=Math.round(16*u)+4;T2('title','MICRO RIVALS 9.7',10,y,Math.round(12*u),'#ff4fd8');y+=Math.round(15*u);T2('floor','FLOOR '+(G.li+1)+' — '+L.name,10,y,Math.round(11*u),'#dddddd');y+=Math.round(16*u);
+ let y=Math.round(16*u)+4;T2('title','MICRO RIVALS 9.8',10,y,Math.round(12*u),'#ff4fd8');y+=Math.round(15*u);T2('floor','FLOOR '+(G.li+1)+' — '+L.name,10,y,Math.round(11*u),'#dddddd');y+=Math.round(16*u);
  if(G.heist&&G.up){const ab={dmg:'DMG',hp:'HP',def:'DEF',spd:'SPD',fr:'ROF',rl:'RLD',kg:'BAG',pr:'MAG'};let s='';for(const k in G.up.list)s+=ab[k]+(G.up.list[k]>1?'x'+G.up.list[k]:'')+' ';T2('lv','LV '+G.up.lv,10,y,Math.round(13*u),'#ff7cf5');if(s)T2('ups',s.trim(),10+tw('LV '+G.up.lv,Math.round(13*u))+8,y,Math.round(9*u),'#e8c8ff');if(G.perkOrder&&G.perkOrder.length)y=pkIcons(10,y+Math.round(6*u),u)-Math.round(3*u);}
  if(G.god)T2('god','GOD',10,y+Math.round(15*u),Math.round(11*u),'#ffe600');
  if(G.toasts){let ty=y+Math.round(32*u);for(const q of G.toasts.slice(-3)){ctx.globalAlpha=Math.min(1,q.t*2);T2('toast',q.s,10,ty,Math.round(11*u),q.c);ty+=Math.round(14*u);}ctx.globalAlpha=1;}
@@ -5162,7 +5162,7 @@ const MR_FONTS="@font-face{font-family:'MRA';src:url(data:font/woff2;base64,d09G
 // ===================== 6.3 MICRO RIVALS: DOM menus (title / map select / heroine select / results) =====================
 // Menus are a DOM overlay; while it is up the canvas is not redrawn (title/squadsel), so menus cost nothing during play.
 // 6.2: no map mini-renders; map cards are name + tag + flat accent colour (nothing generated or cached).
-const MR={vis:false,page:null,tf:0,mf:0,rf:0,how:false,spr:{},resT:0,el:{},ver:'v9.7',sprDone:false};
+const MR={vis:false,page:null,tf:0,mf:0,rf:0,how:false,spr:{},resT:0,el:{},ver:'v9.8',sprDone:false};
 window.__mrvis=false;
 MR.so0=sqSelOpen;
 MR.ORDER=(()=>{const a=[];SQMAPS.forEach((m,i)=>{if(m.i>=0)a.push(i);});SQMAPS.forEach((m,i)=>{if(m.i<0)a.push(i);});return a;})();
@@ -8254,7 +8254,7 @@ function rvPullFx(n){try{rvCss();const b=document.querySelector('#mx73 [data-a="
  let h=document.getElementById('rvpb');if(h)h.remove();h=document.createElement('div');h.id='rvpb';h.style.left=x+'px';h.style.top=y+'px';h.innerHTML='<i class="rvr"></i>'+rvSvg('');document.body.appendChild(h);setTimeout(()=>{h.remove();},950);}catch(e){}}
 {const _p=MXU.pull;MXU.pull=function(n){if(mxS().gems>=(n>=10?MX.COST10:MX.COST*n))rvPullFx(n);return _p.apply(this,arguments);};}
 {const _s=rlStartStage;rlStartStage=function(){const r=_s.apply(this,arguments);try{if(RL.on&&RL.d)rvStamp(RL.i88?'TRAINING':'STAGE '+RL.d.stage,1000);}catch(e){}return r;};}
-try{setTimeout(()=>rvStamp('MICRO RIVALS 9.7',1100),30);}catch(e){}
+try{setTimeout(()=>rvStamp('MICRO RIVALS 9.8',1100),30);}catch(e){}
 UW.RV75={rvD,rvSvg,rvUri,rvPath2D,rvStamp,rvPullFx};
 
 // ===================== 7.6: heroine emblems (one path each, recoloured per heroine) =====================
@@ -9214,7 +9214,7 @@ function feat84Day(st){const f=feat84();if(st){if(st._f84)return;st._f84=1;}f.c+
 mxFeat=function(){return RL.IDS[feat84().i%6];};
 {const _sc=rlxStageClear;rlxStageClear=function(won){try{const st=RL.log&&RL.log[RL.log.length-1];if(st&&RL.d)feat84Day(st);}catch(e){}return _sc.apply(this,arguments);};}
 {const _r=MXU.render;MXU.render=function(){const r=_r.apply(this,arguments);try{const tab=document.querySelector('#mx73 .tabs .tab.on');
-  if(tab&&/FEATURED/.test(tab.textContent)&&!tab.querySelector('.fw84')){const f=feat84(),n=FEAT84_WEEK-f.c;tab.style.flexDirection='column';tab.style.alignItems='flex-start';tab.style.justifyContent='center';tab.style.lineHeight='1.05';tab.style.paddingLeft='14px';tab.insertAdjacentHTML('beforeend',`<small class="fw84" style="display:block;font-size:11px;line-height:1.1;margin-top:2px;opacity:.95;color:#ffd27a;letter-spacing:.5px;font-weight:800">Banner changes in ${n} stage clear${n===1?'':'s'} · week ${f.wk||1}</small>`);}}catch(e){}return r;};}
+  if(tab&&/FEATURED/.test(tab.textContent)&&!tab.querySelector('.fw84')){const f=feat84(),n=FEAT84_WEEK-f.c;tab.style.flexDirection='column';tab.style.alignItems='flex-start';tab.style.justifyContent='center';tab.style.lineHeight='1.05';tab.style.paddingLeft='14px';tab.insertAdjacentHTML('beforeend',`<small class="fw84" style="display:block;font-size:11px;line-height:1.1;margin-top:2px;opacity:.95;color:#ffd27a;letter-spacing:.5px;font-weight:800">NEW BANNER EVERY 5 MIN · SAME FOR EVERYONE</small>`);}}catch(e){}return r;};}
 UW.V84={v84Intro,v84Done,k84Home,uc84Show,mxFeat,feat84,ha84Ang,K84,HA84,V84};
 
 </script>
@@ -11316,6 +11316,97 @@ function v96DrawWorld(){const S=G.squad;if(!S||!S.heroes)return;const t=S.time||
   v96DrawHeli(e,1,e.rot);v95Bar(e.x,e.y-50,64,e.hp/e.maxhp,'#ff3b3b');}}
 {const _dw=sqDrawWorld;sqDrawWorld=function(){const r=_dw.apply(this,arguments);try{v96DrawWorld();}catch(e){console.error(e);}return r;};}
 UW.V96={V96,v96Plan,v96Field,v96Crush,v96Mk,v96Aura,v96Alive,v96Prot};
+
+
+// ===== MICRO RIVALS 9.8 layer: summon banner rotates every 5 real minutes, FOCUS (1 heroine) or PAIR (2 heroines) =====
+// Replaces the 8.4 "once per in-game week" rule and the old flat x2 featured weighting. The banner is a pure function of the wall-clock slot, so reloads never reroll
+// and every device shows the same one. Tier rates (N28/R45/SR18/SSR6/UR3), no pity and no guarantees are untouched; there is one pool, so costumes follow the banner.
+const B98={MS:300000,shown:null,pend:0,tm:0,rs:null,cache:[-1,null]};
+function v98Slot(){return Math.floor(Date.now()/B98.MS);}
+function v98Rng(seed){let a=seed>>>0;return function(){a=(a+0x6D2B79F5)>>>0;let t=a;t=Math.imul(t^(t>>>15),t|1);t^=t+Math.imul(t^(t>>>7),t|61);return((t^(t>>>14))>>>0)/4294967296;};}
+function v98Hash(n){let x=(n^0x9E3779B9)>>>0;x=Math.imul(x^(x>>>16),0x85ebca6b)>>>0;x=Math.imul(x^(x>>>13),0xc2b2ae35)>>>0;return(x^(x>>>16))>>>0;}
+// Banner schedule. Heroine "tokens" come in blocks of N (= pool size, 6): each block is a seeded shuffle of the whole pool, and every slot owns two neighbouring tokens (3 slots per block).
+// A FOCUS banner uses one of its slot's two tokens, a PAIR banner uses both, so two consecutive slots never share a heroine (inside a block the tokens are all different;
+// at a block seam the new block's first two tokens are chosen away from the old block's last two, which are never touched, so nothing needs history).
+// Type (focus/pair) and which token a focus takes come from a hash of the slot number: ~50/50.
+const B98F=.5;   // FOCUS rate-up: share of her tier's heroine picks (SR scrolls, SSR, UR) that go to the focus heroine when she is a candidate
+function v98Perm(b,n){const r=v98Rng(v98Hash(b)^0x5bd1e995),a=[];for(let i=0;i<n;i++)a.push(i);for(let i=n-1;i>0;i--){const j=Math.floor(r()*(i+1)),t=a[i];a[i]=a[j];a[j]=t;}return a;}
+function v98Block(b,n){const raw=v98Perm(b,n),pv=v98Perm(b-1,n),ex=[pv[n-2],pv[n-1]],head=raw.slice(0,n-2);
+ return head.filter(x=>ex.indexOf(x)<0).concat(head.filter(x=>ex.indexOf(x)>=0),raw.slice(n-2));}
+function v98Idxs(slot,n){n=n||(RL.IDS.length||6);const spb=n/2,b=Math.floor(slot/spb),i=slot-b*spb,P=v98Block(b,n),h=v98Hash(slot^0x2f6e2b1),t0=P[2*i],t1=P[2*i+1];
+ return(h&1)?{type:'pair',idx:[t0,t1]}:{type:'focus',idx:[(h&2)?t1:t0]};}
+function v98B(){const s=v98Slot();if(B98.cache[0]!==s){const r=v98Idxs(s);B98.cache=[s,{type:r.type,ids:r.idx.map(i=>RL.IDS[i]),slot:s}];}return B98.cache[1];}
+function v98Left(){return B98.MS-(Date.now()%B98.MS);}      // ms left in this slot
+function v98Cd(){const s=Math.ceil(v98Left()/1000);return Math.floor(s/60)+':'+String(s%60).padStart(2,'0');}
+mxFeat=function(){return v98B().ids[0];};   // first (or only) banner heroine
+const V98SN={emma:'EMMA',rogue:'ROGUE',widow:'WIDOW',cat:'CAT',luna:'LUNA',sue:'SUE'};
+function v98Sn(id){return V98SN[id]||String(mxNm(id)).toUpperCase();}
+function v98Label(b){b=b||v98B();return b.type==='pair'?'PAIR · '+b.ids.map(i=>String(mxNm(i)).toUpperCase()).join(' & '):'FOCUS · '+String(mxNm(b.ids[0])).toUpperCase();}
+// ---- pull rules: only WHO is picked changes; tier rates (N28/R45/SR18/SSR6/UR3), no pity, no guarantees stay exactly as before ----
+// FOCUS: when the focus heroine is among the candidates she gets B98F (50%) of the pick, the others split the rest evenly. PAIR: tiers below UR are normal (uniform); UR = only the two, 50/50.
+mxPickFrom=function(ids){const b=v98B();if(b.type==='focus'&&ids.indexOf(b.ids[0])>=0){const f=b.ids[0],o=ids.filter(i=>i!==f);if(!o.length||MX.rnd()<B98F)return f;return o[Math.min(o.length-1,(MX.rnd()*o.length)|0)];}
+ return ids[Math.min(ids.length-1,(MX.rnd()*ids.length)|0)];};
+mxItem=function(r){if(r<=1)return{k:'fod',r,f:mxFodOf(r).k};
+ if(r===3){const L=mxLocked();if(L.length)return{k:'unl',r,id:mxPickFrom(L)};}const id=mxPickId();
+ if(r===2){return{k:'scr',r,id,hs89:1};}
+ if(r===3)return{k:'dup',r,id};
+ const b=v98B();let cid;if(b.type==='pair')cid=b.ids[MX.rnd()<.5?0:1];else{const L=mxLocked();cid=L.length?mxPickFrom(L):id;}
+ return{k:'cos',r,id:cid,i:(MX.rnd()*MX.COS[cid].length)|0};};
+try{if(UW.MX73){UW.MX73.mxFeat=mxFeat;UW.MX73.mxPickFrom=mxPickFrom;}if(UW.V84)UW.V84.mxFeat=mxFeat;}catch(e){}
+// banner card for the current type: label chip, portrait(s), text
+function v98Deco(stg){const b=v98B(),ban=stg.querySelector('.ban'),tab=stg.querySelector('.tab.on');if(!ban)return;
+ const nm=i=>String(mxNm(i)).toUpperCase(),pair=b.type==='pair';
+ if(tab){const tn=[...tab.childNodes].find(n=>n.nodeType===3&&/FEATURED/.test(n.textContent));if(tn)tn.textContent=v98Label(b);}
+ const bt=ban.querySelector('.bt');if(bt)bt.innerHTML=pair?`${nm(b.ids[0])}<br>&amp; ${nm(b.ids[1])}`:`${nm(b.ids[0])}<br><span style="font-size:24px">FOCUS</span>`;
+ ban.classList.add(pair?'pr2':'fo2');
+ const old=ban.querySelector(':scope > img');if(old)old.remove();
+ const im=b.ids.map((id,k)=>{const fc=mxEq(id),art=fc&&mxCosArt(id,fc.i);return`<img decoding="async" src="${art||RLP[id]}" alt="" class="${art?'cosart ':''}p98 ${pair?'pp'+k:'p1'}" style="${fc&&!art?'filter:'+fc.f:''}">`;}).join('');
+ ban.insertAdjacentHTML('beforeend',im);
+ const bd=ban.querySelector('.bd'),lst=bd&&bd.querySelector('div');
+ if(bd&&lst){const pct=Math.round(B98F*100);
+  bd.innerHTML=(pair?`<b>PAIR BANNER</b> · UR costumes come ONLY from <b>${nm(b.ids[0])}</b> and <b>${nm(b.ids[1])}</b>, split 50/50. Every other tier is normal.`
+   :`<b>FOCUS BANNER</b> · <b>${nm(b.ids[0])}</b> is rated up: about ${pct}% of SR scrolls, SSR and UR picks are hers.`)+'<br>'+lst.outerHTML;}
+ ban.insertAdjacentHTML('beforeend',`<div class="k98 ${pair?'pr':'fo'}">${pair?'PAIR':'FOCUS'}</div>`);}
+MXU.css+=`
+#mx73 .ban img.p98{position:absolute;pointer-events:none;filter:none}
+#mx73 .ban img.p1{right:-30px;top:-4px;height:520px}
+#mx73 .ban img.pp0,#mx73 .ban img.pp1{width:150px;height:312px;top:56px;object-fit:cover;object-position:50% 0;border-radius:12px;border:2px solid rgba(255,255,255,.35);background:rgba(10,10,30,.35)}
+#mx73 .ban img.pp0{right:152px}#mx73 .ban img.pp1{right:14px;top:62px}
+#mx73 .ban.pr2 .bd{width:262px;font-size:14px}#mx73 .ban.pr2 .bd div{font-size:13px!important}#mx73 .ban.fo2 .bd{width:290px;font-size:15px}#mx73 .ban.fo2 .bd div{font-size:13px!important}
+#mx73 .ban.pr2 .bt{font-size:36px}#mx73 .ban.pr2 .rt{font-size:13px}
+#mx73 .k98{position:absolute;right:14px;top:12px;padding:3px 14px;border-radius:8px;font-size:17px;font-weight:900;letter-spacing:3px;color:#fff;border:2px solid rgba(255,255,255,.7)}
+#mx73 .k98.fo{background:#c43fa6}#mx73 .k98.pr{background:#1f7fc4}`;
+// ---- summon screen: ENDS IN pill + wipe on swap ----
+MXU.css+=`
+#mx73 .t98{position:absolute;left:690px;top:84px;width:304px;height:44px;border-radius:10px;background:#141a36;border:2px solid #5a6bd0;display:flex;align-items:center;justify-content:space-between;padding:0 14px;overflow:hidden;font-weight:900;letter-spacing:1px;color:#b9c6ff}
+#mx73 .t98 span{font-size:13px}#mx73 .t98 b{font-size:28px;color:#fff;font-variant-numeric:tabular-nums;letter-spacing:2px}
+#mx73 .t98.lo b{color:#ffb36a}
+#mx73 .t98 i{position:absolute;left:0;bottom:0;height:4px;background:#8a7bff;width:100%}#mx73 .t98.lo i{background:#ffb36a}
+#mx73 .w98{position:absolute;left:34px;top:142px;width:604px;height:414px;border-radius:16px;overflow:hidden;pointer-events:none}
+#mx73 .w98 div{position:absolute;inset:0;background:#c43fa6;display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:'MRA','MRB',Impact,sans-serif;font-style:italic;font-weight:900;color:#fff;animation:w98 .8s cubic-bezier(.6,0,.3,1) both}
+#mx73 .w98 div small{font-size:20px;letter-spacing:3px;font-style:normal;font-family:inherit}#mx73 .w98 div b{font-size:46px;line-height:1.05}
+@keyframes w98{0%{transform:translateX(0)}40%{transform:translateX(0)}100%{transform:translateX(104%)}}`;
+{const _r=MXU.render;MXU.render=function(){const r=_r.apply(this,arguments);try{if(MXU.page==='summon'){const s=v98Slot(),stg=MXU.el.stg;
+  const lo=v98Left()<=30000;
+  stg.insertAdjacentHTML('beforeend',`<div class="t98${lo?' lo':''}" id="b98pill"><span>BANNER ENDS IN</span><b id="b98cd">${v98Cd()}</b><i id="b98bar" style="width:${Math.round(100*v98Left()/B98.MS)}%"></i></div>`);
+  v98Deco(stg);
+  if(B98.shown!=null&&B98.shown!==s)stg.insertAdjacentHTML('beforeend',`<div class="w98"><div><small>NEW BANNER</small><b>${v98Label().replace(' · ','<br>')}</b></div></div>`),B98.wipes=(B98.wipes||0)+1;
+  B98.shown=s;}}catch(e){console.error(e);}return r;};}
+// the featured heroine is read at pull time: never let a pull use a banner the player has not seen yet (nothing is spent, the screen just swaps)
+{const _p=MXU.pull;MXU.pull=function(n){try{if(B98.shown!=null&&B98.shown!==v98Slot()){MXU.page='summon';MXU.toast='THE BANNER JUST CHANGED — CHECK THE NEW BANNER';MXU.render();return;}}catch(e){console.error(e);}return _p.apply(this,arguments);};}
+// ---- hub button (roster): NAME · NEXT IN m:ss ----
+function v98BtnTxt(){const b=v98B();return (b.type==='pair'?'PAIR '+b.ids.map(v98Sn).join('+'):'FOCUS '+v98Sn(b.ids[0]))+' · NEXT IN <span id="b98rs">'+v98Cd()+'</span>';}
+{const _r=rlUI.roster;rlUI.roster=function(){const r=_r.apply(this,arguments);try{const sm=rlUI.el.ro.querySelector('[data-a="msum"] small');if(sm){sm.style.whiteSpace='nowrap';sm.innerHTML=v98BtnTxt();B98.rs=v98Slot();}}catch(e){console.error(e);}return r;};}
+// ---- ticker: countdown every second-ish, swap when the slot turns over (deferred while a reveal is running) ----
+function v98Tick(){try{const s=v98Slot();
+  if(MXU.page==='summon'&&MXU.el&&MXU.el.root.style.display!=='none'){
+   if(B98.shown!==s&&B98.shown!=null){MXU.render();}
+   else{const c=document.getElementById('b98cd');if(c){const t=v98Cd();if(c.textContent!==t)c.textContent=t;const bar=document.getElementById('b98bar');if(bar)bar.style.width=Math.round(100*v98Left()/B98.MS)+'%';const pl=document.getElementById('b98pill');if(pl)pl.classList.toggle('lo',v98Left()<=30000);}}}
+  const rs=document.getElementById('b98rs');
+  if(rs&&rs.isConnected){const sm=rs.parentNode;if(B98.rs!==s){sm.innerHTML=v98BtnTxt();B98.rs=s;sm.classList.remove('f98');void sm.offsetWidth;sm.classList.add('f98');}else{const t=v98Cd();if(rs.textContent!==t)rs.textContent=t;}}}catch(e){}}
+(function(){const st=document.createElement('style');st.textContent='#rl69 .bb small.f98{animation:f98 .7s steps(2,end) 1}@keyframes f98{0%{background:#fff;color:#7a1f6a}100%{background:transparent}}';document.head.appendChild(st);})();
+if(!B98.tm)B98.tm=setInterval(v98Tick,250);
+UW.V98={B98,B98F,v98Slot,v98Idxs,v98B,v98Perm,v98Block,v98Cd,v98Left,v98Tick,v98Label,mxFeat};
 
 </script><script>
 if (location.protocol === 'http:' || location.protocol === 'https:') {
