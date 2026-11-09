@@ -1,13 +1,16 @@
 // Bump CACHE whenever the game HTML changes.
 // Only hangout-* caches are cleaned up so the main game's cache (same origin) is untouched.
-const CACHE = 'hangout-mock-1.4';
+const CACHE = 'hangout-mock-1.5';
 const ASSETS = [
   './',
   './index.html',
-  './Hangout_Mock_1.4.html',
+  './Hangout_Mock_1.5.html',
   './manifest.webmanifest',
   './icon-192.png',
-  './icon-512.png'
+  './icon-512.png',
+  './cg/sample_normal.jpg',
+  './cg/sample_kiss.jpg',
+  './cg/sample_intimate.jpg'
 ];
 
 self.addEventListener('install', (event) => {
