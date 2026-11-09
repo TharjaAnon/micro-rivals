@@ -251,7 +251,9 @@ select{width:100%;height:24px;border-radius:7px;border:2px solid #ffc2dc;backgro
 #ks .cg{position:absolute;inset:0;border:2px solid #ffc2dc;border-radius:12px;overflow:hidden;background:#2a1020;--fw:100%;--fh:100%;--sw:0px}
 .cgl{position:absolute;inset:0;opacity:0;transition:opacity .35s ease}
 .cgl.on{opacity:1}
-.cgl .bgb{position:absolute;inset:-30px;background-size:cover;background-position:center;filter:blur(18px) brightness(.6);-webkit-filter:blur(18px) brightness(.6)}
+.cgl .bgb{position:absolute;inset:0;background:#2a1020;transition:background .35s}
+.cgl .fr{-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 7%,#000 93%,transparent 100%);mask-image:linear-gradient(90deg,transparent 0,#000 7%,#000 93%,transparent 100%)}
+#cg.nostrip .cgl .fr{-webkit-mask-image:none;mask-image:none}
 .cgl .fr{position:absolute;left:50%;top:50%;width:var(--fw);height:var(--fh);transform:translate(-50%,-50%)}
 .cgl .fr img{width:100%;height:100%;object-fit:contain;display:block}
 .ph1{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}
@@ -1279,12 +1281,19 @@ function layoutCG(){const c=document.getElementById('cg');if(!c)return;const W=c
  const fw=Math.min(W,Hh*4/3),fh=fw*3/4,sw=Math.max(0,(W-fw)/2);
  c.style.setProperty('--fw',fw+'px');c.style.setProperty('--fh',fh+'px');c.style.setProperty('--sw',sw+'px');c.classList.toggle('nostrip',sw<84)}
 let cgCur=null,cgTop=1;
+const EDGE={};
+function edgeFill(im,bg){const set=c=>{bg.style.background=`linear-gradient(90deg,${c[0]} 0 50%,${c[1]} 50% 100%)`};
+ const go=()=>{const k=im.src;if(EDGE[k])return set(EDGE[k]);
+  try{const w=64,h=48,cv=document.createElement('canvas');cv.width=w;cv.height=h;const x=cv.getContext('2d',{willReadFrequently:true});x.drawImage(im,0,0,w,h);
+   const avg=x0=>{const d=x.getImageData(x0,0,4,h).data;let r=0,g=0,b=0,n=d.length/4;for(let i=0;i<d.length;i+=4){r+=d[i];g+=d[i+1];b+=d[i+2]}return `rgb(${r/n|0},${g/n|0},${b/n|0})`};
+   EDGE[k]=[avg(0),avg(w-4)];set(EDGE[k])}catch(e){set(['#2a1020','#2a1020'])}};
+ if(im.complete&&im.naturalWidth)go();else im.addEventListener('load',go,{once:true})}
 function showCG(url){const c=$('#cg'),L=[$('#cgL0'),$('#cgL1')];
  if(!url){L.forEach(l=>l.classList.remove('on'));cgCur=null;c.classList.remove('hascg');return}
  c.classList.add('hascg');
  if(url===cgCur)return;cgCur=url;
  const cur=L[cgTop],nx=L[cgTop^1];cgTop^=1;
- nx.querySelector('img').src=url;nx.querySelector('.bgb').style.backgroundImage=`url("${url}")`;
+ nx.querySelector('img').src=url;edgeFill(nx.querySelector('img'),nx.querySelector('.bgb'));
  nx.style.zIndex=2;cur.style.zIndex=1;
  const go=()=>{void nx.offsetWidth;nx.classList.add('on');setTimeout(()=>{if(cgCur===url)cur.classList.remove('on')},380)};
  const im=nx.querySelector('img');(im.decode?im.decode():Promise.resolve()).then(go,go)}
