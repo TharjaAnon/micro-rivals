@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><title>MICRO RIVALS 9.9</title>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><title>MICRO RIVALS 10.0</title>
 <style>html,body{margin:0;height:100%;background:#3a3b3d;overflow:hidden}canvas{display:block;width:100vw;height:100vh;cursor:crosshair;touch-action:none;-webkit-user-select:none;user-select:none;-webkit-touch-callout:none}html,body{touch-action:none;overscroll-behavior:none}</style>
 <meta name="theme-color" content="#3a3b3d">
 <meta name="apple-mobile-web-app-title" content="Micro Rivals">
@@ -1819,7 +1819,7 @@ function drawStairs(x,y,open,down){const X=x-T,Y=y-T,S=2*T;ctx.fillStyle=down?'#
  if(open){const t=Date.now()/180;ctx.strokeStyle='rgba(125,255,168,'+(.5+.3*Math.sin(t)).toFixed(2)+')';ctx.lineWidth=3;ctx.strokeRect(X-2+Math.sin(t)*1.5,Y-2+Math.sin(t)*1.5,S+4-Math.sin(t)*3,S+4-Math.sin(t)*3);ctx.fillStyle='#7dffa8';ctx.font='bold 18px monospace';ctx.fillText('▲',x,y+6);}}
 function txt(s,x,y,sz,c,al){ctx.font='bold '+sz+'px monospace';ctx.textAlign=al||'left';ctx.fillStyle='#000';ctx.fillText(s,x+2,y+2);ctx.fillStyle=c;ctx.fillText(s,x,y);}
 function hud(L,clear){if(TCH.on){hudTouch(L,clear);return;}ctx.setTransform(1,0,0,1,0,0);ctx.fillStyle='rgba(20,20,22,.55)';ctx.fillRect(0,0,W,62);ctx.fillRect(0,H-66,W,66);
- txt('MICRO RIVALS 9.9',16,26,14,'#ff4fd8');txt('FLOOR '+(G.li+1)+' — '+L.name,16,46,13,'#dddddd');ctx.fillStyle='#300';ctx.fillRect(16,H-58,250,14);ctx.fillStyle=player.hp>player.maxhp*.3?'#39ff88':'#ff2e63';ctx.fillRect(16,H-58,250*Math.max(0,player.hp)/player.maxhp,14);txt('HP '+Math.max(0,Math.ceil(player.hp))+'/'+player.maxhp,272,H-46,13,'#fff');
+ txt('MICRO RIVALS 10.0',16,26,14,'#ff4fd8');txt('FLOOR '+(G.li+1)+' — '+L.name,16,46,13,'#dddddd');ctx.fillStyle='#300';ctx.fillRect(16,H-58,250,14);ctx.fillStyle=player.hp>player.maxhp*.3?'#39ff88':'#ff2e63';ctx.fillRect(16,H-58,250*Math.max(0,player.hp)/player.maxhp,14);txt('HP '+Math.max(0,Math.ceil(player.hp))+'/'+player.maxhp,272,H-46,13,'#fff');
  txt('SCORE '+G.score,W-16,30,20,'#fff','right');txt((G.heist?'SAFE $':'LOOT $')+Math.round(G.lootDisp||0).toLocaleString(),W-16,54,16,'#7dff9a','right');if(combo>1)txt('x'+combo+' COMBO',W-16,80,16,'#ffe600','right');if(G.toasts){let ty=combo>1?100:82;for(const q of G.toasts){ctx.globalAlpha=Math.min(1,q.t*2);txt(q.s,W-16,ty,12,q.c,'right');ty+=16;}ctx.globalAlpha=1;}
  const wp=WEAP[player.w];txt(wp.name+(wp.melee?'':'  '+player.ammo+' / ∞'),16,H-20,18,'#7fffd4');if(player.rl>0)txt('RELOADING',230,H-20,16,'#ffe600');
  if(G.god)txt('GOD',300,26,14,'#ffe600');
@@ -1850,7 +1850,7 @@ function selKey(c){const L=selLay(),n=THEMES.length+1;let d=0;if(c==='ArrowRight
 function title(){ctx.setTransform(1,0,0,1,0,0);const t=Date.now()/400;if(G.sel==null)G.sel=0;
  for(let i=0;i<20;i++){ctx.strokeStyle='rgba(200,200,205,'+(.08+.04*Math.sin(t+i))+')';ctx.beginPath();ctx.moveTo(0,H*.6+i*i*2);ctx.lineTo(W,H*.6+i*i*2);ctx.stroke();}
  const L=selLay();const ty=Math.max(54,L.top-96);
- txt('URBAN WARDS',W/2,ty,Math.min(64,W/12),'#ff4fd8','center');txt('MICRO RIVALS 9.9',W/2,ty+32,16,'#2ec5ff','center');
+ txt('URBAN WARDS',W/2,ty,Math.min(64,W/12),'#ff4fd8','center');txt('MICRO RIVALS 10.0',W/2,ty+32,16,'#2ec5ff','center');
  txt(TCH.on?'Touch: left stick move · right stick aim+fire · GREN/KNIFE buttons':'Arrows/WASD move · Mouse aim · Click shoot/swing · Right-click grenade · Numpad0 knife · E pick up',W/2,ty+56,12,'#ddd','center');
  txt('SELECT STAGE'+(TCH.on?'  (tap to select, tap again or START to play · drag to scroll)':'  (arrows/click to select · Enter/double-click to play · wheel scroll)'),W/2,L.top-10,12,'#ffe600','center');
  ctx.save();ctx.beginPath();ctx.rect(0,L.top,W,L.bot-L.top);ctx.clip();const sc=G.selScroll||0;
@@ -2172,7 +2172,7 @@ tBtns=function(){const f=fireGeom(),b={};b.fire={x:f.fx,y:f.fy,r:f.fr,label:'FIR
  if(G.hideUI){for(const k in b)if(k!=='fire'&&k!=='hide')delete b[k];}return b;};
 function hudTouch(L,clear){ctx.setTransform(1,0,0,1,0,0);HUDR=[];const u=hu();
  // top-left
- let y=Math.round(16*u)+4;T2('title','MICRO RIVALS 9.9',10,y,Math.round(12*u),'#ff4fd8');y+=Math.round(15*u);T2('floor','FLOOR '+(G.li+1)+' — '+L.name,10,y,Math.round(11*u),'#dddddd');y+=Math.round(16*u);
+ let y=Math.round(16*u)+4;T2('title','MICRO RIVALS 10.0',10,y,Math.round(12*u),'#ff4fd8');y+=Math.round(15*u);T2('floor','FLOOR '+(G.li+1)+' — '+L.name,10,y,Math.round(11*u),'#dddddd');y+=Math.round(16*u);
  if(G.heist&&G.up){const ab={dmg:'DMG',hp:'HP',def:'DEF',spd:'SPD',fr:'ROF',rl:'RLD',kg:'BAG',pr:'MAG'};let s='';for(const k in G.up.list)s+=ab[k]+(G.up.list[k]>1?'x'+G.up.list[k]:'')+' ';T2('lv','LV '+G.up.lv,10,y,Math.round(13*u),'#ff7cf5');if(s)T2('ups',s.trim(),10+tw('LV '+G.up.lv,Math.round(13*u))+8,y,Math.round(9*u),'#e8c8ff');if(G.perkOrder&&G.perkOrder.length)y=pkIcons(10,y+Math.round(6*u),u)-Math.round(3*u);}
  if(G.god)T2('god','GOD',10,y+Math.round(15*u),Math.round(11*u),'#ffe600');
  if(G.toasts){let ty=y+Math.round(32*u);for(const q of G.toasts.slice(-3)){ctx.globalAlpha=Math.min(1,q.t*2);T2('toast',q.s,10,ty,Math.round(11*u),q.c);ty+=Math.round(14*u);}ctx.globalAlpha=1;}
@@ -3286,7 +3286,7 @@ function sqAllyAI(h,dt,lead){const S=G.squad,d=h.def;const L=lead&&lead.alive?le
     if(use)sqSecondary(h,tx,ty);}}}
  else if(!moved&&L&&L!==h){const sa=h.slotA,sx=L.x+Math.cos(sa)*46,sy=L.y+Math.sin(sa)*46;if(Math.hypot(sx-h.x,sy-h.y)>14&&!blocked(sx,sy,h.r))sqSteer(h,sx,sy,spd*.7,dt,S.pf);h.a+=sqAD(L.a||0,h.a)*Math.min(1,dt*3);}}
 function sqFoeAI(e,dt){const S=G.squad;if(e.stun>0){e.stun-=dt;return;}const sl=e.slow>0?.5:1;if(e.slow>0)e.slow-=dt;for(const z of S.zones)if(z.k==='ice'&&Math.hypot(e.x-z.x,e.y-z.y)<z.R)e.slow=Math.max(e.slow,.15);
- e.tT-=dt;if(e.tT<=0||!e.tgt||!e.tgt.alive){e.tT=.5+Math.random()*.3;let best=null,bd=1e9;for(const h of S.heroes){if(!h.alive)continue;const d=Math.hypot(h.x-e.x,h.y-e.y)*(los(e.x,e.y,h.x,h.y)?1:1.6);if(d<bd){bd=d;best=h;}}if(best!==e.tgt)e.react=.3;e.tgt=best;}
+ e.tT-=dt;if(e.tT<=0||!e.tgt||!e.tgt.alive){e.tT=.5+Math.random()*.3;let best=null,bd=1e9;for(const h of S.heroes){if(!h.alive)continue;const d=Math.hypot(h.x-e.x,h.y-e.y)*(los(e.x,e.y,h.x,h.y)?1:1.6)-(typeof v100Agg==='function'?v100Agg(h):0);if(d<bd){bd=d;best=h;}}if(best!==e.tgt)e.react=.3;e.tgt=best;}
  const h=e.tgt;if(!h)return;const d=Math.hypot(h.x-e.x,h.y-e.y),sees=d<520&&los(e.x,e.y,h.x,h.y);const W0=e.w,mel=W0==='bat'||W0==='fists';const rng=mel?24:W0==='shotgun'?190:W0==='smg'?280:330;const spd=(e.boss?118:mel?150:128)*sl;
  if(sees)e.a=Math.atan2(h.y-e.y,h.x-e.x);
  if(!sees||d>rng){const g=(sees&&d<220)?null:sqFieldDir(e,S.ef);let vx,vy;if(g){vx=g[0];vy=g[1];}else{vx=(h.x-e.x)/(d||1);vy=(h.y-e.y)/(d||1);}const ox=e.x,oy=e.y;move(e,vx*spd*dt,vy*spd*dt);if(!sees)e.a=Math.atan2(vy,vx);
@@ -5162,7 +5162,7 @@ const MR_FONTS="@font-face{font-family:'MRA';src:url(data:font/woff2;base64,d09G
 // ===================== 6.3 MICRO RIVALS: DOM menus (title / map select / heroine select / results) =====================
 // Menus are a DOM overlay; while it is up the canvas is not redrawn (title/squadsel), so menus cost nothing during play.
 // 6.2: no map mini-renders; map cards are name + tag + flat accent colour (nothing generated or cached).
-const MR={vis:false,page:null,tf:0,mf:0,rf:0,how:false,spr:{},resT:0,el:{},ver:'v9.9',sprDone:false};
+const MR={vis:false,page:null,tf:0,mf:0,rf:0,how:false,spr:{},resT:0,el:{},ver:'v10.0',sprDone:false};
 window.__mrvis=false;
 MR.so0=sqSelOpen;
 MR.ORDER=(()=>{const a=[];SQMAPS.forEach((m,i)=>{if(m.i>=0)a.push(i);});SQMAPS.forEach((m,i)=>{if(m.i<0)a.push(i);});return a;})();
@@ -5860,7 +5860,8 @@ v43Hud=function(){const S=G.squad,P=player;if(!S||!S.heroes)return;const g=V43,l
  const fpsH=GFX.fps?30:0,yEnd=botT-fpsH-4;V43.fpsY=yEnd+4;
  // squad list
  const N=S.heroes.length,cols=lb>=128?2:1,rows=Math.ceil(N/cols),gapR=4,rh=Math.max(26,Math.min(cols===1?74:Math.round(lb*.5),Math.floor((yEnd-y-(rows-1)*gapR)/rows))),cwC=(cw-(cols-1)*4)/cols;
- S.heroes.forEach((h,i)=>{const me=h===P,c=i%cols,r=(i/cols)|0,x0=pad+c*(cwC+4),y0=y+r*(rh+gapR);
+ const RH0=rh;let RH100=null,Y100=null;if(cols===1&&N>=5){const rc=Math.max(22,Math.min(30,Math.floor((yEnd-y-(N-1)*gapR-44)/(N-1)))),rb=Math.max(34,Math.min(74,yEnd-y-(N-1)*(rc+gapR)));RH100=[];Y100=[];let yy=y;S.heroes.forEach(h=>{const q=h===P?rb:rc;RH100.push(q);Y100.push(yy);yy+=q+gapR;});}
+ S.heroes.forEach((h,i)=>{const rh=RH100?RH100[i]:RH0,me=h===P,c=i%cols,r=(i/cols)|0,x0=pad+c*(cwC+4),y0=RH100?Y100[i]:y+r*(rh+gapR);
   ctx.fillStyle=me?'rgba(255,230,0,.14)':'rgba(255,255,255,.05)';ctx.fillRect(x0-1,y0,cwC+2,rh);if(me){ctx.strokeStyle='#ffe600';ctx.lineWidth=1.5;ctx.strokeRect(x0-.25,y0+.75,cwC+.5,rh-1.5);}
   const hf=h.alive?Math.max(0,h.hp/h.maxhp):0,bh=Math.max(4,Math.round(rh*.09));let pr,px,py,nx,ny,nal,nw;
   if(cols===1){pr=Math.round(Math.max(9,Math.min(24,(rh-bh-10)/2,cwC*.24)));px=x0+pr+3;py=y0+pr+3;nx=x0+2*pr+7;ny=py+4;nal='left';nw=cwC-2*pr-9;}
@@ -8254,7 +8255,7 @@ function rvPullFx(n){try{rvCss();const b=document.querySelector('#mx73 [data-a="
  let h=document.getElementById('rvpb');if(h)h.remove();h=document.createElement('div');h.id='rvpb';h.style.left=x+'px';h.style.top=y+'px';h.innerHTML='<i class="rvr"></i>'+rvSvg('');document.body.appendChild(h);setTimeout(()=>{h.remove();},950);}catch(e){}}
 {const _p=MXU.pull;MXU.pull=function(n){if(mxS().gems>=(n>=10?MX.COST10:MX.COST*n))rvPullFx(n);return _p.apply(this,arguments);};}
 {const _s=rlStartStage;rlStartStage=function(){const r=_s.apply(this,arguments);try{if(RL.on&&RL.d)rvStamp(RL.i88?'TRAINING':'STAGE '+RL.d.stage,1000);}catch(e){}return r;};}
-try{setTimeout(()=>rvStamp('MICRO RIVALS 9.9',1100),30);}catch(e){}
+try{setTimeout(()=>rvStamp('MICRO RIVALS 10.0',1100),30);}catch(e){}
 UW.RV75={rvD,rvSvg,rvUri,rvPath2D,rvStamp,rvPullFx};
 
 // ===================== 7.6: heroine emblems (one path each, recoloured per heroine) =====================
@@ -9576,7 +9577,7 @@ function ai87Wake(e,S,pop){if(e.n87)return;e.n87=1;e.react=Math.max(e.react||0,.
 function ai87Idle(e,dt,S){const g=sqFieldDir(e,S.ef);const sp=ai87Spd(e)*.6;let vx,vy;if(g){vx=g[0];vy=g[1];}else{let b=null,bd=1e9;for(const h of S.heroes){if(!h.alive)continue;const d=Math.hypot(h.x-e.x,h.y-e.y);if(d<bd){bd=d;b=h;}}if(!b)return;vx=(b.x-e.x)/(bd||1);vy=(b.y-e.y)/(bd||1);}
  const ox=e.x,oy=e.y;move(e,vx*sp*dt,vy*sp*dt);e.a=Math.atan2(vy,vx);if(Math.hypot(e.x-ox,e.y-oy)<sp*dt*.3){e.stuck=(e.stuck||0)+dt;if(e.stuck>.6){const ga=Math.random()*6.28;move(e,Math.cos(ga)*14,Math.sin(ga)*14);e.stuck=0;}}else e.stuck=0;}
 function ai87Retarget(e,S){if(e.etype==='rusher'||e.charm>0||e.leader)return;const cnt=new Map();for(const f of enemies){if(f!==e&&f.alive&&f.sq&&f.n87&&f.tgt)cnt.set(f.tgt,(cnt.get(f.tgt)||0)+1);}
- let best=null,bc=1e9;for(const h of S.heroes){if(!h.alive)continue;const d=Math.hypot(h.x-e.x,h.y-e.y)*(los(e.x,e.y,h.x,h.y)?1:1.6);const c=d+75*Math.max(0,(cnt.get(h)||0)-2)-(h===e.tgt?40:0);if(c<bc){bc=c;best=h;}}
+ let best=null,bc=1e9;for(const h of S.heroes){if(!h.alive)continue;const d=Math.hypot(h.x-e.x,h.y-e.y)*(los(e.x,e.y,h.x,h.y)?1:1.6);const c=d+75*Math.max(0,(cnt.get(h)||0)-2)-(h===e.tgt?40:0)-(typeof v100Agg==='function'?v100Agg(h):0);if(c<bc){bc=c;best=h;}}
  if(best){if(best!==e.tgt&&e.tgt&&e.tgt.alive){e.react=Math.max(e.react||0,.25);AI87.st.spread++;}e.tgt=best;e.tT=1.4;}}
 function ai87Lanes(e,S){// am I standing in a friend's line of fire? step out sideways
  for(const f of enemies){if(f===e||!f.alive||!f.sq||!f.n87||ai87Mel(f)||!f.tgt||!f.tgt.alive)continue;const t=f.tgt;const L=Math.hypot(t.x-f.x,t.y-f.y);if(L>ai87Rng(f)+40)continue;
@@ -10994,7 +10995,7 @@ const V95AI={
   if(e.dv){e.dv.t+=dt;const D=e.dv;if(D.t<.45){e.a=Math.atan2(D.y-e.y,D.x-e.x);return;}const dx=D.x-e.x,dy=D.y-e.y,d=Math.hypot(dx,dy),st=360*dt;
    let hit=d<=st;if(!hit){e.x+=dx/d*st;e.y+=dy/d*st;}for(const h of v95Heroes())if(Math.hypot(h.x-e.x,h.y-e.y)<h.r+10)hit=true;
    if(hit||D.t>1.6){e.dived=1;v95Boom(e.x,e.y,54,11*v95Dm(),'boom');e.hp=0;e.alive=false;e.rag=null;e.pool=99;}return;}  // self-destruct: no kill reward
-  e.tT-=dt;if(e.tT<=0||!e.tgt||!e.tgt.alive){e.tT=.6;const hs=v95Heroes();let b=null,bs=-1;for(const h of hs){let s=0;for(const u of hs)if(Math.hypot(u.x-h.x,u.y-h.y)<90)s++;s-=Math.hypot(h.x-e.x,h.y-e.y)/900;if(s>bs){bs=s;b=h;}}e.tgt=b;}
+  e.tT-=dt;if(e.tT<=0||!e.tgt||!e.tgt.alive){e.tT=.6;const hs=v95Heroes();let b=null,bs=-1;for(const h of hs){let s=0;for(const u of hs)if(Math.hypot(u.x-h.x,u.y-h.y)<90)s++;s-=Math.hypot(h.x-e.x,h.y-e.y)/900;s+=(typeof v100Agg==='function'?v100Agg(h):0)/300;if(s>bs){bs=s;b=h;}}e.tgt=b;}
   const h=e.tgt;if(!h)return;const ox=Math.cos(e.ph)*70,oy=Math.sin(e.ph)*70,gx=h.x+ox,gy=h.y+oy,dx=gx-e.x,dy=gy-e.y,d=Math.hypot(dx,dy),sl=e.slow>0?.5:1;if(e.slow>0)e.slow-=dt;
   if(d>4){const s=Math.min(d,175*sl*dt);e.x+=dx/d*s;e.y+=dy/d*s;}e.a=Math.atan2(h.y-e.y,h.x-e.x);
   e.x=Math.max(T,Math.min((gw-1)*T,e.x));e.y=Math.max(T,Math.min((gh-1)*T,e.y));e.cd-=dt;
@@ -11195,7 +11196,7 @@ Object.assign(V95AI,{
   for(const u of v95Heroes())if(Math.hypot(u.x-e.x,u.y-e.y)<u.r+8){V96.stat.mslHit=(V96.stat.mslHit||0)+1;v96MslEnd(e,e.x,e.y,1);return;}
   if(e.mt>C.life){V96.stat.fizzle=(V96.stat.fizzle||0)+1;v96MslEnd(e,e.x,e.y,0);}},
  heli(e,dt){e.charm=0;e.stun=0;e.kx=e.ky=0;e.slow=0;e.rot=(e.rot||0)+dt*26;e.flipT-=dt;
-  e.tT-=dt;if(e.tT<=0||!e.tgt||!e.tgt.alive){e.tT=1;let b=null,bd=1e9;for(const h of v95Heroes()){const d=Math.hypot(h.x-e.x,h.y-e.y);if(d<bd){bd=d;b=h;}}e.tgt=b;}
+  e.tT-=dt;if(e.tT<=0||!e.tgt||!e.tgt.alive){e.tT=1;let b=null,bd=1e9;for(const h of v95Heroes()){const d=Math.hypot(h.x-e.x,h.y-e.y)-(typeof v100Agg==='function'?v100Agg(h):0);if(d<bd){bd=d;b=h;}}e.tgt=b;}
   const h=e.tgt;if(!h)return;const d=Math.hypot(h.x-e.x,h.y-e.y),Gn=e.gun;e.ph+=dt*(Gn?.22:.5)*e.dir;
   const R=V96.HELI.R,gx=h.x+Math.cos(e.ph)*R,gy=h.y+Math.sin(e.ph)*R,dx=gx-e.x,dy=gy-e.y,dd=Math.hypot(dx,dy),sp=(Gn?90:165)*dt;
   if(dd>2){const s=Math.min(dd,sp),nx=e.x+dx/dd*s,ny=e.y+dy/dd*s;if(!v96Noe(nx,ny,e.r)){e.x=nx;e.y=ny;}else if(e.flipT<=0){e.dir=-e.dir;e.flipT=2;}}v96Clamp(e);
@@ -11318,7 +11319,7 @@ function v96DrawWorld(){const S=G.squad;if(!S||!S.heroes)return;const t=S.time||
 UW.V96={V96,v96Plan,v96Field,v96Crush,v96Mk,v96Aura,v96Alive,v96Prot};
 
 
-// ===== MICRO RIVALS 9.9 layer: summon banner rotates every 5 real minutes, FOCUS (1 heroine) or PAIR (2 heroines) =====
+// ===== MICRO RIVALS 10.0 layer: summon banner rotates every 5 real minutes, FOCUS (1 heroine) or PAIR (2 heroines) =====
 // Replaces the 8.4 "once per in-game week" rule and the old flat x2 featured weighting. The banner is a pure function of the wall-clock slot, so reloads never reroll
 // and every device shows the same one. Tier rates (N28/R45/SR18/SSR6/UR3), no pity and no guarantees are untouched; there is one pool, so costumes follow the banner.
 const B98={MS:300000,shown:null,pend:0,tm:0,rs:null,cache:[-1,null]};
@@ -11569,7 +11570,7 @@ function v99MineN(e){let n=0;for(const m of V99.mines)if(m.o===e)n++;return n;}
 // commander call-in: airstrike (5 red circles, 1.5 s) or a drone swarm (inside the drone cap)
 function v99Call(e){const S=G.squad,C=V99.CMD;V99.stat.cmdCall++;e.calls++;const air=((e.calls+(e.first||0))%2===1)||v95Alive('drone')>=4||!v99Ok();
  if(air){const hs=v95Heroes();const pts=[];for(const h of hs)pts.push([h.x+(Math.random()-.5)*30,h.y+(Math.random()-.5)*30]);
-  let k=0;while(pts.length<C.N&&k<40){k++;const b=hs.length?hs[(Math.random()*hs.length)|0]:e;const a=Math.random()*6.283,r=70+Math.random()*90;const x=b.x+Math.cos(a)*r,y=b.y+Math.sin(a)*r;if(!blocked(x,y,4))pts.push([x,y]);}
+  let k=0;while(pts.length<C.N&&k<40){k++;const b=hs.length?((k%2===0&&typeof v100Top==='function'&&v100Top())||hs[(Math.random()*hs.length)|0]):e;const a=Math.random()*6.283,r=70+Math.random()*90;const x=b.x+Math.cos(a)*r,y=b.y+Math.sin(a)*r;if(!blocked(x,y,4))pts.push([x,y]);}
   for(const p of pts.slice(0,C.N))V99.strikes.push({x:p[0],y:p[1],R:C.R,t:0,T:C.TG,dm:v95Dm()});V99.stat.airstrike++;
   try{sqBanner('AIRSTRIKE INCOMING — LEAVE THE RED CIRCLES',1.8,'#ff5a5a');}catch(z){}}
  else{const n0=enemies.length;const p=[e.x,e.y];let m=0;for(let i=0;i<4;i++){if(v95Alive('drone')>=6)break;const a=i/4*6.283;const d=v95Mk('drone',p[0]+Math.cos(a)*22,p[1]+Math.sin(a)*22);if(d){d.ph=a;m++;if(i===0&&v99Ok())v99Sdr(d);}}
@@ -11907,6 +11908,305 @@ function v99Hud(){const S=G.squad;if(!S||!S.heroes||G.state!=='play')return;ctx.
 const v99HudS=ph83Safe(v99Hud);
 {const _h=sqHud;sqHud=function(){const r=_h.apply(this,arguments);try{v99HudS();}catch(e){console.error(e);}return r;};}
 UW.V99={V99,M99,m99Assign,m99Plan,v99Plan,v99Mk,v99Blast,v99Call,v99Barrels,v99MechMult,vip99,m99Setup};
+
+
+
+// ===================== MICRO RIVALS 10.0 · squads up to 6 · squad select · city-locked campaigns · campaign chain · stamina · solo missions =====================
+// Final layer (inserted after 9.9). Function declarations are global, so reassigning them here overrides every caller.
+// ---------- 1. CONSTANTS ----------
+const V100={MAXS:3,ELC:4,HPC:.12,HIC:2,
+ // one map set per campaign: the five lab cities (Avengers Plaza is only ever the opening stage / training)
+ CITY:[{n:'MIDTOWN',c:'#4fa3ff',bv:'tank',boss:'THE TANK QUEEN',dist:['TIMES SQ','GARMENT','BRYANT PARK']},
+  {n:'LOWER MANHATTAN',c:'#ffb43a',bv:'mech',boss:'THE IRON WARDEN',dist:['TRIBECA','FINANCIAL','THE BATTERY']},
+  {n:'SHIBUYA',c:'#ff4fa8',bv:'mech',boss:'THE NEON RONIN',dist:['DOGENZAKA','SCRAMBLE','HARAJUKU']},
+  {n:'CLINTON',c:'#7fe07a',bv:'tank',boss:'THE KITCHEN BOSS',dist:["HELL'S KITCHEN",'PIER 84','THE DOCKS']},
+  {n:'MADRIPOOR',c:'#c27bff',bv:'mech',boss:'THE PIRATE QUEEN',dist:['HIGHTOWN','LOWTOWN','THE HARBOR']}],
+ SOLO:['sabotage','hunt','survive'],SOLOT:75,swallow:0};
+function v100MapIdx(name){return SQMAPS.findIndex(m=>m&&m.n===name);}
+function v100Plaza(){const i=v100MapIdx('AVENGERS PLAZA');return i>=0?i:1;}
+function v100CityList(){return V100.CITY.map((c,k)=>k).filter(k=>v100MapIdx(V100.CITY[k].n)>=0);}
+// ---------- 2. SAVE: d.v100 = {camp, city (index into V100.CITY), used[], sta{id:0..3}, last{sq,ctrl}, cc (campaign-clear screen pending)} ----------
+function v100D(d){d=d||RL.d;if(!d)return null;let v=d.v100;
+ if(!v||typeof v!=='object'){const L=v100CityList();v=d.v100={camp:1,city:L.length?L[((d.seed||1)>>>3)%L.length]:0,used:[],sta:{},last:null,cc:null};v.used.push(v.city);}
+ if(!(v.camp>=1))v.camp=1;if(!V100.CITY[v.city])v.city=0;if(!Array.isArray(v.used))v.used=[v.city];if(!v.sta||typeof v.sta!=='object')v.sta={};return v;}
+function v100City(){const v=v100D();return V100.CITY[v?v.city:0]||V100.CITY[0];}
+function v100CityIdx(){const c=v100City();return v100MapIdx(c.n);}
+function v100Camp(){const v=v100D();return v?v.camp:1;}
+// ---------- 3. STAMINA (max 3; deploy −1; benched +1 per stage sat out; REST = full; hangout hook) ----------
+function st100(id){const v=v100D();if(!v)return V100.MAXS;const x=v.sta[id];return x==null?V100.MAXS:Math.max(0,Math.min(V100.MAXS,x|0));}
+function st100Set(id,n){const v=v100D();if(!v)return 0;v.sta[id]=Math.max(0,Math.min(V100.MAXS,Math.round(n)||0));return v.sta[id];}
+function st100Own(){return mxUnl().filter(id=>RL.IDS.indexOf(id)>=0);}
+function v100Can(id){return mxUnl().indexOf(id)>=0&&av89(id)&&st100(id)>0;}
+// hangouts (not in the game yet) call this: v100Stamina.restore('emma',1) → +1, restore('emma') → full
+window.v100Stamina={max:V100.MAXS,get:st100,set(id,n){const r=st100Set(id,n);try{rlSave();}catch(e){}return r;},
+ restore(id,n){const r=st100Set(id,n==null?V100.MAXS:st100(id)+n);try{rlSave();if(CM88.vis)cm88Render();}catch(e){}return r;},
+ restoreAll(n){for(const id of st100Own())st100Set(id,n==null?V100.MAXS:st100(id)+n);try{rlSave();if(CM88.vis)cm88Render();}catch(e){}},
+ all(){const o={};for(const id of st100Own())o[id]=st100(id);return o;}};
+// soft-lock guard: nobody healthy has stamina left → SECOND WIND, +1 to every healthy heroine (no stage is skipped, nothing else changes)
+function v100Guard(){const d=RL.d;if(!d||d.over)return false;const av=av89List();if(!av.length)return false;if(av.some(id=>st100(id)>0))return false;
+ for(const id of av)st100Set(id,st100(id)+1);V100.sw=(V100.sw|0)+1;CM88.msg='SECOND WIND — everyone was exhausted: +1 stamina to every healthy heroine';try{rlSave();}catch(e){}return true;}
+// a deployment (every combat stage start, retries included): deployed −1, everyone else who owns a slot on the roster +1
+function v100Spend(dep){const v=v100D();if(!v)return;const own=st100Own();for(const id of own){if(dep.indexOf(id)>=0)st100Set(id,st100(id)-1);else if(!cap89Has(id))st100Set(id,st100(id)+1);}
+ v.lastSpend={dep:dep.slice(),t:Date.now()};}
+// ---------- 4. SQUAD CAPS ----------
+// columns 1-2: 2 · 3-4: 3 · 5-7: 4 · 8-9: 5 · elite + boss: 6 · escort: one less (min 2) · rescue: at least 4 · solo: 1
+function v100Cap(n){if(!n)return 4;if(n.t==='intro')return 1;if(n.solo)return 1;if(n.t==='boss'||n.t==='elite')return 6;const c=n.c||1;let b=c<=2?2:c<=4?3:c<=7?4:5;
+ if(n.t==='escort')b=Math.max(2,b-1);if(n.t==='rescue')b=Math.max(4,b);return b;}
+cm88SzT=function(n){const s=n.sz|0;return s>=6?'FULL 6':s===1?'SOLO':'SQUAD '+s;};
+mxSqF=function(){const d=RL.d;if(!d||!d.squad)return 1;return[1,.45,.65,.83,1,1.16,1.32][Math.min(6,d.squad.length)];};
+// ---------- 5. MAP GENERATION: city lock, Plaza opener, caps, solo nodes, city boss ----------
+function v100Fix(g){const d=RL.d,v=v100D();if(!g||!v)return;const ci=v100CityIdx(),pl=v100Plaza(),city=v100City();
+ const R=cm88Rng(((((d.cm88&&d.cm88.seed)||d.seed||1)>>>0)^0x100a5)>>>0);
+ if(!g.solo100){g.solo100=1;const by=g.by;const cand=g.nodes.filter(n=>n.t==='fight'&&!n.rq&&n.c>=2&&n.c<=8&&!n.av92);
+  const want=1+(R()<.5?1:0),cols={};let k=0;for(let tr=0;tr<40&&k<want&&cand.length;tr++){const n=cand[(R()*cand.length)|0];if(n.solo||cols[n.c])continue;
+   const ban={};for(const p of g.nodes)if(p.nx&&p.nx.indexOf(n.id)>=0&&p.ms)ban[p.ms]=1;for(const id of n.nx||[])if(by[id]&&by[id].ms)ban[by[id].ms]=1;
+   const L=V100.SOLO.filter(m=>!ban[m]);n.solo=1;n.ms=(L.length?L:V100.SOLO)[(R()*(L.length||V100.SOLO.length))|0];n.w=['m99'];n.rq=0;cols[n.c]=1;k++;}}
+ for(const n of g.nodes){n.m=n.t==='start'?pl:(ci>=0?ci:n.m);n.sz=v100Cap(n);if(n.t==='boss')n.bv=city.bv;}
+ g.c100=v.city;}
+{const _f=cm88D;cm88D=function(){const d=RL.d;if(!d)return _f.apply(this,arguments);const v=v100D(),ci=v100CityIdx();
+ if(ci>=0){CM88.maps=[ci];if(CM88.g&&CM88.g.c100!=null&&CM88.g.c100!==v.city){CM88.g=null;CM88.gs=null;}}
+ const C=_f.apply(this,arguments);try{const g=CM88.g;if(g){const key=(g.s89||'')+'|'+g.nodes.length+'|'+v.city;if(g.f100!==key){v100Fix(g);g.f100=key;}}}catch(e){console.error('v100fix',e);}return C;};}
+// ---------- 6. ENEMY LEVEL: squad average level + campaign number, on top of the 9.5 squad-strength matching ----------
+{const _e=mxEL;mxEL=function(){const r=_e.apply(this,arguments);if(RL.i88)return r;return r+V100.ELC*(v100Camp()-1);};}
+{const _h=ts95HpM;ts95HpM=function(){const c=v100Camp();if(c<=1||RL.i88)return _h.apply(this,arguments);const hi=TS95.hi;TS95.hi=hi+V100.HIC*(c-1);try{return _h.apply(this,arguments)*(1+V100.HPC*(c-1));}finally{TS95.hi=hi;}};}
+{const _m=ts95DmM;ts95DmM=function(){const c=v100Camp();if(c<=1||RL.i88)return _m.apply(this,arguments);const hi=TS95.hi;TS95.hi=hi+V100.HIC*(c-1);try{return _m.apply(this,arguments)*(1+V100.HPC*(c-1));}finally{TS95.hi=hi;}};}
+// ---------- 7. SAVE MIGRATION / NEW RUNS ----------
+{const _f=rlNew;rlNew=function(){const d=_f.apply(this,arguments);try{delete d.v100;v100D(d);}catch(e){}return d;};}
+{const _f=rlLoad;rlLoad=function(){const d=_f.apply(this,arguments);if(!d)return d;try{v100D(d);if(d.over&&d.won&&!d.v100.cc){/* a 9.9 save that finished its city: continue the chain */d.v100.mig=1;}}catch(e){console.error('v100mig',e);}return d;};}
+// ---------- 8. SQUAD PICK (default fill = last squad, then the freshest heroines) ----------
+function v100Pick(n,pref){const d=RL.d,v=v100D(),cap=Math.max(1,Math.min(6,(n.sz|0)||v100Cap(n))),own=mxUnl();const ok=id=>own.indexOf(id)>=0&&av89(id)&&st100(id)>0;
+ let rq='',rqW='';try{rq=(!n.solo&&n.rq)?cm88Rq(n):'';}catch(e){rq='';}if(rq&&!ok(rq)){rqW=rq;rq='';}
+ const base=(pref&&pref.sq)||(v.last&&v.last.sq)||d.squad||[];const sq=[];if(rq)sq.push(rq);
+ for(const id of base)if(sq.length<cap&&ok(id)&&sq.indexOf(id)<0)sq.push(id);
+ if(!pref)for(const id of own.filter(x=>ok(x)&&sq.indexOf(x)<0).sort((a,b)=>st100(b)-st100(a)||own.indexOf(a)-own.indexOf(b))){if(sq.length>=cap)break;sq.push(id);}
+ let ctrl=(pref&&pref.ctrl)||(v.last&&v.last.ctrl)||d.ctrl;if(sq.indexOf(ctrl)<0)ctrl=sq[0]||'';return{sq,ctrl,rq,rqW,cap};}
+{const _f=cm88Squad;cm88Squad=function(n){const d=RL.d;if(!d||!n||n.t==='intro')return _f.apply(this,arguments);
+ try{const s=RL.ss100&&RL.ss100.id===n.id?RL.ss100:null;const o=v100Pick(n,s);let sq=o.sq;
+  if(!sq.length){const av=av89List();const L=av.filter(id=>st100(id)>0);sq=[(L[0]||av[0]||mxUnl()[0])];}
+  const ctrl=sq.indexOf(o.ctrl)>=0?o.ctrl:sq[0];return{sq,ctrl,rq:o.rq};}catch(e){console.error('v100sq',e);return _f.apply(this,arguments);}};}
+// stage start: stamina is spent / regained per deployment (campaign stages only; the training is free)
+{const _s=rlStartStage;rlStartStage=function(){const r=_s.apply(this,arguments);try{const S=G.squad;if(RL.on&&!RL.i88&&RL.n88&&S&&S.heroes&&RL.st&&!RL.st.st100){RL.st.st100=1;
+  const dep=S.heroes.map(h=>h.def.id);v100Spend(dep);RL.st.dep100=dep;RL.ss100=null;try{rlSave();}catch(e){}}}catch(e){console.error('v100st',e);}return r;};}
+// non-combat nodes: REST = full stamina for everyone; D20 / SHOP = nobody deployed, so everyone sat this stage out (+1)
+{const _r=cm88Resolve;cm88Resolve=function(n){let add='';try{if(n&&RL.d){if(n.t==='rest'){for(const id of st100Own())st100Set(id,V100.MAXS);add='ALL STAMINA RESTORED';}
+  else{for(const id of st100Own())if(!cap89Has(id))st100Set(id,st100(id)+1);add='+1 STAMINA (everyone sat out)';}}}catch(e){}
+ const r=_r.apply(this,arguments);try{if(add){CM88.msg=(CM88.msg?CM88.msg+' · ':'')+add;if(CM88.vis)cm88Render();}}catch(e){}return r;};}
+CM88.T.rest.d='No fight. Every heroine gets full stamina back; recovering heroines heal 1 stage.';
+// ---------- 9. CAMPAIGN CHAIN: beating the City Boss opens a fresh 10-stage map in a NEW city ----------
+// Everything in the run save carries over (levels, ranks, skills, costumes, unlocked heroines, bonds, GOLD and BLUE).
+// Carry-over of GOLD / BLUE is the single line marked [CARRY] in v100Chain: zero d.coins / mxS().gems there to reverse it.
+function v100NextCity(v){const all=v100CityList();let pool=all.filter(k=>v.used.indexOf(k)<0&&k!==v.city);if(!pool.length){v.used=[v.city];pool=all.filter(k=>k!==v.city);}
+ if(!pool.length)return v.city;const d=RL.d;const r=((((d.seed||1)>>>0)+v.camp*2654435761)>>>0)%pool.length;return pool[r];}
+function v100Chain(n){const d=RL.d,v=v100D();if(!d||!v)return;const M=mxS();const C=d.cm88||{};
+ let stars=0;try{for(const L of RL.log||[])if(L&&L.stars8)stars+=L.stars8;}catch(e){}
+ const own=st100Own();let lv=0;for(const id of own)lv+=(rlH(id)||{lv:1}).lv;lv=own.length?Math.round(lv/own.length):1;
+ const prev=v.city,next=v100NextCity(v);
+ v.cc={camp:v.camp,city:prev,next,lv,gold:Math.round(M.gems||0),blue:Math.round(d.coins||0),path:Math.max(10,(C.path||[]).length),el0:0,el1:0,ok:0};
+ v.camp++;v.city=next;if(v.used.indexOf(next)<0)v.used.push(next);v.camps=(v.camps||[]).concat([{c:v.cc.camp,city:V100.CITY[prev].n}]);
+ // [CARRY] GOLD (mxS().gems, stored in the run) and BLUE (d.coins) are left untouched here, so they carry into the next city.
+ d.over=0;d.won=0;d.stage=1;d.cm88={seed:((((C.seed||d.seed||1)>>>0)*1664525+1013904223+v.camp*7919)>>>0),at:null,path:[],rq:{}};RL.NST=10;
+ d.rc89={};d.cap89=[];delete d.tva89;for(const id of own)st100Set(id,V100.MAXS);
+ CM88.g=null;CM88.gs=null;CM88.sel=null;CM88.msg='';
+ rlSave();}
+{const _sh=rlUI.show;rlUI.show=function(p){if(V100.swallow&&p==='over')return;return _sh.apply(this,arguments);};}
+{const _sc=rlStageClear;rlStageClear=function(){const d=RL.d;let fin=false;try{fin=!!(d&&!RL.i88&&!d.over&&d.stage>=RL.NST);}catch(e){}
+ if(fin)V100.swallow=1;let r;try{r=_sc.apply(this,arguments);}finally{V100.swallow=0;}
+ try{if(fin&&d.over&&d.won){v100Chain(RL.n88);const vis=typeof V83!=='undefined'&&V83.el&&V83.el.style.display!=='none';if(!vis){try{rlUI.hide();}catch(e){}cm88Open();}}}catch(e){console.error('v100chain',e);}return r;};}
+// ---------- 10. CAMPAIGN-CLEAR SCREEN ----------
+const CC100={el:null,st:null,open:false,t0:0};
+CC100.css=`#cc100{position:fixed;inset:0;z-index:97;display:none;background:#0a0d1c;touch-action:none;-webkit-user-select:none;user-select:none;font-family:'MRB','Barlow Condensed','Arial Narrow',sans-serif;color:#fff;overflow:hidden}
+#cc100 .stg{position:absolute;left:0;top:0;width:1024px;height:640px;transform-origin:0 0;overflow:hidden;background:radial-gradient(circle at 70% 35%,#1d2550,#0a0d1c 70%)}
+#cc100 .grid{position:absolute;inset:0;background-image:linear-gradient(rgba(80,110,200,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(80,110,200,.06) 1px,transparent 1px);background-size:32px 32px}
+#cc100 .pt{position:absolute;left:10px;bottom:0;height:540px}
+#cc100 .k{position:absolute;left:380px;top:34px;font-size:20px;font-weight:900;letter-spacing:2px;color:#9fb0d8}
+#cc100 .t1{position:absolute;left:376px;top:62px;font:italic 900 70px/1 'MRA','MRB',Impact,sans-serif;color:#ffe94a;animation:v83pop .5s cubic-bezier(.2,1.6,.4,1)}
+#cc100 .t2{position:absolute;left:380px;top:138px;font-size:22px;font-weight:900;color:#dfe6ff}
+#cc100 .bx{position:absolute;left:380px;top:180px;width:600px;display:flex;gap:10px}
+#cc100 .bx div{flex:1;height:78px;border-radius:12px;border:2px solid #34406a;background:#141b33;display:flex;flex-direction:column;align-items:center;justify-content:center}
+#cc100 .bx b{font:italic 900 30px/1 'MRA','MRB',Impact,sans-serif}#cc100 .bx small{font-size:13px;font-weight:800;color:#9fb1d8;margin-top:4px;letter-spacing:1px}
+#cc100 .nx{position:absolute;left:380px;top:278px;width:600px;height:112px;box-sizing:border-box;border-radius:16px;border:3px solid var(--cc);background:linear-gradient(90deg,var(--cc2),rgba(14,20,44,.9) 70%);padding:12px 20px}
+#cc100 .nx i{font-style:normal;font-size:14px;font-weight:900;letter-spacing:2px;color:#dfe6ff}#cc100 .nx b{display:block;font:italic 900 40px/1.05 'MRA','MRB',Impact,sans-serif;color:var(--cc)}
+#cc100 .nx small{display:block;font-size:15px;font-weight:800;color:#dfe6ff;margin-top:3px}
+#cc100 .tx{position:absolute;left:380px;top:404px;width:600px;font-size:16px;font-weight:700;color:#aab8de;line-height:1.3}
+#cc100 .bt{position:absolute;left:380px;top:500px;height:66px;padding:0 34px;border-radius:14px;display:flex;align-items:center;font:italic 900 32px/1 'MRA','MRB',Impact,sans-serif;cursor:pointer;background:linear-gradient(#ffd23a,#f0a400);color:#2a1a00;border:3px solid #fff2b0}`;
+function cc100Build(){if(CC100.el)return;const st=document.createElement('style');st.textContent=CC100.css;document.head.appendChild(st);const el=document.createElement('div');el.id='cc100';el.innerHTML='<div class="stg"></div>';document.body.appendChild(el);
+ CC100.el=el;CC100.st=el.firstChild;el.addEventListener('pointerdown',e=>{const t=e.target.closest('[data-a]');if(!t)return;e.preventDefault();e.stopPropagation();cc100Go();});
+ window.addEventListener('resize',()=>{if(CC100.open)CC100.st.style.transform=ph83TF();});}
+function cc100Show(){const d=RL.d,v=v100D();if(!d||!v||!v.cc)return;cc100Build();try{cm88Hide();}catch(e){}try{rlUI.hide();}catch(e){}try{mrHide();}catch(e){}
+ G.state='rlmenu';G.squad=null;window.__mrvis=true;const c=v.cc,A=V100.CITY[c.city],B=V100.CITY[c.next],lead=(v.last&&v.last.ctrl)||d.ctrl,src=(typeof RLP!=='undefined'&&RLP[lead])||'';
+ CC100.st.innerHTML=`<div class="grid"></div>${src?`<img class="pt" src="${src}" alt="">`:''}<div class="k">CAMPAIGN ${c.camp} · ${A.n} · CLEARED</div><div class="t1">CITY LIBERATED!</div>
+ <div class="t2">${A.boss} is down. ${A.n} is safe — the squad moves on.</div>
+ <div class="bx"><div><b>${c.path}</b><small>STAGES CLEARED</small></div><div><b>LV ${c.lv}</b><small>SQUAD AVERAGE</small></div><div><b style="color:#ffe58a">◆ ${mxN(c.gold)}</b><small>GOLD CARRIED</small></div><div><b style="color:#bcd6ff">◉ ${mxN(c.blue)}</b><small>BLUE CARRIED</small></div></div>
+ <div class="nx" style="--cc:${B.c};--cc2:${B.c}44"><i>NEXT · CAMPAIGN ${c.camp+1}</i><b>${B.n}</b><small>10 new stages · City Boss: ${B.boss} · enemies +${V100.ELC} LV</small></div>
+ <div class="tx">Levels, ranks, skills, costumes, heroines, bonds, GOLD and BLUE all carry over. Every heroine starts the new city with full stamina. The first stage is always Avengers Plaza.</div>
+ <div class="bt" data-a="go">TO ${B.n} ▸</div>`;
+ CC100.st.style.transform=ph83TF();CC100.el.style.display='block';CC100.open=true;CC100.t0=performance.now();}
+function cc100Go(){if(performance.now()-CC100.t0<350)return;const v=v100D();if(v&&v.cc)v.cc.ok=1;try{rlSave();}catch(e){}CC100.open=false;if(CC100.el)CC100.el.style.display='none';window.__mrvis=false;cm88Open();}
+window.addEventListener('keydown',e=>{if(!CC100.open)return;if(e.code==='Enter'||e.code==='Space'){cc100Go();}e.preventDefault();e.stopImmediatePropagation();},true);
+{const _o=cm88Open;cm88Open=function(){const d=RL.d;try{if(d&&!d.over){const v=v100D();if(v&&v.cc&&!v.cc.ok){cc100Show();return;}v100Guard();}}catch(e){console.error(e);}return _o.apply(this,arguments);};}
+// TVA case file: the city of the current campaign
+{const _t=tva89Show;tva89Show=function(T){const r=_t.apply(this,arguments);try{const el=TVA89.el&&TVA89.el.firstChild;if(el)el.innerHTML=el.innerHTML.replace('WESTSIDE CITY',v100City().n+' (CAMPAIGN '+v100Camp()+')');}catch(e){}return r;};}
+// stage banner / clear text
+{const _t=rl88StartTxt;rl88StartTxt=function(s){let t=_t.apply(this,arguments);try{const n=RL.n88;if(n&&n.solo)t=t.replace(/^STAGE (\d+) · /,'STAGE $1 · SOLO · ');if(n&&n.t==='boss')t+=' · '+v100City().boss;}catch(e){}return t;};}
+// a 9.9 save that had already beaten its city: continue the chain instead of the old run-complete screen
+{const _o=rlOpen;rlOpen=function(){try{if(!RL.d){const d=rlLoad();if(d)RL.d=d;}const d=RL.d;if(d&&d.over&&d.won&&d.v100&&d.v100.mig){delete d.v100.mig;v100Chain(null);}}catch(e){console.error('v100open',e);}return _o.apply(this,arguments);};}
+// ---------- 11. SQUAD SELECT (before every campaign combat stage) ----------
+// Tap a roster card to add / remove her · tap a filled slot to make her LEAD (the heroine you control first) · ✕ removes · REQUIRED heroines are locked in.
+// Keys: 1-6 toggle · TAB next lead · R last squad · ENTER deploy · ESC back.
+const SS100={el:null,st:null,open:false,n:null,sq:[],ctrl:'',rq:'',rqW:'',t0:0,msg:''};
+SS100.css=`#ss100{position:fixed;inset:0;z-index:90;display:none;background:#0a0d1c;touch-action:none;-webkit-user-select:none;user-select:none;-webkit-tap-highlight-color:transparent;font-family:'MRB','Barlow Condensed','Arial Narrow',sans-serif;color:#fff;overflow:hidden}
+#ss100 .stg{position:absolute;left:0;top:0;width:1024px;height:640px;transform-origin:0 0;overflow:hidden;background:radial-gradient(circle at 50% 30%,#18203f,#0a0d1c 75%)}
+#ss100 .grid{position:absolute;inset:0;background-image:linear-gradient(rgba(80,110,200,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(80,110,200,.06) 1px,transparent 1px);background-size:32px 32px}
+#ss100 .h1{position:absolute;left:22px;top:12px;font:italic 900 34px/1 'MRA','MRB',Impact,sans-serif}#ss100 .h1 b{color:var(--cc)}
+#ss100 .h2{position:absolute;left:24px;top:52px;font-size:15px;font-weight:800;color:#9fb0d8}#ss100 .h2 b{color:#fff}
+#ss100 .cnt{position:absolute;right:18px;top:14px;height:34px;border-radius:17px;padding:0 16px;display:flex;align-items:center;font-weight:900;font-size:19px;background:rgba(14,20,44,.9);border:2px solid #ffd23a;color:#ffe58a}
+#ss100 .lb{position:absolute;left:24px;font-size:13px;font-weight:900;letter-spacing:2px;color:#c9b6ff}
+#ss100 .slots{position:absolute;left:12px;right:12px;top:98px;height:186px;display:flex;justify-content:center;gap:10px}
+#ss100 .sl{position:relative;width:155px;height:186px;flex:none;border-radius:14px;overflow:hidden;box-sizing:border-box;border:3px solid var(--hc,#3a4778);background:#121933;cursor:pointer}
+#ss100 .sl.e{border:3px dashed #3a4778;background:rgba(18,25,51,.55);display:flex;align-items:center;justify-content:center;flex-direction:column;color:#5d6a98;font-weight:900;font-size:17px;cursor:default}
+#ss100 .sl.e i{font-style:normal;font-size:44px;line-height:1;color:#3a4778}
+#ss100 .sl.ld{border-color:#ffd23a;box-shadow:inset 0 0 0 2px #ffd23a}
+#ss100 .pt{position:absolute;inset:0;overflow:hidden}#ss100 .pt::after{content:'';position:absolute;left:0;right:0;bottom:0;height:62%;background:linear-gradient(transparent,rgba(8,10,24,.96) 62%)}
+#ss100 .pt img{position:absolute;left:50%;top:4px;height:330%;transform:translateX(-50%);pointer-events:none}
+#ss100 .nm{position:absolute;left:8px;right:8px;bottom:40px;font:italic 900 22px/1 'MRA','MRB',Impact,sans-serif;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#ss100 .lv{position:absolute;left:8px;bottom:22px;font-size:13px;font-weight:900;color:#bcc6e4}
+#ss100 .pp{position:absolute;right:8px;bottom:8px;display:flex;gap:4px;align-items:center}#ss100 .pp b{font-size:11px;font-weight:900;color:#9fb0d8;margin-right:2px;letter-spacing:1px}
+#ss100 .pp i{width:14px;height:14px;border-radius:50%;border:2px solid #7fe07a;box-sizing:border-box;background:transparent}#ss100 .pp i.f{background:#7fe07a}#ss100 .pp i.u{background:#ffb43a;border-color:#ffb43a}
+#ss100 .pp.z i{border-color:#ff5a6e}
+#ss100 .tg{position:absolute;left:6px;top:6px;padding:3px 9px;border-radius:9px;font-size:13px;font-weight:900;letter-spacing:1px;background:#ffd23a;color:#2a1a00}
+#ss100 .tg.rq{background:#e0559f;color:#fff}#ss100 .tg.gr{background:#3a4778;color:#dfe6ff}#ss100 .tg.bd{background:#5a1a26;color:#ff9aa8}
+#ss100 .x{position:absolute;right:4px;top:4px;width:40px;height:40px;border-radius:20px;background:rgba(10,14,32,.85);border:2px solid #5d6a98;display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:900;color:#dfe6ff}
+#ss100 .ros{position:absolute;left:12px;right:12px;top:326px;height:180px;display:flex;justify-content:center;gap:10px}
+#ss100 .rc{position:relative;width:155px;height:180px;flex:none;border-radius:14px;overflow:hidden;box-sizing:border-box;border:3px solid #2c3762;background:#121933;cursor:pointer}
+#ss100 .rc.in{border-color:var(--hc);box-shadow:inset 0 0 0 2px var(--hc)}#ss100 .rc.in .ck{display:flex}
+#ss100 .rc .ck{display:none;position:absolute;right:6px;top:6px;width:30px;height:30px;border-radius:15px;background:#7fe07a;color:#0b2a0a;font-weight:900;font-size:19px;align-items:center;justify-content:center}
+#ss100 .rc.off{cursor:default}#ss100 .rc.off .pt,#ss100 .rc.off .nm,#ss100 .rc.off .lv{filter:grayscale(1) brightness(.45)}
+#ss100 .bot{position:absolute;left:12px;right:12px;top:528px;height:64px;display:flex;gap:10px}
+#ss100 .bt{display:flex;align-items:center;justify-content:center;border-radius:12px;font-weight:900;cursor:pointer;box-sizing:border-box}
+#ss100 .bk{width:150px;font-size:20px;background:#1b2448;border:2px solid #3a4778;color:#dfe6ff}
+#ss100 .rl{flex:1;font-size:18px;background:#1b2448;border:2px solid #b06cff;color:#e2c8ff;flex-direction:column;line-height:1.1}#ss100 .rl small{font-size:12px;color:#b9a6e0;font-weight:800}
+#ss100 .rl.dis,#ss100 .dp.dis{filter:grayscale(.9) brightness(.55);cursor:default}
+#ss100 .dp{width:300px;background:linear-gradient(#ffd23a,#f0a400);color:#2a1a00;font:italic 900 32px/1 'MRA','MRB',Impact,sans-serif;border:3px solid #fff2b0}
+#ss100 .msg{position:absolute;left:24px;right:24px;top:600px;font-size:13px;font-weight:800;color:#8f9cc4;text-align:center;line-height:1.25}#ss100 .msg b{color:#ffb43a}#ss100 .msg em{font-style:normal;color:#ff8ac4}
+#ss100 .kh{position:absolute;right:24px;top:298px;font-size:12px;font-weight:800;color:#5d6a98}`;
+function ss100Build(){if(SS100.el)return;const st=document.createElement('style');st.textContent=SS100.css;document.head.appendChild(st);
+ const el=document.createElement('div');el.id='ss100';el.innerHTML='<div class="stg"></div>';document.body.appendChild(el);SS100.el=el;SS100.st=el.firstChild;
+ el.addEventListener('pointerdown',e=>{e.stopPropagation();const t=e.target.closest('[data-a]');if(!t)return;e.preventDefault();ss100Act(t.getAttribute('data-a'));});
+ for(const ev of['mousedown','touchstart'])el.addEventListener(ev,e=>e.stopPropagation(),{passive:true});
+ window.addEventListener('resize',()=>{if(SS100.open)SS100.st.style.transform=ph83TF();});}
+function ss100Ok(id){return v100Can(id);}
+function ss100Open(n){const d=RL.d;if(!d||!n)return;ss100Build();cm88D();v100Guard();const o=v100Pick(n,null);
+ SS100.n=n;SS100.sq=o.sq.slice();SS100.ctrl=o.ctrl;SS100.rq=o.rq;SS100.rqW=o.rqW;SS100.cap=o.cap;SS100.msg=CM88.msg||'';SS100.open=true;SS100.t0=performance.now();
+ SS100.st.style.transform=ph83TF();SS100.el.style.display='block';ss100Render();}
+function ss100Close(){SS100.open=false;if(SS100.el)SS100.el.style.display='none';}
+function ss100Pips(id,spend){const s=st100(id);let h='';for(let i=0;i<V100.MAXS;i++)h+=`<i class="${i<s?(spend&&i===s-1?'u':'f'):''}"></i>`;return`<div class="pp${s===0?' z':''}"><b>STAMINA</b>${h}</div>`;}
+function ss100Img(id){const src=(typeof RLP!=='undefined'&&RLP[id])||'';let off=0;try{off=rlPO(id,'card');}catch(e){}return src?`<div class="pt"><img decoding="async" src="${src}" alt="" style="transform:translateX(calc(-50% + ${off}px))"></div>`:'<div class="pt"></div>';}
+function ss100Last(){const v=v100D();if(!v||!v.last||!v.last.sq)return null;const sq=v.last.sq.filter(ss100Ok).slice(0,SS100.cap);if(SS100.rq&&sq.indexOf(SS100.rq)<0){if(sq.length>=SS100.cap)sq.pop();sq.unshift(SS100.rq);}
+ if(!sq.length)return null;return{sq,ctrl:sq.indexOf(v.last.ctrl)>=0?v.last.ctrl:sq[0]};}
+function ss100Render(){const d=RL.d,n=SS100.n;if(!n)return;const city=v100City(),T=CM88.T[n.t]||CM88.T.fight,cap=SS100.cap,own=mxUnl();
+ const mt=(typeof M99!=='undefined'&&n.ms&&M99.T[n.ms])?M99.T[n.ms].n:'';
+ const _p=[];if(n.solo)_p.push('SOLO');for(const x of [T.f||T.n,mt&&n.t!=='boss'?mt:''])if(x&&_p.map(y=>String(y).toUpperCase()).indexOf(String(x).toUpperCase())<0)_p.push(x);if(n.solo&&_p.length>2&&String(_p[1]).toUpperCase()==='COMBAT')_p.splice(1,1);const title=_p.join(' · ');
+ let sl='';for(let i=0;i<cap;i++){const id=SS100.sq[i];if(!id){sl+=`<div class="sl e"><i>+</i>EMPTY</div>`;continue;}
+  const H=rlH(id)||{lv:1},ld=id===SS100.ctrl,lk=id===SS100.rq;
+  sl+=`<div class="sl${ld?' ld':''}" data-a="lead:${id}" style="--hc:${rlUI.col(id)}">${ss100Img(id)}${ld?'<div class="tg">★ LEAD</div>':lk?'<div class="tg rq">REQUIRED</div>':''}
+   ${lk?'<div class="x" style="border-color:#e0559f">🔒</div>':`<div class="x" data-a="rm:${id}">✕</div>`}<div class="nm" style="color:${rlUI.col(id)}">${rlUI.nm(id)}</div><div class="lv">LV ${H.lv}${ld&&lk?' · REQUIRED':''}</div>${ss100Pips(id,true)}</div>`;}
+ let rc='';for(const id of own){const H=rlH(id)||{lv:1},inq=SS100.sq.indexOf(id)>=0,cp=cap89Has(id),rc8=rc89N(id),s=st100(id),ok=ss100Ok(id);
+  const tag=cp?'<div class="tg bd">⛓ CAPTURED</div>':rc8?`<div class="tg gr">⛑ RECOVERING ${rc8}</div>`:s<=0?'<div class="tg bd">EXHAUSTED</div>':id===SS100.rq?'<div class="tg rq">REQUIRED</div>':inq&&id===SS100.ctrl?'<div class="tg">★ LEAD</div>':'';
+  rc+=`<div class="rc${inq?' in':''}${ok?'':' off'}" data-a="tg:${id}" style="--hc:${rlUI.col(id)}">${ss100Img(id)}${tag}<div class="ck">✓</div><div class="nm" style="color:${ok?rlUI.col(id):'#8f9cc4'}">${rlUI.nm(id)}</div><div class="lv">LV ${H.lv}</div>${ss100Pips(id,false)}</div>`;}
+ const L=ss100Last(),ln=L?L.sq.map(id=>rlUI.nm(id)).join(' · '):'none yet';
+ const ok=SS100.sq.length>=1;const tch=i88Touch();
+ let m=[];if(SS100.msg)m.push('<b>'+SS100.msg+'</b>');if(SS100.rqW)m.push(`<em>${rlUI.nm(SS100.rqW)} was required here but can't deploy — the requirement is waived.</em>`);
+ if(n.solo)m.push('<b>SOLO MISSION</b> — exactly one heroine, about '+V100.SOLOT+' seconds.');
+ const fewer=own.filter(ss100Ok).length<cap;if(fewer&&!n.solo)m.push('Not enough rested heroines for a full squad — you can deploy fewer.');
+ m.push('Deploying costs 1 stamina · heroines who sit a stage out regain 1 · REST restores everyone.');
+ SS100.st.innerHTML=`<div class="grid"></div><div class="h1" style="--cc:${city.c}">SQUAD SELECT · <b>${title}</b></div>
+ <div class="h2">CAMPAIGN ${v100Camp()} · <b>${city.n}</b> · STAGE ${n.c} · ${n.t==='start'?'AVENGERS PLAZA · ':''}SQUAD UP TO <b>${cap}</b>${n.t==='boss'?' · CITY BOSS: <b>'+city.boss+'</b>':''}</div>
+ <div class="cnt">${SS100.sq.length} / ${cap} DEPLOYED</div>
+ <div class="lb" style="top:76px">DEPLOYED — tap a heroine to make her LEAD · ✕ removes</div><div class="slots">${sl}</div>
+ <div class="lb" style="top:302px">ROSTER — tap to add or remove</div>${tch?'':'<div class="kh">1-6 toggle · TAB lead · R last squad · ENTER deploy · ESC back</div>'}<div class="ros">${rc}</div>
+ <div class="bot"><div class="bt bk" data-a="back">◂ BACK</div><div class="bt rl${L?'':' dis'}" data-a="last">↻ REDEPLOY LAST SQUAD<small>${ln}</small></div><div class="bt dp${ok?'':' dis'}" data-a="go">DEPLOY ▸</div></div>
+ <div class="msg">${m.join('<br>')}</div>`;}
+function ss100Toggle(id){const i=SS100.sq.indexOf(id);if(i>=0){if(id===SS100.rq)return;SS100.sq.splice(i,1);if(SS100.ctrl===id)SS100.ctrl=SS100.sq[0]||'';return;}
+ if(!ss100Ok(id))return;if(SS100.sq.length>=SS100.cap){if(SS100.cap===1){SS100.sq=[id];SS100.ctrl=id;return;}return;}SS100.sq.push(id);if(!SS100.ctrl)SS100.ctrl=id;}
+function ss100Go(sq,ctrl){const d=RL.d,n=SS100.n;if(!d||!n||!sq.length)return;const v=v100D();ctrl=sq.indexOf(ctrl)>=0?ctrl:sq[0];
+ RL.ss100={id:n.id,sq:sq.slice(),ctrl};v.last={sq:sq.slice(),ctrl};d.squad=sq.slice();d.ctrl=ctrl;ss100Close();CM88.msg='';try{rlSave();}catch(e){}cm88Hide();rlStartStage();}
+function ss100Act(a){if(performance.now()-SS100.t0<200)return;if(!SS100.open)return;
+ if(a.startsWith('tg:'))ss100Toggle(a.slice(3));
+ else if(a.startsWith('rm:')){const id=a.slice(3);if(id!==SS100.rq){SS100.sq=SS100.sq.filter(x=>x!==id);if(SS100.ctrl===id)SS100.ctrl=SS100.sq[0]||'';}}
+ else if(a.startsWith('lead:')){const id=a.slice(5);if(SS100.sq.indexOf(id)>=0)SS100.ctrl=id;}
+ else if(a==='back'){ss100Close();cm88Open();return;}
+ else if(a==='last'){const L=ss100Last();if(L){ss100Go(L.sq,L.ctrl);return;}}
+ else if(a==='go'){if(SS100.sq.length){ss100Go(SS100.sq,SS100.ctrl);return;}}
+ ss100Render();}
+window.addEventListener('keydown',e=>{if(!SS100.open)return;const c=e.code;const own=mxUnl();
+ if(/^Digit[1-6]$/.test(c)){const id=own[+c.slice(5)-1];if(id){ss100Toggle(id);ss100Render();}}
+ else if(c==='Tab'){const L=SS100.sq;if(L.length){const i=L.indexOf(SS100.ctrl);SS100.ctrl=L[(i+1)%L.length];ss100Render();}}
+ else if(c==='Enter'||c==='Space')ss100Act('go');else if(c==='Escape'||c==='Backspace')ss100Act('back');else if(c==='KeyR')ss100Act('last');
+ e.preventDefault();e.stopImmediatePropagation();},true);
+// DEPLOY on the map now opens squad select for every combat node
+{const _d=cm88Deploy;cm88Deploy=function(){const g=CM88.g,n=g&&g.by[CM88.sel];if(!n||!RL.d||!cm88Combat(n))return _d.apply(this,arguments);CM88.msg='';ss100Open(n);};}
+UW.V100={V100,SS100,CC100,v100D,v100Cap,v100Pick,v100Chain,v100Guard,st100,ss100Open,ss100Go,cc100Show};
+// ---------- 12. CAMPAIGN MAP: city header, district names, SOLO badges, stamina strip, caps ----------
+CM88.css+=`
+#cm88 .st100{display:flex;gap:6px;margin-top:5px;flex-wrap:nowrap}#cm88 .st100 .u{display:flex;flex-direction:column;align-items:center;width:44px}
+#cm88 .st100 .u .em76{width:20px;height:20px}#cm88 .st100 .u span{font-size:10px;font-weight:900;letter-spacing:.5px;margin-top:1px;white-space:nowrap}
+#cm88 .st100 .u div{display:flex;gap:2px;margin-top:2px}#cm88 .st100 .u i{width:9px;height:9px;border-radius:50%;border:1.5px solid #7fe07a;box-sizing:border-box}#cm88 .st100 .u i.f{background:#7fe07a}
+#cm88 .st100 .u.z i{border-color:#ff5a6e}#cm88 .st100 .u.x{opacity:.45}
+#cm88 .h1 b.c100{color:var(--cc)}`;
+function v100Strip(){const own=st100Own();return`<div class="st100">${own.map(id=>{const s=st100(id),x=!av89(id);let p='';for(let i=0;i<V100.MAXS;i++)p+=`<i class="${i<s?'f':''}"></i>`;
+ return`<div class="u${s===0?' z':''}${x?' x':''}" title="${rlUI.nm(id)}">${em76Svg(id,'')}<span style="color:${rlUI.col(id)}">${(nk89(id)||rlUI.nm(id)).toUpperCase().slice(0,7)}</span><div>${p}</div></div>`;}).join('')}</div>`;}
+function v100MapPost(){const d=RL.d,st=CM88.stg,g=CM88.g;if(!st||!d||!g)return;const city=v100City(),camp=v100Camp();
+ const h1=st.querySelector('.h1');if(h1)h1.innerHTML=`CAMPAIGN ${camp} · <b class="c100" style="--cc:${city.c}">${city.n}</b>`;
+ const h2=st.querySelector('.h2');if(h2&&(RL.NST||10)<=10)h2.textContent='Stage 1 is Avengers Plaza, then every stage is '+city.n+'. The route ends at '+city.boss+'.';
+ const svg=st.querySelector('svg.mp');if(svg){const ds=svg.querySelectorAll('text[font-size="54"]');ds.forEach((t,i)=>{if(city.dist[i])t.textContent=city.dist[i];});
+  for(const t of svg.querySelectorAll('text'))if(t.textContent==='FULL 4'){t.textContent='FULL 6';}
+  const R=CM88.R;let add='';for(const n of g.nodes){if(!n.solo||!cm88Vis(n))continue;const[x,y]=cm88XY(n.c,n.r);
+   add+=`<g pointer-events="none" transform="translate(${(x-R*.4).toFixed(1)},${(y-R*.56).toFixed(1)})"><rect x="-17" y="-8" width="34" height="16" rx="8" fill="#ffd23a" stroke="#2a1a00" stroke-width="1.5"/><text x="0" y="4.5" font-size="11" fill="#2a1a00">SOLO</text></g>`;}
+  if(add)svg.insertAdjacentHTML('beforeend',add);
+  const bs=svg.querySelectorAll('g.hx');for(const el of bs){const id=(el.getAttribute('data-a')||'').slice(2),n=g.by[id];if(!n||!cm88Vis(n)||n.t==='boss')continue;const tx=el.querySelectorAll('text');const lb=tx[2];if(lb&&n.solo)lb.textContent='SOLO · 1';}}
+ const ef=st.querySelector('.ef');if(ef){const nn=ef.querySelector('.nn');if(nn&&/None yet/.test(nn.textContent))nn.innerHTML='<span style="color:#7fe07a">STAMINA</span> — deploy −1 · sit out +1 · REST = full';
+  for(const l of ef.querySelectorAll('.lg'))l.style.display='none';ef.insertAdjacentHTML('beforeend',v100Strip());const h=ef.querySelector('h3');if(h)h.textContent='SQUAD STAMINA · CAMPAIGN '+camp;}
+ const sel=g.by[CM88.sel],nd=st.querySelector('.nd');if(sel&&nd&&cm88Combat(sel)){let x='';
+  if(sel.solo)x+=`<div class="l" style="color:#ffd23a">SOLO MISSION · one heroine · about ${V100.SOLOT}s</div>`;
+  if(sel.t==='boss'){const w=document.createTreeWalker(nd,NodeFilter.SHOW_TEXT);let t,hit=0;while((t=w.nextNode())){if(/BOSS VARIANT: (MECH|TANK)/.test(t.nodeValue)){t.nodeValue=t.nodeValue.replace(/BOSS VARIANT: (MECH|TANK)/,'CITY BOSS: '+city.boss+' ($1)');hit=1;}}if(!hit)x+=`<div class="l" style="color:${city.c}">CITY BOSS: ${city.boss}</div>`;}
+  if(x){const ms=nd.querySelector('.ms');if(ms)ms.insertAdjacentHTML('beforebegin',x);else nd.insertAdjacentHTML('beforeend',x);}}
+ const lg=st.querySelector('.lgd h3');if(lg&&!lg.querySelector('.s100'))lg.insertAdjacentHTML('beforeend',`<span class="s100" style="margin-left:14px;font-size:10px;letter-spacing:.5px"><span style="display:inline-block;background:#ffd23a;color:#2a1a00;border-radius:7px;padding:0 6px;font-weight:900">SOLO</span> one heroine, short mission</span>`);
+ const dep=st.querySelector('.dep');if(dep&&sel&&cm88Combat(sel))dep.textContent='SQUAD SELECT ▸';}
+{const _r=cm88Render;cm88Render=function(){const r=_r.apply(this,arguments);try{v100MapPost();}catch(e){console.error('v100map',e);}return r;};}
+// ---------- 13. ROSTER: stamina pips on every card ----------
+{const st=document.createElement('style');st.textContent=`.st100c{position:absolute;right:6px;top:30px;display:flex;gap:3px;align-items:center;justify-content:flex-end;background:rgba(8,10,24,.72);padding:3px 5px;border-radius:7px;z-index:3;pointer-events:none}
+.st100c b{font:900 9px 'MRB','Barlow Condensed',sans-serif;letter-spacing:.5px;color:#cfe8cf;padding:0 2px;border-radius:4px;margin-right:2px}
+.st100c i{width:10px;height:10px;border-radius:50%;border:2px solid #7fe07a;box-sizing:border-box;background:rgba(8,10,24,.6)}.st100c i.f{background:#7fe07a}.st100c.z i{border-color:#ff5a6e}`;document.head.appendChild(st);}
+{const _c=rlUI.card;rlUI.card=function(id){const h=_c.apply(this,arguments);try{if(!RL.d)return h;const s=st100(id);let p='';for(let i=0;i<V100.MAXS;i++)p+=`<i class="${i<s?'f':''}"></i>`;
+ return String(h).replace(/<\/div>\s*$/,`<div class="st100c${s===0?' z':''}"><b>STAMINA</b>${p}</div></div>`);}catch(e){return h;}};}
+// ---------- 14. SWAP: the swap control cycles through every deployed heroine (TAB / NEXT ⇄ step to the next one) ----------
+{const _k=sw89Key;sw89Key=function(c){if(c==='Tab'&&SW89.open){sw89Step(1);return;}return _k.apply(this,arguments);};}
+{const _a=sw89Act;sw89Act=function(b){if(b==='next'){if(performance.now()-SW89.t0<120)return;sw89Step(1);return;}return _a.apply(this,arguments);};}
+{const _r=sw89Render;sw89Render=function(){const r=_r.apply(this,arguments);try{const bt=SW89.el.querySelector('.bt');if(bt&&!bt.querySelector('[data-b="next"]'))bt.insertAdjacentHTML('afterbegin','<div class="cc" data-b="next" style="border-color:#ffd23a;color:#ffe58a">NEXT ⇄</div>');
+ const kh=SW89.el.querySelector('.kh');if(kh)kh.textContent='TAB / ← → next heroine · ENTER confirm'+(SW89.force?'':' · ESC cancel');}catch(e){}return r;};}
+// ---------- 15. SOLO MISSIONS: one heroine, ~75 s (sabotage / hunt / survive scaled down) ----------
+function v100Solo(){return!!(RL.on&&RL.n88&&RL.n88.solo);}
+{const _s=m99Setup;m99Setup=function(S,o){const r=_s.apply(this,arguments);if(!r||!v100Solo())return r;o.solo=1;
+ try{if(o.m==='survive'){o.T=o.left=V100.SOLOT;}
+  else if(o.m==='sabotage'){for(const e of o.tg){e.hp=e.maxhp=Math.max(1,Math.round(e.maxhp*.5));}let k=0;for(const e of enemies)if(e.alive&&e.sq&&e.g99&&++k>2)e.alive=false;}
+  else if(o.m==='hunt'){o.T=o.left=80;const e=o.hv;if(e){e.hp=e.maxhp=Math.round(e.maxhp*1.3);}const g=o.guards||[];for(let i=2;i<g.length;i++)if(g[i])g[i].alive=false;o.guards=g.slice(0,2);}}catch(e){console.error(e);}return r;};}
+{const _p=m99Spawn;m99Spawn=function(S,o,dt,cap,iv){if(o&&o.solo)return _p.call(this,S,o,dt,Math.max(2,Math.ceil(cap*.45)),iv*1.35);return _p.apply(this,arguments);};}
+{const _t=m99Text;m99Text=function(){const r=_t.apply(this,arguments);try{const o=G.squad.obj;if(o&&o.solo&&r&&r.t){r.t='SOLO · '+r.t.replace(/PH (\d)\/5/,(m,a)=>'PH '+Math.min(3,+a)+'/3');}}catch(e){}return r;};}
+// node panel: with up to 6 heroines the bench list gets long — collapse it to a count
+{const _r=cm88Render;cm88Render=function(){const r=_r.apply(this,arguments);try{document.querySelectorAll('.rp .nd .l').forEach(l=>{const b=l.querySelector('b');try{if(b&&b.textContent.split(',').length>=4){const M={};for(const id of RL.IDS)M[rlUI.nm(id)]=String(nk89(id)).toUpperCase();b.textContent=b.textContent.split(', ').map(x=>M[x]||x).join(', ');}}catch(e){}if(!b||l.textContent.indexOf('(bench)')<0)return;const n=(l.textContent.match(/\(bench\)/g)||[]).length;while(b.nextSibling)l.removeChild(b.nextSibling);l.appendChild(document.createTextNode(' · '+n+' on the bench'));});}catch(e){}return r;};}
+// ---------- 13. AGGRO BIAS: enemies lean toward the highest-level deployed heroine ----------
+// A weighting, not a lock: each target score subtracts AGG px per whole level the heroine sits above the squad's average
+// level (capped). Close or blocking heroines still win when they are much nearer. Solo = one heroine -> no effect.
+V100.AGG=50;V100.AGGCAP=400;
+function v100AggMap(){const S=G.squad;if(!S||!S.heroes)return null;const k=Math.floor((S.time||0)*2);if(S.agg100&&S.agg100.k===k)return S.agg100;
+ const hs=S.heroes.filter(h=>h&&h.alive&&h.def),m=new Map();let top=null;
+ if(hs.length>1){const lv=h=>{try{return Math.round((rlH(h.def.id)||{lv:1}).lv||1);}catch(e){return 1;}};let t=0;for(const h of hs)t+=lv(h);const avg=Math.round(t/hs.length);let tl=-1;
+  for(const h of hs){const L=lv(h),b=Math.min(V100.AGGCAP,V100.AGG*Math.max(0,L-avg));m.set(h,b);if(b>0&&L>tl){tl=L;top=h;}}}
+ S.agg100={k,m,top};return S.agg100;}
+function v100Agg(h){try{const A=v100AggMap();return A&&A.m.get(h)||0;}catch(e){return 0;}}
+function v100Top(){try{const A=v100AggMap();return A&&A.top&&A.top.alive?A.top:null;}catch(e){return null;}}
+v95Tgt=function(e){const hs=v95Heroes();let b=null,bd=1e9;for(const h of hs){const d=Math.hypot(h.x-e.x,h.y-e.y)*(los(e.x,e.y,h.x,h.y)?1:1.5)-v100Agg(h);if(d<bd){bd=d;b=h;}}return b;};
+UW.V100.agg=()=>{const A=v100AggMap();return A?{top:A.top&&A.top.def.id,m:[...A.m].map(([h,b])=>h.def.id+':'+b)}:null;};
 
 </script><script>
 if (location.protocol === 'http:' || location.protocol === 'https:') {
