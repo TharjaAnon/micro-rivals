@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><title>MICRO RIVALS 10.0</title>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><title>MICRO RIVALS 10.1</title>
 <style>html,body{margin:0;height:100%;background:#3a3b3d;overflow:hidden}canvas{display:block;width:100vw;height:100vh;cursor:crosshair;touch-action:none;-webkit-user-select:none;user-select:none;-webkit-touch-callout:none}html,body{touch-action:none;overscroll-behavior:none}</style>
 <meta name="theme-color" content="#3a3b3d">
 <meta name="apple-mobile-web-app-title" content="Micro Rivals">
@@ -1819,7 +1819,7 @@ function drawStairs(x,y,open,down){const X=x-T,Y=y-T,S=2*T;ctx.fillStyle=down?'#
  if(open){const t=Date.now()/180;ctx.strokeStyle='rgba(125,255,168,'+(.5+.3*Math.sin(t)).toFixed(2)+')';ctx.lineWidth=3;ctx.strokeRect(X-2+Math.sin(t)*1.5,Y-2+Math.sin(t)*1.5,S+4-Math.sin(t)*3,S+4-Math.sin(t)*3);ctx.fillStyle='#7dffa8';ctx.font='bold 18px monospace';ctx.fillText('▲',x,y+6);}}
 function txt(s,x,y,sz,c,al){ctx.font='bold '+sz+'px monospace';ctx.textAlign=al||'left';ctx.fillStyle='#000';ctx.fillText(s,x+2,y+2);ctx.fillStyle=c;ctx.fillText(s,x,y);}
 function hud(L,clear){if(TCH.on){hudTouch(L,clear);return;}ctx.setTransform(1,0,0,1,0,0);ctx.fillStyle='rgba(20,20,22,.55)';ctx.fillRect(0,0,W,62);ctx.fillRect(0,H-66,W,66);
- txt('MICRO RIVALS 10.0',16,26,14,'#ff4fd8');txt('FLOOR '+(G.li+1)+' — '+L.name,16,46,13,'#dddddd');ctx.fillStyle='#300';ctx.fillRect(16,H-58,250,14);ctx.fillStyle=player.hp>player.maxhp*.3?'#39ff88':'#ff2e63';ctx.fillRect(16,H-58,250*Math.max(0,player.hp)/player.maxhp,14);txt('HP '+Math.max(0,Math.ceil(player.hp))+'/'+player.maxhp,272,H-46,13,'#fff');
+ txt('MICRO RIVALS 10.1',16,26,14,'#ff4fd8');txt('FLOOR '+(G.li+1)+' — '+L.name,16,46,13,'#dddddd');ctx.fillStyle='#300';ctx.fillRect(16,H-58,250,14);ctx.fillStyle=player.hp>player.maxhp*.3?'#39ff88':'#ff2e63';ctx.fillRect(16,H-58,250*Math.max(0,player.hp)/player.maxhp,14);txt('HP '+Math.max(0,Math.ceil(player.hp))+'/'+player.maxhp,272,H-46,13,'#fff');
  txt('SCORE '+G.score,W-16,30,20,'#fff','right');txt((G.heist?'SAFE $':'LOOT $')+Math.round(G.lootDisp||0).toLocaleString(),W-16,54,16,'#7dff9a','right');if(combo>1)txt('x'+combo+' COMBO',W-16,80,16,'#ffe600','right');if(G.toasts){let ty=combo>1?100:82;for(const q of G.toasts){ctx.globalAlpha=Math.min(1,q.t*2);txt(q.s,W-16,ty,12,q.c,'right');ty+=16;}ctx.globalAlpha=1;}
  const wp=WEAP[player.w];txt(wp.name+(wp.melee?'':'  '+player.ammo+' / ∞'),16,H-20,18,'#7fffd4');if(player.rl>0)txt('RELOADING',230,H-20,16,'#ffe600');
  if(G.god)txt('GOD',300,26,14,'#ffe600');
@@ -1850,7 +1850,7 @@ function selKey(c){const L=selLay(),n=THEMES.length+1;let d=0;if(c==='ArrowRight
 function title(){ctx.setTransform(1,0,0,1,0,0);const t=Date.now()/400;if(G.sel==null)G.sel=0;
  for(let i=0;i<20;i++){ctx.strokeStyle='rgba(200,200,205,'+(.08+.04*Math.sin(t+i))+')';ctx.beginPath();ctx.moveTo(0,H*.6+i*i*2);ctx.lineTo(W,H*.6+i*i*2);ctx.stroke();}
  const L=selLay();const ty=Math.max(54,L.top-96);
- txt('URBAN WARDS',W/2,ty,Math.min(64,W/12),'#ff4fd8','center');txt('MICRO RIVALS 10.0',W/2,ty+32,16,'#2ec5ff','center');
+ txt('URBAN WARDS',W/2,ty,Math.min(64,W/12),'#ff4fd8','center');txt('MICRO RIVALS 10.1',W/2,ty+32,16,'#2ec5ff','center');
  txt(TCH.on?'Touch: left stick move · right stick aim+fire · GREN/KNIFE buttons':'Arrows/WASD move · Mouse aim · Click shoot/swing · Right-click grenade · Numpad0 knife · E pick up',W/2,ty+56,12,'#ddd','center');
  txt('SELECT STAGE'+(TCH.on?'  (tap to select, tap again or START to play · drag to scroll)':'  (arrows/click to select · Enter/double-click to play · wheel scroll)'),W/2,L.top-10,12,'#ffe600','center');
  ctx.save();ctx.beginPath();ctx.rect(0,L.top,W,L.bot-L.top);ctx.clip();const sc=G.selScroll||0;
@@ -2172,7 +2172,7 @@ tBtns=function(){const f=fireGeom(),b={};b.fire={x:f.fx,y:f.fy,r:f.fr,label:'FIR
  if(G.hideUI){for(const k in b)if(k!=='fire'&&k!=='hide')delete b[k];}return b;};
 function hudTouch(L,clear){ctx.setTransform(1,0,0,1,0,0);HUDR=[];const u=hu();
  // top-left
- let y=Math.round(16*u)+4;T2('title','MICRO RIVALS 10.0',10,y,Math.round(12*u),'#ff4fd8');y+=Math.round(15*u);T2('floor','FLOOR '+(G.li+1)+' — '+L.name,10,y,Math.round(11*u),'#dddddd');y+=Math.round(16*u);
+ let y=Math.round(16*u)+4;T2('title','MICRO RIVALS 10.1',10,y,Math.round(12*u),'#ff4fd8');y+=Math.round(15*u);T2('floor','FLOOR '+(G.li+1)+' — '+L.name,10,y,Math.round(11*u),'#dddddd');y+=Math.round(16*u);
  if(G.heist&&G.up){const ab={dmg:'DMG',hp:'HP',def:'DEF',spd:'SPD',fr:'ROF',rl:'RLD',kg:'BAG',pr:'MAG'};let s='';for(const k in G.up.list)s+=ab[k]+(G.up.list[k]>1?'x'+G.up.list[k]:'')+' ';T2('lv','LV '+G.up.lv,10,y,Math.round(13*u),'#ff7cf5');if(s)T2('ups',s.trim(),10+tw('LV '+G.up.lv,Math.round(13*u))+8,y,Math.round(9*u),'#e8c8ff');if(G.perkOrder&&G.perkOrder.length)y=pkIcons(10,y+Math.round(6*u),u)-Math.round(3*u);}
  if(G.god)T2('god','GOD',10,y+Math.round(15*u),Math.round(11*u),'#ffe600');
  if(G.toasts){let ty=y+Math.round(32*u);for(const q of G.toasts.slice(-3)){ctx.globalAlpha=Math.min(1,q.t*2);T2('toast',q.s,10,ty,Math.round(11*u),q.c);ty+=Math.round(14*u);}ctx.globalAlpha=1;}
@@ -5162,7 +5162,7 @@ const MR_FONTS="@font-face{font-family:'MRA';src:url(data:font/woff2;base64,d09G
 // ===================== 6.3 MICRO RIVALS: DOM menus (title / map select / heroine select / results) =====================
 // Menus are a DOM overlay; while it is up the canvas is not redrawn (title/squadsel), so menus cost nothing during play.
 // 6.2: no map mini-renders; map cards are name + tag + flat accent colour (nothing generated or cached).
-const MR={vis:false,page:null,tf:0,mf:0,rf:0,how:false,spr:{},resT:0,el:{},ver:'v10.0',sprDone:false};
+const MR={vis:false,page:null,tf:0,mf:0,rf:0,how:false,spr:{},resT:0,el:{},ver:'v10.1',sprDone:false};
 window.__mrvis=false;
 MR.so0=sqSelOpen;
 MR.ORDER=(()=>{const a=[];SQMAPS.forEach((m,i)=>{if(m.i>=0)a.push(i);});SQMAPS.forEach((m,i)=>{if(m.i<0)a.push(i);});return a;})();
@@ -8255,7 +8255,7 @@ function rvPullFx(n){try{rvCss();const b=document.querySelector('#mx73 [data-a="
  let h=document.getElementById('rvpb');if(h)h.remove();h=document.createElement('div');h.id='rvpb';h.style.left=x+'px';h.style.top=y+'px';h.innerHTML='<i class="rvr"></i>'+rvSvg('');document.body.appendChild(h);setTimeout(()=>{h.remove();},950);}catch(e){}}
 {const _p=MXU.pull;MXU.pull=function(n){if(mxS().gems>=(n>=10?MX.COST10:MX.COST*n))rvPullFx(n);return _p.apply(this,arguments);};}
 {const _s=rlStartStage;rlStartStage=function(){const r=_s.apply(this,arguments);try{if(RL.on&&RL.d)rvStamp(RL.i88?'TRAINING':'STAGE '+RL.d.stage,1000);}catch(e){}return r;};}
-try{setTimeout(()=>rvStamp('MICRO RIVALS 10.0',1100),30);}catch(e){}
+try{setTimeout(()=>rvStamp('MICRO RIVALS 10.1',1100),30);}catch(e){}
 UW.RV75={rvD,rvSvg,rvUri,rvPath2D,rvStamp,rvPullFx};
 
 // ===================== 7.6: heroine emblems (one path each, recoloured per heroine) =====================
@@ -11319,7 +11319,7 @@ function v96DrawWorld(){const S=G.squad;if(!S||!S.heroes)return;const t=S.time||
 UW.V96={V96,v96Plan,v96Field,v96Crush,v96Mk,v96Aura,v96Alive,v96Prot};
 
 
-// ===== MICRO RIVALS 10.0 layer: summon banner rotates every 5 real minutes, FOCUS (1 heroine) or PAIR (2 heroines) =====
+// ===== MICRO RIVALS 10.1 layer: summon banner rotates every 5 real minutes, FOCUS (1 heroine) or PAIR (2 heroines) =====
 // Replaces the 8.4 "once per in-game week" rule and the old flat x2 featured weighting. The banner is a pure function of the wall-clock slot, so reloads never reroll
 // and every device shows the same one. Tier rates (N28/R45/SR18/SSR6/UR3), no pity and no guarantees are untouched; there is one pool, so costumes follow the banner.
 const B98={MS:300000,shown:null,pend:0,tm:0,rs:null,cache:[-1,null]};
@@ -11911,7 +11911,7 @@ UW.V99={V99,M99,m99Assign,m99Plan,v99Plan,v99Mk,v99Blast,v99Call,v99Barrels,v99M
 
 
 
-// ===================== MICRO RIVALS 10.0 · squads up to 6 · squad select · city-locked campaigns · campaign chain · stamina · solo missions =====================
+// ===================== MICRO RIVALS 10.1 · squads up to 6 · squad select · city-locked campaigns · campaign chain · stamina · solo missions =====================
 // Final layer (inserted after 9.9). Function declarations are global, so reassigning them here overrides every caller.
 // ---------- 1. CONSTANTS ----------
 const V100={MAXS:3,ELC:4,HPC:.12,HIC:2,
@@ -12207,6 +12207,116 @@ function v100Agg(h){try{const A=v100AggMap();return A&&A.m.get(h)||0;}catch(e){r
 function v100Top(){try{const A=v100AggMap();return A&&A.top&&A.top.alive?A.top:null;}catch(e){return null;}}
 v95Tgt=function(e){const hs=v95Heroes();let b=null,bd=1e9;for(const h of hs){const d=Math.hypot(h.x-e.x,h.y-e.y)*(los(e.x,e.y,h.x,h.y)?1:1.5)-v100Agg(h);if(d<bd){bd=d;b=h;}}return b;};
 UW.V100.agg=()=>{const A=v100AggMap();return A?{top:A.top&&A.top.def.id,m:[...A.m].map(([h,b])=>h.def.id+':'+b)}:null;};
+
+
+// ---------- 10.1 SQUAD SELECT: one row of ALL heroines as tall portrait cards (iPhone-first, touch) ----------
+// TAP a card = deploy / undeploy (deployed = thick yellow outline). PRESS AND HOLD a card (0.45 s) = make her LEAD
+// (deploys her too if there is room). Drag sideways to scroll when the row is wider than the screen.
+// Keys unchanged: 1-6 toggle · Tab next lead · R last squad · Enter deploy · Esc back.
+SS100.css=`
+#ss100{position:fixed;inset:0;z-index:90;display:none;background:#0d1423;touch-action:none;-webkit-user-select:none;user-select:none;-webkit-touch-callout:none;-webkit-tap-highlight-color:transparent;font-family:'MRB','Barlow Condensed','Arial Narrow',sans-serif;color:#fff;overflow:hidden}
+#ss100 *{box-shadow:none!important;text-shadow:none!important;box-sizing:border-box}
+#ss100 .stg{position:absolute;inset:0;transform:none!important;background:#0d1423;overflow:hidden}
+#ss100 .w{position:absolute;inset:0;display:flex;flex-direction:column;gap:8px;padding:calc(env(safe-area-inset-top,0px) + 8px) calc(env(safe-area-inset-right,0px) + 12px) calc(env(safe-area-inset-bottom,0px) + 6px) calc(env(safe-area-inset-left,0px) + 12px)}
+#ss100 .hd{flex:none;display:flex;align-items:center;gap:10px;height:40px}
+#ss100 .hd .tt{flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#ss100 .hd .t{font:italic 900 22px/1 'MRA','MRB',Impact,sans-serif}
+#ss100 .hd .k{font-size:13px;font-weight:800;color:#95a7bf;margin-left:8px}#ss100 .hd .k b{color:var(--cc)}
+#ss100 .cnt{flex:none;height:36px;min-width:64px;padding:0 12px;border-radius:8px;border:2px solid #ffd23a;color:#ffe58a;font-weight:900;font-size:18px;display:flex;align-items:center;justify-content:center;background:#172238}
+#ss100 .row{flex:1 1 auto;min-height:0;display:flex;gap:8px;overflow:hidden;justify-content:center}
+#ss100 .row.ov{justify-content:flex-start}
+#ss100 .cd{position:relative;flex:1 1 0;min-width:104px;height:100%;max-width:200px;border-radius:12px;border:3px solid #2c3a52;background:#172238;overflow:hidden;cursor:pointer}
+#ss100 .cd img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 8%;pointer-events:none;-webkit-user-drag:none}
+#ss100 .cd.on{border:5px solid #ffd23a}
+#ss100 .cd .inf{position:absolute;left:0;right:0;bottom:0;padding:5px 7px 6px;background:rgba(13,20,35,.9)}
+#ss100 .cd.on .inf{background:#1d2333}
+#ss100 .nm{font:900 16px/1.1 'MRB','Barlow Condensed',sans-serif;white-space:nowrap;overflow:hidden}
+#ss100 .ln{display:flex;align-items:center;justify-content:space-between;margin-top:3px}
+#ss100 .lv{font-size:12px;font-weight:900;color:#c4cee6}
+#ss100 .pp{display:flex;gap:3px}#ss100 .pp i{width:10px;height:10px;border-radius:50%;border:2px solid #7fe07a}#ss100 .pp i.f{background:#7fe07a}#ss100 .pp i.u{background:#ffb43a;border-color:#ffb43a}#ss100 .pp.z i{border-color:#ff5a6e}
+#ss100 .ld{position:absolute;left:6px;top:6px;padding:2px 7px;border-radius:5px;background:#ffd23a;color:#201d10;font-size:11px;font-weight:900;letter-spacing:1px}
+#ss100 .lk{position:absolute;right:6px;top:6px;padding:2px 6px;border-radius:5px;background:#e0559f;color:#fff;font-size:10px;font-weight:900}
+#ss100 .cd.off img{filter:grayscale(1);opacity:.35}#ss100 .cd.off .nm,#ss100 .cd.off .lv{color:#8492a8!important}
+#ss100 .why{position:absolute;left:50%;top:42%;transform:translate(-50%,-50%);padding:3px 7px;border-radius:5px;background:#5a1a26;color:#ffb3bd;font-size:11px;font-weight:900;letter-spacing:.5px;white-space:nowrap}
+#ss100 .why.rc{background:#2f3b66;color:#dfe6ff}
+#ss100 .bnr{position:absolute;left:0;right:0;top:40%;height:30px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;letter-spacing:1px;white-space:nowrap}
+#ss100 .bnr.rq{background:#ffd23a;color:#201d10}#ss100 .bnr.no{background:#d8324a;color:#fff}
+#ss100 .cd.ban{border-color:#d8324a;cursor:not-allowed}#ss100 .cd.ban img{opacity:.25}
+#ss100 .nt{flex:none;height:30px;padding:0 10px;border-radius:6px;display:flex;align-items:center;font-size:13px;font-weight:900;letter-spacing:.5px;white-space:nowrap}
+#ss100 .nt.rq{background:#ffd23a;color:#201d10}#ss100 .nt.no{background:#d8324a;color:#fff}
+#ss100 .fb{flex:none;display:flex;gap:8px;height:48px}
+#ss100 .bt{display:flex;align-items:center;justify-content:center;border-radius:10px;font-weight:900;min-height:44px;white-space:nowrap;cursor:pointer}
+#ss100 .bk{width:96px;font-size:16px;background:#172238;border:1px solid #3a4778;color:#dfe6ff}
+#ss100 .rl{flex:1;min-width:0;font-size:15px;background:#172238;border:1px solid #52647d;color:#cdd9ec}
+#ss100 .rl.dis,#ss100 .dp.dis{opacity:.4}
+#ss100 .dp{width:200px;background:#ffd23a;color:#211e10;font:italic 900 24px/1 'MRA','MRB',Impact,sans-serif}
+#ss100 .msg{flex:none;font-size:11px;font-weight:700;color:#8fa4bd;text-align:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;line-height:13px}#ss100 .msg b{color:#ffb43a}#ss100 .msg em{color:#ff8ac4;font-style:normal}
+@media (min-height:600px){#ss100 .w{padding:18px 24px 14px;gap:12px;max-width:1300px;margin:0 auto}#ss100 .hd .t{font-size:30px}#ss100 .hd{height:48px}#ss100 .row{flex:none;height:min(60vh,420px)}#ss100 .w{justify-content:center}#ss100 .fb{height:56px}#ss100 .dp{width:260px;font-size:28px}#ss100 .nm{font-size:20px}}`;
+if(SS100.el){const st=document.createElement('style');st.textContent=SS100.css;document.head.appendChild(st);}
+function ss101Pips(id,spend){const s=st100(id);let h='';for(let i=0;i<V100.MAXS;i++)h+=`<i class="${i<s?(spend&&i===s-1?'u':'f'):''}"></i>`;return`<div class="pp${s===0?' z':''}">${h}</div>`;}
+function ss101Why(id){if(cap89Has(id))return['CAPTURED',''];const r=rc89N(id);if(r)return['RECOVERING '+r,' rc'];if(st100(id)<=0)return['EXHAUSTED',''];return null;}
+ss100Render=function(){const n=SS100.n;if(!n||!SS100.st)return;const city=v100City(),T=CM88.T[n.t]||CM88.T.fight,cap=SS100.cap,own=mxUnl();
+ const mt=(typeof M99!=='undefined'&&n.ms&&M99.T[n.ms])?M99.T[n.ms].n:'';
+ const P=[];if(n.solo)P.push('SOLO');for(const x of [T.f||T.n,mt&&n.t!=='boss'?mt:''])if(x&&P.map(y=>String(y).toUpperCase()).indexOf(String(x).toUpperCase())<0)P.push(x);if(n.solo&&P.length>2&&String(P[1]).toUpperCase()==='COMBAT')P.splice(1,1);
+ let cds='';for(const id of own){const H=rlH(id)||{lv:1},on=SS100.sq.indexOf(id)>=0,bn=id===SS100.ban,ok=(ss100Ok(id)||on)&&!bn,w=on?null:ss101Why(id),ld=on&&id===SS100.ctrl,lk=id===SS100.rq;
+  const A=ss101Art(id),src=A.src;
+  cds+=`<div class="cd${on?' on':''}${ok?'':' off'}${bn?' ban':''}${lk?' req':''}" data-c="${id}">${src?`<img src="${src}" alt="" decoding="async" draggable="false"${A.f&&ok&&!bn?` style="filter:${A.f}"`:''}>`:''}${ld?'<div class="ld">♛ LEAD</div>':''}${lk?'<div class="bnr rq">🔒 REQUIRED</div>':bn?'<div class="bnr no">⊘ NOT ALLOWED</div>':w?`<div class="why${w[1]}">${w[0]}</div>`:''}
+   <div class="inf"><div class="nm" style="color:${ok?rlUI.col(id):'#8492a8'}">${rlUI.nm(id)}</div><div class="ln"><span class="lv">LV ${H.lv}</span>${ss101Pips(id,on)}</div></div></div>`;}
+ const L=ss100Last(),tch=i88Touch();
+ let m='';if(SS100.flash101&&performance.now()<SS100.flash101.t)m=`<b>${SS100.flash101.s}</b>`;else if(SS100.banW)m=`<em>${rlUI.nm(SS100.banW)} was not allowed here, but nobody else can deploy — the rule is waived.</em>`;else if(SS100.rqW)m=`<em>${rlUI.nm(SS100.rqW)} can't deploy — requirement waived.</em>`;else if(SS100.msg)m='<b>'+SS100.msg+'</b>';else if(n.solo)m='<b>SOLO</b> · one heroine · about '+V100.SOLOT+' s';else if(own.filter(ss100Ok).length<cap)m='Not enough rested heroines — you can deploy fewer.';
+ SS100.st.innerHTML=`<div class="w" style="--cc:${city.c}">
+ <div class="hd"><div class="tt"><span class="t">${P.join(' · ')}</span><span class="k">STAGE ${n.c} · <b>${city.n}</b> · UP TO ${cap}</span></div>${SS100.rq?`<div class="nt rq">REQUIRES: ${rlUI.nm(SS100.rq)}</div>`:''}${SS100.ban?`<div class="nt no">WITHOUT: ${rlUI.nm(SS100.ban)}</div>`:''}<div class="cnt">${SS100.sq.length}/${cap}</div></div>
+ <div class="row">${cds}</div>
+ <div class="fb"><div class="bt bk" data-a="back">◂ BACK</div><div class="bt rl${L?'':' dis'}" data-a="last">↻ REDEPLOY LAST</div><div class="bt dp${SS100.sq.length?'':' dis'}" data-a="go">DEPLOY ▸</div></div>
+ <div class="msg">${m?m+' · ':''}Tap to deploy · hold for LEAD · deploy −1 stamina, sit out +1${tch?'':' · keys 1-6 · Tab lead · R last · Enter · Esc'}</div></div>`;
+ ss101Fit();};
+function ss101Fit(){if(!SS100.st)return;const row=SS100.st.querySelector('.row');if(row)row.classList.toggle('ov',row.scrollWidth>row.clientWidth+2);
+ for(const el of SS100.st.querySelectorAll('.nm')){el.style.fontSize='';let z=parseFloat(getComputedStyle(el).fontSize)||16;while(el.scrollWidth>el.clientWidth+1&&z>9){z--;el.style.fontSize=z+'px';}}}
+function ss101Flash(s){SS100.flash101={s,t:performance.now()+2200};}
+// tap: deploy / undeploy (a full squad says so instead of silently ignoring the tap; a 1-heroine squad swaps)
+function ss101Tap(id){if(id===SS100.ban){ss101Flash(rlUI.nm(id)+' is not allowed on this mission');return;}const i=SS100.sq.indexOf(id);if(i>=0){if(id===SS100.rq){ss101Flash(rlUI.nm(id)+' is required here');return;}ss100Toggle(id);return;}
+ if(!ss100Ok(id)){const w=ss101Why(id);ss101Flash(rlUI.nm(id)+(w?' is '+w[0].toLowerCase():' can\'t deploy'));return;}
+ if(SS100.sq.length>=SS100.cap&&SS100.cap>1){ss101Flash('Squad full ('+SS100.cap+'/'+SS100.cap+') — tap a yellow card to remove her');return;}ss100Toggle(id);}
+function ss101Hold(id){if(id===SS100.ban){ss101Flash(rlUI.nm(id)+' is not allowed on this mission');return;}if(SS100.sq.indexOf(id)<0){if(!ss100Ok(id))return;if(SS100.sq.length>=SS100.cap){if(SS100.cap!==1){ss101Flash('Squad full — remove someone first');return;}SS100.sq=[];}SS100.sq.push(id);}SS100.ctrl=id;}
+// pointer handling on cards: tap / hold / drag-scroll (body has touch-action:none, so the row scrolls by hand)
+function ss101Bind(el){if(el.dataset.b101)return;el.dataset.b101=1;let D=null;
+ el.addEventListener('pointerdown',e=>{const c=e.target.closest&&e.target.closest('[data-c]');if(!c)return;e.preventDefault();e.stopPropagation();const row=c.parentNode;
+  D={id:c.getAttribute('data-c'),row,x:e.clientX,sl:row.scrollLeft,mv:0,held:0,tm:setTimeout(()=>{if(D&&!D.mv){D.held=1;ss101Hold(D.id);ss100Render();}},450)};},true);
+ el.addEventListener('pointermove',e=>{if(!D)return;const dx=e.clientX-D.x;if(Math.abs(dx)>=8)D.mv=1;if(D.mv){clearTimeout(D.tm);D.row.scrollLeft=D.sl-dx;}},true);
+ el.addEventListener('pointerup',e=>{if(!D)return;clearTimeout(D.tm);const d=D;D=null;if(d.mv||d.held||!SS100.open)return;if(performance.now()-SS100.t0<200)return;ss101Tap(d.id);ss100Render();},true);
+ el.addEventListener('pointercancel',()=>{if(D)clearTimeout(D.tm);D=null;},true);
+ el.addEventListener('contextmenu',e=>e.preventDefault());}
+{const _o=ss100Open;ss100Open=function(){const r=_o.apply(this,arguments);try{SS100.st.style.transform='none';ss101Bind(SS100.el);SS100.flash101=null;ss100Render();}catch(e){}return r;};}
+{const _t=ss100Toggle;ss100Toggle=function(id){const r=_t.apply(this,arguments);if(SS100.sq.length&&SS100.sq.indexOf(SS100.ctrl)<0)SS100.ctrl=SS100.sq[0];return r;};}
+window.addEventListener('resize',()=>{if(SS100.open&&SS100.st){SS100.st.style.transform='none';ss100Render();}});
+UW.V101={ss101Fit,ss101Tap,ss101Hold};
+
+// ---------- 10.1 SKIN ART: the card shows the costume she has equipped (same source as the roster) ----------
+function ss101Art(id){let src=(typeof RLP!=='undefined'&&RLP[id])||'',f='';try{const e=mxEq(id);if(e){const a=mxCosArt(id,e.i);if(a)src=a;else if(e.f)f=e.f;}}catch(err){}return{src,f};}
+// ---------- 10.1 BANNED HEROINE ("WITHOUT: X") ----------
+// Seeded per map: 2 candidate combat nodes, each kept with 65% odds (0-2 per map, ~1.3 avg) (columns 2-9, distinct columns, never solo / required / boss / start) forbid one
+// heroine. She is picked from the unlocked roster when the node is first looked at (needs >= 3 unlocked, never the
+// required heroine) and stored in the save (d.cm88.ban101). If the ban would leave nobody able to deploy, it is waived.
+const V101={BANN:2,PCT:65};
+function v101H(s){let h=2166136261;s=String(s);for(let i=0;i<s.length;i++){h^=s.charCodeAt(i);h=Math.imul(h,16777619);}return h>>>0;}
+function v101Mark(g){if(!g||g.bn101)return;g.bn101=1;const sd=CM88.gs||1;
+ const cand=g.nodes.filter(n=>n.c>=2&&n.c<=9&&['fight','fort','escort','elite'].indexOf(n.t)>=0&&!n.rq&&!n.solo).map(n=>({n,h:v101H(sd+':'+n.id+':ban')})).sort((a,b)=>a.h-b.h);
+ const cols=[];for(const o of cand){if(cols.length>=V101.BANN)break;if(cols.indexOf(o.n.c)>=0)continue;cols.push(o.n.c);if(o.h%100>=V101.PCT)continue;o.n.bn=1;}}
+{const _d=cm88D;cm88D=function(){const r=_d.apply(this,arguments);try{v101Mark(CM88.g);}catch(e){console.error('v101mark',e);}return r;};}
+function v101Ban(n){const d=RL.d;if(!n||!n.bn||!d||!d.cm88)return'';const C=d.cm88;C.ban101=C.ban101||{};if(C.ban101[n.id]!=null)return C.ban101[n.id];
+ const own=mxUnl();if(own.length<3)return'';let rq='';try{rq=n.rq?cm88Rq(n):'';}catch(e){}const L=own.filter(id=>id!==rq);const b=L[v101H((CM88.gs||1)+':'+n.id+':who')%L.length]||'';C.ban101[n.id]=b;return b;}
+function v101BanFor(n){const b=v101Ban(n);if(!b)return{b:'',w:''};const others=mxUnl().filter(id=>id!==b&&v100Can(id));return others.length?{b,w:''}:{b:'',w:b};}
+{const _p=v100Pick;v100Pick=function(n,pref){const o=_p.apply(this,arguments);try{const B=v101BanFor(n);o.ban=B.b;o.banW=B.w;if(B.b&&o.sq.indexOf(B.b)>=0){o.sq=o.sq.filter(x=>x!==B.b);
+  for(const id of mxUnl().filter(x=>x!==B.b&&v100Can(x)&&o.sq.indexOf(x)<0).sort((a,b)=>st100(b)-st100(a))){if(o.sq.length>=o.cap)break;o.sq.push(id);}
+  if(o.sq.indexOf(o.ctrl)<0)o.ctrl=o.sq[0]||'';}}catch(e){console.error('v101pick',e);}return o;};}
+{const _ok=ss100Ok;ss100Ok=function(id){if(SS100.open&&id===SS100.ban)return false;return _ok.apply(this,arguments);};}
+{const _o=ss100Open;ss100Open=function(n){const B=n?v101BanFor(n):{b:'',w:''};SS100.ban=B.b;SS100.banW=B.w;const r=_o.apply(this,arguments);try{if(SS100.ban&&SS100.sq.indexOf(SS100.ban)>=0){SS100.sq=SS100.sq.filter(x=>x!==SS100.ban);if(SS100.ctrl===SS100.ban)SS100.ctrl=SS100.sq[0]||'';}ss100Render();}catch(e){}return r;};}
+// hex map: "NO <NAME>" under the node, and a WITHOUT line in the node panel
+{const _r=cm88Render;cm88Render=function(){const r=_r.apply(this,arguments);try{const st=CM88.stg,g=CM88.g;if(!st||!g)return r;
+  for(const el of st.querySelectorAll('svg.mp g.hx')){const id=(el.getAttribute('data-a')||'').slice(2),n=g.by[id];if(!n||!n.bn||!cm88Vis(n))continue;const b=v101Ban(n);if(!b)continue;const lb=el.querySelectorAll('text')[2];if(lb){lb.textContent='NO '+String(nk89(b)).toUpperCase();lb.setAttribute('fill','#ff8a9a');}}
+  const sel=g.by[CM88.sel],tb=st.querySelector('.tb'),nd=tb&&tb.parentNode;if(sel&&nd&&sel.bn&&cm88Combat(sel)){const b=v101Ban(sel);if(b){const wv=!v101BanFor(sel).b;const x=`<div class="l bn101" style="color:#ff6a7a">WITHOUT: ${rlUI.nm(b)} — ${wv?'waived, nobody else can deploy':'she can\'t deploy here'}</div>`;const L=[...nd.querySelectorAll('.l')].filter(e=>/^REWARD/.test(e.textContent));if(L[0])L[0].insertAdjacentHTML('beforebegin',x);else nd.insertAdjacentHTML('beforeend',x);}}
+  if(nd){const dd=nd.querySelector('.d');for(const k of [3,2,1]){if(nd.scrollHeight<=nd.clientHeight+1||!dd)break;dd.style.cssText+=`;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:${k};overflow:hidden`;}}}catch(e){console.error('v101map',e);}return r;};}
+UW.V101.v101Ban=v101Ban;UW.V101.v101BanFor=v101BanFor;UW.V101.ss101Art=ss101Art;UW.V101.V101=V101;
 
 </script><script>
 if (location.protocol === 'http:' || location.protocol === 'https:') {
