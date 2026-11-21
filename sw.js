@@ -1,6 +1,6 @@
-const CACHE_NAME = 'micro-rivals-10.2';
+const CACHE_NAME = 'micro-rivals-10.3';
 const PRECACHE = [
-  './index.html', './Urban_Wards_Weapons_10.2.html', './Urban_Wards_Weapons_10.1.html', './manifest.webmanifest',
+  './index.html', './Urban_Wards_Weapons_10.3.html', './Urban_Wards_Weapons_10.2.html', './manifest.webmanifest',
   './icon-192.png', './icon-512.png', './apple-touch-icon.png'
 ];
 self.addEventListener('install', event => {
