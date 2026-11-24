@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><title>MICRO RIVALS 10.4</title>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><title>MICRO RIVALS 10.5</title>
 <style>html,body{margin:0;height:100%;background:#3a3b3d;overflow:hidden}canvas{display:block;width:100vw;height:100vh;cursor:crosshair;touch-action:none;-webkit-user-select:none;user-select:none;-webkit-touch-callout:none}html,body{touch-action:none;overscroll-behavior:none}</style>
 <meta name="theme-color" content="#3a3b3d">
 <meta name="apple-mobile-web-app-title" content="Micro Rivals">
@@ -1819,7 +1819,7 @@ function drawStairs(x,y,open,down){const X=x-T,Y=y-T,S=2*T;ctx.fillStyle=down?'#
  if(open){const t=Date.now()/180;ctx.strokeStyle='rgba(125,255,168,'+(.5+.3*Math.sin(t)).toFixed(2)+')';ctx.lineWidth=3;ctx.strokeRect(X-2+Math.sin(t)*1.5,Y-2+Math.sin(t)*1.5,S+4-Math.sin(t)*3,S+4-Math.sin(t)*3);ctx.fillStyle='#7dffa8';ctx.font='bold 18px monospace';ctx.fillText('▲',x,y+6);}}
 function txt(s,x,y,sz,c,al){ctx.font='bold '+sz+'px monospace';ctx.textAlign=al||'left';ctx.fillStyle='#000';ctx.fillText(s,x+2,y+2);ctx.fillStyle=c;ctx.fillText(s,x,y);}
 function hud(L,clear){if(TCH.on){hudTouch(L,clear);return;}ctx.setTransform(1,0,0,1,0,0);ctx.fillStyle='rgba(20,20,22,.55)';ctx.fillRect(0,0,W,62);ctx.fillRect(0,H-66,W,66);
- txt('MICRO RIVALS 10.4',16,26,14,'#ff4fd8');txt('FLOOR '+(G.li+1)+' — '+L.name,16,46,13,'#dddddd');ctx.fillStyle='#300';ctx.fillRect(16,H-58,250,14);ctx.fillStyle=player.hp>player.maxhp*.3?'#39ff88':'#ff2e63';ctx.fillRect(16,H-58,250*Math.max(0,player.hp)/player.maxhp,14);txt('HP '+Math.max(0,Math.ceil(player.hp))+'/'+player.maxhp,272,H-46,13,'#fff');
+ txt('MICRO RIVALS 10.5',16,26,14,'#ff4fd8');txt('FLOOR '+(G.li+1)+' — '+L.name,16,46,13,'#dddddd');ctx.fillStyle='#300';ctx.fillRect(16,H-58,250,14);ctx.fillStyle=player.hp>player.maxhp*.3?'#39ff88':'#ff2e63';ctx.fillRect(16,H-58,250*Math.max(0,player.hp)/player.maxhp,14);txt('HP '+Math.max(0,Math.ceil(player.hp))+'/'+player.maxhp,272,H-46,13,'#fff');
  txt('SCORE '+G.score,W-16,30,20,'#fff','right');txt((G.heist?'SAFE $':'LOOT $')+Math.round(G.lootDisp||0).toLocaleString(),W-16,54,16,'#7dff9a','right');if(combo>1)txt('x'+combo+' COMBO',W-16,80,16,'#ffe600','right');if(G.toasts){let ty=combo>1?100:82;for(const q of G.toasts){ctx.globalAlpha=Math.min(1,q.t*2);txt(q.s,W-16,ty,12,q.c,'right');ty+=16;}ctx.globalAlpha=1;}
  const wp=WEAP[player.w];txt(wp.name+(wp.melee?'':'  '+player.ammo+' / ∞'),16,H-20,18,'#7fffd4');if(player.rl>0)txt('RELOADING',230,H-20,16,'#ffe600');
  if(G.god)txt('GOD',300,26,14,'#ffe600');
@@ -1850,7 +1850,7 @@ function selKey(c){const L=selLay(),n=THEMES.length+1;let d=0;if(c==='ArrowRight
 function title(){ctx.setTransform(1,0,0,1,0,0);const t=Date.now()/400;if(G.sel==null)G.sel=0;
  for(let i=0;i<20;i++){ctx.strokeStyle='rgba(200,200,205,'+(.08+.04*Math.sin(t+i))+')';ctx.beginPath();ctx.moveTo(0,H*.6+i*i*2);ctx.lineTo(W,H*.6+i*i*2);ctx.stroke();}
  const L=selLay();const ty=Math.max(54,L.top-96);
- txt('URBAN WARDS',W/2,ty,Math.min(64,W/12),'#ff4fd8','center');txt('MICRO RIVALS 10.4',W/2,ty+32,16,'#2ec5ff','center');
+ txt('URBAN WARDS',W/2,ty,Math.min(64,W/12),'#ff4fd8','center');txt('MICRO RIVALS 10.5',W/2,ty+32,16,'#2ec5ff','center');
  txt(TCH.on?'Touch: left stick move · right stick aim+fire · GREN/KNIFE buttons':'Arrows/WASD move · Mouse aim · Click shoot/swing · Right-click grenade · Numpad0 knife · E pick up',W/2,ty+56,12,'#ddd','center');
  txt('SELECT STAGE'+(TCH.on?'  (tap to select, tap again or START to play · drag to scroll)':'  (arrows/click to select · Enter/double-click to play · wheel scroll)'),W/2,L.top-10,12,'#ffe600','center');
  ctx.save();ctx.beginPath();ctx.rect(0,L.top,W,L.bot-L.top);ctx.clip();const sc=G.selScroll||0;
@@ -2172,7 +2172,7 @@ tBtns=function(){const f=fireGeom(),b={};b.fire={x:f.fx,y:f.fy,r:f.fr,label:'FIR
  if(G.hideUI){for(const k in b)if(k!=='fire'&&k!=='hide')delete b[k];}return b;};
 function hudTouch(L,clear){ctx.setTransform(1,0,0,1,0,0);HUDR=[];const u=hu();
  // top-left
- let y=Math.round(16*u)+4;T2('title','MICRO RIVALS 10.4',10,y,Math.round(12*u),'#ff4fd8');y+=Math.round(15*u);T2('floor','FLOOR '+(G.li+1)+' — '+L.name,10,y,Math.round(11*u),'#dddddd');y+=Math.round(16*u);
+ let y=Math.round(16*u)+4;T2('title','MICRO RIVALS 10.5',10,y,Math.round(12*u),'#ff4fd8');y+=Math.round(15*u);T2('floor','FLOOR '+(G.li+1)+' — '+L.name,10,y,Math.round(11*u),'#dddddd');y+=Math.round(16*u);
  if(G.heist&&G.up){const ab={dmg:'DMG',hp:'HP',def:'DEF',spd:'SPD',fr:'ROF',rl:'RLD',kg:'BAG',pr:'MAG'};let s='';for(const k in G.up.list)s+=ab[k]+(G.up.list[k]>1?'x'+G.up.list[k]:'')+' ';T2('lv','LV '+G.up.lv,10,y,Math.round(13*u),'#ff7cf5');if(s)T2('ups',s.trim(),10+tw('LV '+G.up.lv,Math.round(13*u))+8,y,Math.round(9*u),'#e8c8ff');if(G.perkOrder&&G.perkOrder.length)y=pkIcons(10,y+Math.round(6*u),u)-Math.round(3*u);}
  if(G.god)T2('god','GOD',10,y+Math.round(15*u),Math.round(11*u),'#ffe600');
  if(G.toasts){let ty=y+Math.round(32*u);for(const q of G.toasts.slice(-3)){ctx.globalAlpha=Math.min(1,q.t*2);T2('toast',q.s,10,ty,Math.round(11*u),q.c);ty+=Math.round(14*u);}ctx.globalAlpha=1;}
@@ -3678,11 +3678,11 @@ function k9Txt(x,y,s,c){parts.push({x,y:y-26,txt:s,t:.9,vy:-30,c});}
 function k9Gain(h,v,dmg){if(!h||!h.hero||!h.k9||!(v>0))return;if(!h.ultOn&&h.alive)h.ult=Math.min(100,(h.ult||0)+v/K9.COST[h.def.id]*100);
  if(dmg&&h.def.id==='cat'&&!(h.fortT>0)&&h.alive){h.fort+=v;if(h.fort>=K9.FORT){h.fort=0;h.fortT=4;h.shield=Math.max(h.shield,90);h.fortHeal=4;h.forts=(h.forts||0)+1;k9Fx({k:'ring',x:h.x,y:h.y,R:70,c:'rgba(255,226,122,',t:.5});k9Txt(h.x,h.y,'FORTUNE!','#ffe27a');}}}
 function k9Hit(src,e,dmg,a,o){if(!e||!e.alive||!e.sq)return 0;o=o||{};const hp0=e.hp;let n=0;
- if(dmg>0||o.kb||o.stun){sqHitFoe(e,dmg,a,o.kb||0,o.stun||0,src);n=Math.max(0,Math.min(dmg,hp0));if(src&&src.hero){k9Gain(src,n,1);src.dealt=(src.dealt||0)+n;if(hp0>0&&!e.alive)src.kills=(src.kills||0)+1;}}
+ if(dmg>0||o.kb||o.stun){sqHitFoe(e,dmg,a,o.kb||0,o.stun||0,src);n=Math.max(0,Math.min(dmg,hp0));if(src&&src.hero){UC5.e=e;UC5.k=hp0>0&&!e.alive;try{k9Gain(src,n,1);}finally{UC5.e=null;UC5.k=0;}src.dealt=(src.dealt||0)+n;if(hp0>0&&!e.alive)src.kills=(src.kills||0)+1;}}
  if(e.alive){if(o.slow)e.slow=Math.max(e.slow||0,o.slow);if(o.freeze){const f=o.freeze*(e.boss?.5:1);e.frz=Math.max(e.frz||0,f);e.stun=Math.max(e.stun||0,f);}if(o.wallChk){e.wallChk=o.wallChk;e.wallBy=src;}}
  return n;}
-function k9Heal(src,u,v,noShare){if(!u||!u.alive)return 0;const n=sqHealHero(u,v);if(n>0&&src&&src.hero){k9Gain(src,n,0);src.healed=(src.healed||0)+n;}
- if(!noShare&&src&&src.aura&&src.aura.alive&&u!==src.aura){const m=sqHealHero(src.aura,v*.35);if(m>0){k9Gain(src,m,0);src.healed=(src.healed||0)+m;src.shared=(src.shared||0)+m;}}return n;}
+function k9Heal(src,u,v,noShare){if(!u||!u.alive)return 0;const n=sqHealHero(u,v);if(n>0&&src&&src.hero){UC5.u=u;try{k9Gain(src,n,0);}finally{UC5.u=null;}src.healed=(src.healed||0)+n;}
+ if(!noShare&&src&&src.aura&&src.aura.alive&&u!==src.aura){const m=sqHealHero(src.aura,v*.35);if(m>0){UC5.u=src.aura;try{k9Gain(src,m,0);}finally{UC5.u=null;}src.healed=(src.healed||0)+m;src.shared=(src.shared||0)+m;}}return n;}
 function k9HealAround(src,x,y,R,v){let n=0;for(const a of sqAliveH())if(Math.hypot(a.x-x,a.y-y)<R+a.r){k9Heal(src,a,v);n++;}return n;}
 function k9Aoe(src,x,y,R,dmg,o){let n=0;for(const e of sqFoes()){const dd=Math.hypot(e.x-x,e.y-y);if(dd>R+e.r||!k9Los(x,y,e.x,e.y))continue;k9Hit(src,e,dmg,Math.atan2(e.y-y,e.x-x),o);n++;}return n;}
 function k9Cone(src,x,y,a,R,arc,dmg,o,fall){let n=0;for(const e of sqFoes()){const dd=Math.hypot(e.x-x,e.y-y);if(dd>R+e.r)continue;const da=k9Ad(Math.atan2(e.y-y,e.x-x),a);if(da>arc/2&&dd>e.r+8)continue;if(!k9Los(x,y,e.x,e.y))continue;let m=1;if(fall)m=Math.max(.3,1-Math.max(0,da-fall)/(arc/2));k9Hit(src,e,dmg*m,Math.atan2(e.y-y,e.x-x),o);n++;}return n;}
@@ -5162,7 +5162,7 @@ const MR_FONTS="@font-face{font-family:'MRA';src:url(data:font/woff2;base64,d09G
 // ===================== 6.3 MICRO RIVALS: DOM menus (title / map select / heroine select / results) =====================
 // Menus are a DOM overlay; while it is up the canvas is not redrawn (title/squadsel), so menus cost nothing during play.
 // 6.2: no map mini-renders; map cards are name + tag + flat accent colour (nothing generated or cached).
-const MR={vis:false,page:null,tf:0,mf:0,rf:0,how:false,spr:{},resT:0,el:{},ver:'v10.4',sprDone:false};
+const MR={vis:false,page:null,tf:0,mf:0,rf:0,how:false,spr:{},resT:0,el:{},ver:'v10.5',sprDone:false};
 window.__mrvis=false;
 MR.so0=sqSelOpen;
 MR.ORDER=(()=>{const a=[];SQMAPS.forEach((m,i)=>{if(m.i>=0)a.push(i);});SQMAPS.forEach((m,i)=>{if(m.i<0)a.push(i);});return a;})();
@@ -7928,7 +7928,7 @@ rlUI.prev=function(id,sl,t){const a=rlTV(id,sl,t),b=rlTV(id,sl,t+1),f=rlUI.fmt,r
  return o.slice(0,4).join(' · ');};
 rlUI.detail=function(){const id=rlUI.det||RL.IDS[rlUI.f],d=RL.d,H=rlH(id),rk=H.rank,cap=RL.CAP[rk],nr=rk+1,M=mxS(),st=mxStats(id),c=rlUI.cp(id),eqc=mxEq(id);
  const sls=mxSls(id),lg=H.lg||[],G0=MX.G[id],bon=5*rk;
- const cells=MX.ST.map((k,i)=>{const g=Math.min(100,G0[i]+bon),gr=MX.grade(G0[i]+bon);return`<div class="sc"><span>${MX.SN[i]}</span><b>${i===0?mr95S(st.v[0]):st.v[i]}</b>${(i===0?mr95G(lg[i]):lg[i])?`<u>+${i===0?mr95G(lg[i]):lg[i]}</u>`:''}<em style="color:${MX.GCOL[gr]}">${gr} ${G0[i]+bon}%</em></div>`;}).join('');
+ const cells=MX.ST.map((k,i)=>{const g=gr5R(id,i,rk),gr=MX.grade(g);return`<div class="sc"><span>${MX.SN[i]}</span><b>${i===0?mr95S(st.v[0]):st.v[i]}</b>${(i===0?mr95G(lg[i]):lg[i])?`<u>+${i===0?mr95G(lg[i]):lg[i]}</u>`:''}<em style="color:${MX.GCOL[gr]}">${gr} ${g}%</em></div>`;}).join('');
  const need=rlNeed(H.lv),xq=Math.min(100,Math.round(100*H.xp/need));
  let body='';
  if(rlUI.dtab==='sk'){body=`<div class="sks mx">${sls.map((sl,j)=>{const r=rlRow(id,sl),t=M.t[id][sl]||1,u=mxTU(id,sl),c0=K9.SC[sl===5?4:sl],cb=eqc&&eqc.sl===sl;
@@ -8262,7 +8262,7 @@ function rvPullFx(n){try{rvCss();const b=document.querySelector('#mx73 [data-a="
  let h=document.getElementById('rvpb');if(h)h.remove();h=document.createElement('div');h.id='rvpb';h.style.left=x+'px';h.style.top=y+'px';h.innerHTML='<i class="rvr"></i>'+rvSvg('');document.body.appendChild(h);setTimeout(()=>{h.remove();},950);}catch(e){}}
 {const _p=MXU.pull;MXU.pull=function(n){if(mxS().gems>=(n>=10?MX.COST10:MX.COST*n))rvPullFx(n);return _p.apply(this,arguments);};}
 {const _s=rlStartStage;rlStartStage=function(){const r=_s.apply(this,arguments);try{if(RL.on&&RL.d)rvStamp(RL.i88?'TRAINING':'STAGE '+RL.d.stage,1000);}catch(e){}return r;};}
-try{setTimeout(()=>rvStamp('MICRO RIVALS 10.4',1100),30);}catch(e){}
+try{setTimeout(()=>rvStamp('MICRO RIVALS 10.5',1100),30);}catch(e){}
 UW.RV75={rvD,rvSvg,rvUri,rvPath2D,rvStamp,rvPullFx};
 
 // ===================== 7.6: heroine emblems (one path each, recoloured per heroine) =====================
@@ -8378,7 +8378,7 @@ mxStats=function(id){if(RL.d&&!RL.d.v80)mx8Mig();const H=rlH(id);const key=MX.ve
 function mx8EnTxt(s,el){return'ENEMY HP '+Math.round((1+.03*(el-1))*mx8EH(s)*100)+'% / DMG '+Math.round((1+.02*(el-1))*mx8ED(s)*100)+'%';}
 // honest level-curve line on the heroine page
 {const _d=rlUI.detail;rlUI.detail=function(){const r=_d.apply(this,arguments);try{const id=rlUI.det||RL.IDS[rlUI.f],st=mxStats(id),x=rlUI.el.de.querySelector('.xpt');
- if(x&&!x.querySelector('.lc8')){const p=v=>Math.round(v*100);x.insertAdjacentHTML('beforeend',`<span class="lc8" style="margin-left:10px;color:#ffb27a;font-size:12px;letter-spacing:.5px">LV CURVE · CD ${p(st.cdL)}% · ULT CHARGE ${p(st.uL)}% · SHIELDS ${p(st.eL)}%</span>`);}}catch(e){}return r;};}
+ if(x&&!x.querySelector('.lc8')){const p=v=>Math.round(v*100);x.insertAdjacentHTML('beforeend',`<span class="lc8" style="margin-left:10px;color:#ffb27a;font-size:12px;letter-spacing:.5px">LV CURVE · CD ${p(st.cdL)}% · SHIELDS ${p(st.eL)}%</span>`);}}catch(e){}return r;};}
 
 // ---------- no pity, no guarantees ----------
 mxPull=function(){const M=mxS();M.pity.n++;const r=mxRoll5(),it=mxItem(r);it.pity='';M.tot.pulls++;mxRun().pulls++;if(r===4)M.tot.ur++;else if(r===3)M.tot.ssr++;return mxApply(it);};
@@ -9789,7 +9789,7 @@ function s88Ms(st){const t=st.tm8||0,p=s88Pct(st);
   {n:'CLEAR IN 4:00',sub:mx8Clock(t)+' / 4:00',ok:t<=S88.TL},
   {n:'DAMAGE ≤ 50%',sub:p+'% of squad HP lost',ok:p<=S88.DP}];}
 function s88Rows(st){const ms=st.ms8||s88Ms(st),n=ms.filter(m=>m.ok).length;
- return`<div class="s88">${ms.map((m,i)=>`<div class="r ${m.ok?'ok':'no'}" style="animation-delay:${.25+i*.18}s"><i>${m.ok?'★':'☆'}</i><b>${m.n}</b><small>${m.sub}</small><em>${m.ok?'PASS':'FAIL'}</em></div>`).join('')}<div class="tot">${n} / 3 STARS${st.gst?' · +'+st.gst+' BLUE':''}</div></div>`;}
+ return`<div class="s88">${ms.map((m,i)=>`<div class="r ${m.ok?'ok':'no'}" style="animation-delay:${.25+i*.18}s"><i>${m.ok?'★':'☆'}</i><b>${m.n}</b><small>${m.sub}</small><em>${m.ok?'PASS':'FAIL'}</em></div>`).join('')}<div class="tot">${n} / 3 STARS${st.gst?' · +'+st.gst+' BLUE':''}${st.nocap105?' · NO CAPTURE +'+st.nocap105+' GOLD':''}</div></div>`;}
 // ---------- start of a stage: node squad, damage tracking ----------
 {const _rs=rlStartStage;rlStartStage=function(){const d=RL.d;if(!d||d.over)return _rs.apply(this,arguments);cm88Hide();i88Panel(null);
  if(RL.i88){const M=mxS();I88.w0={g:M.gems,c:d.coins,day:M.day,gw:G85.GOLDEN_WAVE,ec:G85.ELITE_CH};M.day=new Date().toDateString();G85.GOLDEN_WAVE=0;G85.ELITE_CH=0;}
@@ -13278,6 +13278,178 @@ function f4Draw(){const g=f4Geo();if(!g||G.hideUI)return;const now=performance.n
 {const _t=gm8Txt;gm8Txt=function(x,y,txt,cls){if(!f4Side()||!G.squad||!G.squad.heroes||G.state!=='play')return _t.apply(this,arguments);const s=String(txt).replace(/\s*◆\s*$/,'');f4Push({k:'gem',txt:s,col:'#FFF212'});};}
 
 UW.V104={HS4,CI4,AR4,DB4,F4,hs104,ci4Set,ci4Show,ci4End,f4Side,f4Geo,arc4Add,db4Spawn};
+
+// ===================================================================================================
+// MICRO RIVALS 10.5 layer: enemy level parity · ult charge from hits/kills/time · gold quests + milestones
+//   + no-capture bonus · per-heroine Random Look · growth rates 20%-80%
+// ===================================================================================================
+// ---------- 1. ENEMY LEVEL: average of the squad's top-3 levels + a small stage bump ----------
+//  EL = max(stage floor, round(avg of the 3 highest squad levels) + floor((stage-1)/3) + 2 x (campaign-1))
+//  enemies get +4% HP / +3% DMG per level of that bump, on top of the 9.5 squad-strength matching.
+const EL5={SB:3,CB:2,HP:.04,DM:.03,HI:6};
+function el5Top3(sq){const d=RL.d;if(!d)return 1;const L=(sq||d.squad||[]).map(id=>rlH(id)).filter(Boolean).map(H=>H.lv|0).sort((a,b)=>b-a).slice(0,3);
+ if(!L.length)return 1;return Math.max(1,Math.round(L.reduce((a,b)=>a+b,0)/L.length));}
+function el5Bump(){if(RL.i88||!RL.d)return 0;const c=Math.max(1,Math.min(10,RL.d.stage||1));let b=Math.floor((c-1)/EL5.SB);try{b+=EL5.CB*Math.max(0,v100Camp()-1);}catch(e){}return b;}
+mxEL=function(){const d=RL.d;if(!d)return 1;return Math.max(RL.i88?1:rlDS(),el5Top3()+el5Bump());};
+function el5Gap(){if(!RL.d)return 0;const e=RL.on&&RL.el?RL.el:mxEL();return Math.max(0,Math.min(el5Bump(),e-el5Top3()));}
+TS95.hi=EL5.HI;
+{const _h=ts95HpM;ts95HpM=function(){return _h.apply(this,arguments)*(1+EL5.HP*el5Gap());};}
+{const _m=ts95DmM;ts95DmM=function(){return _m.apply(this,arguments)*(1+EL5.DM*el5Gap());};}
+
+// ---------- 2. ULT CHARGE: hits landed, kills and time (not raw damage, no level curve) ----------
+//  per landed hit: FLAT (max FR per second) + CH x share of the target's max HP removed (max 1 target's worth)
+//  per kill: KILL / elite KE / boss KB · per heal: HEAL x share of the healed heroine's max HP · TIME per second in a fight
+//  then x0.5 for AI heroines (5.4) and x the ULT skill tier charge rate (T1 100% ... T5 139%)
+const UC5={on:1,FLAT:.9,FR:3,FB:3,CH:5,KILL:2,KE:5,KB:12,HEAL:7,TIME:1,K:{emma:1,rogue:1,widow:1,cat:1,luna:1,sue:1},e:null,k:0,u:null,log:{}};
+function uc5Mul(h){let m=h===player?1:SQ_AIULT;try{const t=rlT(h,4);m/=RL.CD[t-1]||1;}catch(e){}return m*(UC5.K[h.def.id]||1);}
+function uc5Flat(h){const S=G.squad,t=S&&S.time||0;let b=h._b5==null?UC5.FB:h._b5;b=Math.min(UC5.FB,b+Math.max(0,t-(h._t5==null?t:h._t5))*UC5.FR);h._t5=t;
+ if(b>=1){h._b5=b-1;return UC5.FLAT;}h._b5=b;return 0;}
+function uc5Add(h,v,why){if(!h||!h.alive||sqUltBusy(h)||!(v>0))return;const a=v*uc5Mul(h);h.ult=Math.min(100,(h.ult||0)+a);const L=UC5.log[why]=(UC5.log[why]||0);UC5.log[why]=L+a;}
+{const _g=k9Gain;k9Gain=function(h,v,dmg){if(!UC5.on||!RL.on||!h||!h.hero||!h.def||!h.k9)return _g.apply(this,arguments);
+ const u0=h.ult||0,r=_g.apply(this,arguments);h.ult=u0;// keep everything else the old chain does (Cat's fortune), drop its damage-based charge
+ if(!(v>0))return r;
+ if(dmg){const e=UC5.e;if(e){uc5Add(h,uc5Flat(h)+UC5.CH*Math.min(1,v/Math.max(1,e.maxhp||1)),'hit');
+   if(UC5.k){let k='grunt';try{k=rlKind(e);}catch(z){}uc5Add(h,k==='boss'?UC5.KB:k==='elite'?UC5.KE:UC5.KILL,'kill');}}}
+ else if(UC5.u)uc5Add(h,UC5.HEAL*Math.min(1,v/Math.max(1,UC5.u.maxhp||1)),'heal');
+ else uc5Add(h,uc5Flat(h),'hit');
+ return r;};}
+function uc5Tick(dts){const S=G.squad;if(!UC5.on||!RL.on||!S||!S.heroes||!(dts>0)||dts>.5)return;let f=false;for(const e of enemies)if(e.alive){f=true;break;}if(!f)return;
+ for(const h of S.heroes)if(h.alive&&h.k9&&!sqUltBusy(h))uc5Add(h,UC5.TIME*dts,'time');}
+{const _u=update;update=function(dt){const S=G.squad,t0=S&&S.time;const r=_u.apply(this,arguments);try{if(S&&S===G.squad&&G.state==='play'&&t0!=null)uc5Tick((S.time||0)-t0);}catch(e){}return r;};}
+
+// ---------- 3. GOLD QUESTS: daily quests, run milestones, no-capture stage bonus ----------
+const Q5={KEY:'mr105_q',NOCAP:20,ALL:60,
+ D:[['clr2','Clear 2 stages','clr',2,40],['clr4','Clear 4 stages','clr',4,70],['kill150','Defeat 150 enemies','kill',150,40],['kill400','Defeat 400 enemies','kill',400,60],
+    ['ult6','Fire 6 ultimates','ult',6,30],['nocap','Clear a stage with no one captured','nocap',1,40],['star3','Earn 3 stars on a stage','star3',1,40],['elite25','Defeat 25 elite enemies','elite',25,50]],
+ M:[['clr','Clear {n} stages this run',[3,6,10,20,30],[50,80,120,200,250]],['lv','Reach Lv {n} with any heroine',[10,20,30,40,60],[40,60,80,100,150]],
+    ['kill','Defeat {n} enemies this run',[300,1000,3000,6000],[50,100,150,200]],['streak','Clear {n} stages in a row, no one captured',[3,5,10],[40,80,150]],
+    ['ult','Fire {n} ultimates this run',[10,25,60],[30,60,100]]],
+ s:null,open:false,el:null,btn:null,tog:null};
+function q5Day(){const d=new Date();return d.getFullYear()+'-'+(d.getMonth()+1)+'-'+d.getDate();}
+function q5Hash(s){let h=2166136261>>>0;for(let i=0;i<s.length;i++){h^=s.charCodeAt(i);h=Math.imul(h,16777619)>>>0;}return h>>>0;}
+function q5Daily(){if(!Q5.s){try{Q5.s=JSON.parse(localStorage.getItem(Q5.KEY));}catch(e){Q5.s=null;}if(!Q5.s||typeof Q5.s!=='object')Q5.s={};}
+ const s=Q5.s,day=q5Day();if(s.day!==day||!Array.isArray(s.ids)||s.ids.length!==3){const rng=mxRng(q5Hash('mr105'+day)),ids=[],used={};let guard=0;
+  while(ids.length<3&&guard++<200){const q=Q5.D[(rng()*Q5.D.length)|0];if(used[q[2]])continue;used[q[2]]=1;ids.push(q[0]);}
+  s.day=day;s.ids=ids;s.p={};s.c={};s.all=0;q5SaveD();}
+ return s;}
+function q5SaveD(){try{localStorage.setItem(Q5.KEY,JSON.stringify(Q5.s));}catch(e){}}
+function q5Run(){const d=RL.d;if(!d)return null;if(!d.q105||typeof d.q105!=='object')d.q105={clr:0,kill:0,ult:0,streak:0,c:{}};const q=d.q105;for(const k of['clr','kill','ult','streak'])q[k]=q[k]|0;if(!q.c)q.c={};return q;}
+function q5Ev(k,n){if(!RL.d||!(n>0))return;const s=q5Daily();s.p[k]=(s.p[k]|0)+n;q5SaveD();const q=q5Run();if(q&&q[k]!=null&&k!=='streak')q[k]+=n;}
+function q5DRows(){const s=q5Daily();return s.ids.map(id=>{const q=Q5.D.find(x=>x[0]===id);const p=Math.min(q[3],s.p[q[2]]|0);return{id,t:q[1],p,n:q[3],v:q[4],ok:p>=q[3],got:!!s.c[id]};});}
+function q5MVal(k){const q=q5Run();if(!q)return 0;if(k==='lv'){let m=0;for(const id of RL.IDS){const H=rlH(id);if(H&&RL.d.un&&RL.d.un.indexOf(id)>=0)m=Math.max(m,H.lv|0);}return m;}if(k==='streak')return q.best5|0;return q[k]|0;}
+function q5MRows(){const q=q5Run();if(!q)return[];return Q5.M.map(m=>{const i=q.c[m[0]]|0,done=i>=m[2].length,n=done?m[2][m[2].length-1]:m[2][i],p=Math.min(n,q5MVal(m[0]));
+ return{id:m[0],t:m[1].replace('{n}',mxN(n)),p,n,v:done?0:m[3][i],ok:!done&&p>=n,got:done,tier:i,tiers:m[2].length};});}
+function q5Ready(){if(!RL.d||RL.d.over)return 0;let n=0;for(const r of q5DRows())if(r.ok&&!r.got)n++;const s=q5Daily();if(!s.all&&q5DRows().every(r=>r.got))n++;for(const r of q5MRows())if(r.ok)n++;return n;}
+function q5Claim(kind,id){if(!RL.d||RL.d.over)return 0;let v=0;
+ if(kind==='d'){const r=q5DRows().find(x=>x.id===id);if(!r||!r.ok||r.got)return 0;const s=q5Daily();s.c[id]=1;q5SaveD();v=g85Give(r.v,'quest',null);}
+ else if(kind==='all'){const s=q5Daily();if(s.all||!q5DRows().every(r=>r.got))return 0;s.all=1;q5SaveD();v=g85Give(Q5.ALL,'quest',null);}
+ else if(kind==='m'){const r=q5MRows().find(x=>x.id===id);if(!r||!r.ok)return 0;const q=q5Run();q.c[id]=(q.c[id]|0)+1;v=g85Give(r.v,'milestone',null);}
+ try{mxSave();}catch(e){}try{rlSave();}catch(e){}return v;}
+// events
+{const _k=rlOnKill;rlOnKill=function(e){const r=_k.apply(this,arguments);try{if(RL.on&&RL.d){q5Ev('kill',1);let k='grunt';try{k=rlKind(e);}catch(z){}if(k!=='grunt')q5Ev('elite',1);}}catch(z){}return r;};}
+{const _u=k9Ult;k9Ult=function(h){const pre=!!(h&&h.ultOn),r=_u.apply(this,arguments);try{if(RL.on&&h&&h.hero&&!pre&&h.ultOn)q5Ev('ult',1);}catch(e){}return r;};}
+{const _t=cap89Take;cap89Take=function(h,S){try{if(RL.st)RL.st.cap105=1;}catch(e){}return _t.apply(this,arguments);};}
+{const _s=g85Stage;g85Stage=function(st){const first=st&&!st._g85&&RL.d;const r=_s.apply(this,arguments);
+ try{if(first){q5Ev('clr',1);if((st.stars8|0)>=3)q5Ev('star3',1);const q=q5Run();
+  if(!st.cap105){st.nocap105=g85Give(Q5.NOCAP,'nocap',st);q5Ev('nocap',1);if(q){q.streak=(q.streak|0)+1;q.best5=Math.max(q.best5|0,q.streak);}}else if(q)q.streak=0;
+  try{mxSave();}catch(e){}}}catch(e){console.error('q105',e);}return r;};}
+// UI: QUESTS button (left side band on iPhone, top of the screen elsewhere) + panel
+(function(){const st=document.createElement('style');st.textContent=`
+#q105b{position:fixed;z-index:96;display:none;min-width:44px;min-height:44px;box-sizing:border-box;border-radius:10px;background:#ffd23a;color:#14110a;border:2px solid #fff3b0;
+ font-family:'MRB','Barlow Condensed','Arial Narrow',sans-serif;font-weight:900;letter-spacing:1px;text-align:center;align-items:center;justify-content:center;flex-direction:column;line-height:1;cursor:pointer;-webkit-tap-highlight-color:transparent;touch-action:manipulation;user-select:none;-webkit-user-select:none}
+#q105b .qi{font-size:20px}#q105b .qt{font-size:12px;margin-top:2px}
+#q105b .qn{position:absolute;right:-7px;top:-7px;min-width:22px;height:22px;border-radius:11px;background:#ff3a5a;color:#fff;font-size:13px;line-height:22px;padding:0 5px;box-sizing:border-box;border:2px solid #fff}
+#q105{position:fixed;inset:0;z-index:130;display:none;background:rgba(5,7,16,.94);font-family:'MRB','Barlow Condensed','Arial Narrow',sans-serif;color:#fff;touch-action:manipulation;user-select:none;-webkit-user-select:none;-webkit-tap-highlight-color:transparent}
+#q105 .bx{position:absolute;display:flex;flex-direction:column;gap:6px}
+#q105 .hd{display:flex;align-items:center;gap:10px;height:44px;flex:none}
+#q105 .hd .tt{font-family:'MRA','MRB',Impact,sans-serif;font-style:italic;font-weight:900;font-size:28px;letter-spacing:1px}
+#q105 .hd .gc{margin-left:auto;height:32px;line-height:30px;padding:0 12px;border-radius:16px;border:2px solid #7a5cff;background:#141831;color:#ffd23a;font-weight:800;font-size:16px;display:flex;align-items:center;gap:6px;white-space:nowrap}
+#q105 .hd .gc svg{width:18px;height:18px}
+#q105 .x{width:44px;height:44px;border-radius:10px;background:#262c48;border:2px solid #4a5684;color:#fff;font-size:22px;font-weight:900;display:flex;align-items:center;justify-content:center;flex:none;cursor:pointer}
+#q105 .cols{flex:1;display:flex;gap:10px;min-height:0}
+#q105 .col{flex:1;display:flex;flex-direction:column;gap:5px;min-width:0;overflow-y:auto;-webkit-overflow-scrolling:touch;touch-action:pan-y}
+#q105 .ch{font-size:14px;font-weight:800;letter-spacing:2px;color:#9fb1d8;display:flex;justify-content:space-between;flex:none;height:18px;align-items:center}
+#q105 .ch small{font-size:12px;letter-spacing:1px;color:#7d89ad}
+#q105 .rw{display:flex;align-items:center;gap:8px;min-height:48px;padding:2px 4px 2px 10px;border-radius:9px;background:#151a30;border:2px solid #2a3256;flex:none;box-sizing:border-box}
+#q105 .rw.ok{border-color:#ffd23a;background:#2a2410}#q105 .rw.got{opacity:.5}
+#q105 .rw .tx{flex:1;min-width:0}
+#q105 .rw .tl{font-size:14px;font-weight:800;line-height:1.1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#q105 .rw .br{height:6px;border-radius:3px;background:#262b40;margin-top:4px;overflow:hidden}#q105 .rw .br i{display:block;height:100%;background:#58c8ff}#q105 .rw.ok .br i,#q105 .rw.got .br i{background:#ffd23a}
+#q105 .rw .pg{font-size:11px;color:#9fb1d8;margin-top:2px;white-space:nowrap}
+#q105 .rw .rv{font-size:14px;font-weight:800;color:#ffd23a;white-space:nowrap;display:flex;align-items:center;gap:3px}#q105 .rw .rv svg{width:14px;height:14px}
+#q105 .rw .cl{min-width:70px;height:44px;border-radius:8px;border:0;background:#353c5c;color:#9fb1d8;font-family:inherit;font-weight:900;font-size:14px;letter-spacing:1px;flex:none;display:flex;align-items:center;justify-content:center}
+#q105 .rw.ok .cl{background:#ffd23a;color:#14110a;cursor:pointer}
+#q105 .tst{position:absolute;left:50%;top:40%;transform:translate(-50%,-50%);padding:10px 22px;border-radius:12px;background:#ffd23a;color:#14110a;font-weight:900;font-size:22px;letter-spacing:1px;pointer-events:none;opacity:0;transition:opacity .25s;white-space:nowrap;display:flex;align-items:center;gap:6px}
+#q105 .tst svg{width:22px;height:22px}#q105 .tst.on{opacity:1}
+#rk105{position:fixed;z-index:96;display:none;box-sizing:border-box;min-height:44px;min-width:44px;border-radius:10px;border:2px solid #4a5684;background:#151a30;color:#c4d0ee;
+ font-family:'MRB','Barlow Condensed','Arial Narrow',sans-serif;font-weight:900;letter-spacing:1px;text-align:center;flex-direction:column;align-items:center;justify-content:center;line-height:1.05;cursor:pointer;-webkit-tap-highlight-color:transparent;touch-action:manipulation;user-select:none;-webkit-user-select:none;padding:2px 6px}
+#rk105 .a{font-size:12px}#rk105 .b{font-size:15px;margin-top:2px}#rk105.on{border-color:#ffd23a;background:#2a2410;color:#ffd23a}#rk105.na{opacity:.6}`;
+ (document.head||document.documentElement).appendChild(st);})();
+function q5Gold(){try{return mxN(Math.round(mxS().gems||0));}catch(e){return'0';}}
+function q5Row(r,kind){const pct=Math.round(100*Math.min(1,r.p/Math.max(1,r.n)));const btn=r.got?'DONE':r.ok?'CLAIM':mxN(r.p)+'/'+mxN(r.n);
+ return`<div class="rw${r.ok?' ok':''}${r.got?' got':''}"><div class="tx"><div class="tl">${r.t}</div><div class="br"><i style="width:${pct}%"></i></div><div class="pg">${mxN(r.p)} / ${mxN(r.n)}${r.tiers?' · STEP '+Math.min(r.tier+1,r.tiers)+' OF '+r.tiers:''}</div></div>
+ ${r.v?`<div class="rv">${ico83('gold')}${mxN(r.v)}</div>`:''}<div class="cl" data-q="${r.ok?kind+':'+r.id:''}">${btn}</div></div>`;}
+function q5Render(){const el=Q5.el;if(!el)return;const sa=ph83SA(),W=innerWidth,H=innerHeight,bx=el.querySelector('.bx');
+ const L=sa.l+10,R=sa.r+10,T=sa.t+6,B=sa.b+6,w=Math.min(900,W-L-R);bx.style.left=Math.round(L+(W-L-R-w)/2)+'px';bx.style.width=Math.round(w)+'px';bx.style.top=T+'px';bx.style.bottom=B+'px';
+ const D=q5DRows(),s=q5Daily(),allDone=D.every(r=>r.got),allR={id:'all',t:'All 3 daily quests',p:D.filter(r=>r.got).length,n:3,v:Q5.ALL,ok:allDone&&!s.all,got:!!s.all};
+ const M=q5MRows(),narrow=W<560;
+ bx.innerHTML=`<div class="hd"><div class="tt">QUESTS</div><div class="gc">${ico83('gold')} ${q5Gold()} GOLD</div><div class="x" data-q="close">✕</div></div>
+ <div class="cols" style="${narrow?'flex-direction:column;overflow-y:auto':''}"><div class="col"><div class="ch">DAILY<small>NEW QUESTS AT MIDNIGHT</small></div>${D.map(r=>q5Row(r,'d')).join('')}${q5Row(allR,'all')}
+ <div class="ch"><small>NO-CAPTURE CLEAR: +${Q5.NOCAP} GOLD EACH STAGE</small></div></div>
+ <div class="col"><div class="ch">RUN MILESTONES<small>RESET WITH A NEW RUN</small></div>${M.map(r=>q5Row(r,'m')).join('')}</div></div><div class="tst"></div>`;}
+function q5Open(){if(!RL.d)return;let el=Q5.el;if(!el){el=Q5.el=document.createElement('div');el.id='q105';el.innerHTML='<div class="bx"></div>';document.body.appendChild(el);
+  const stop=e=>{e.stopPropagation();};['pointerdown','touchstart','mousedown','keydown'].forEach(k=>el.addEventListener(k,stop));
+  el.addEventListener('click',e=>{e.stopPropagation();const t=e.target.closest('[data-q]');if(!t)return;const a=t.getAttribute('data-q');if(!a)return;if(a==='close'){q5Close();return;}
+   const[k,id]=a.split(':');const v=q5Claim(k,id);q5Render();if(v>0){const ts=el.querySelector('.tst');ts.innerHTML='+'+mxN(v)+' '+ico83('gold')+' GOLD';ts.classList.add('on');clearTimeout(Q5.tt);Q5.tt=setTimeout(()=>{const x=el.querySelector('.tst');if(x)x.classList.remove('on');},1100);}});}
+ Q5.open=true;el.style.display='block';q5Render();q5Btn();}
+function q5Close(){Q5.open=false;if(Q5.el)Q5.el.style.display='none';try{if(CM88.vis)cm88Render();}catch(e){}try{if(rlUI.el&&rlUI.el.root&&rlUI.el.root.style.display!=='none'&&rlUI.page==='roster')rlUI.render();}catch(e){}q5Btn();}
+function q5Where(){// which menu is showing and the rect of its 1024x640 stage
+ try{if(CM88.vis&&CM88.el&&CM88.el.style.display!=='none'&&CM88.stg)return{k:'hub',r:CM88.stg.getBoundingClientRect()};}catch(e){}
+ try{const E=rlUI.el;if(E&&E.root&&E.root.style.display!=='none'&&(rlUI.page==='roster'||rlUI.page==='detail')&&E.stg)return{k:rlUI.page,r:E.stg.getBoundingClientRect()};}catch(e){}return null;}
+function q5Rot(){const r=document.getElementById('rot83');if(!r)return false;const c=getComputedStyle(r);return c.display!=='none'&&c.visibility!=='hidden'&&+c.opacity>0;}
+function q5Btn(){let b=Q5.btn;if(!b){b=Q5.btn=document.createElement('div');b.id='q105b';document.body.appendChild(b);['pointerdown','touchstart','mousedown'].forEach(k=>b.addEventListener(k,e=>e.stopPropagation()));
+  b.addEventListener('click',e=>{e.stopPropagation();q5Open();});}
+ const w=q5Where();if(!w||q5Rot()||w.k==='detail'||Q5.open||!RL.d||RL.d.over||G.state==='play'){b.style.display='none';return;}
+ const sa=ph83SA(),r=w.r,band=r.left-sa.l,n=q5Ready();let bw,bh,x,y;
+ if(band>=56){bw=Math.min(76,band-10);bh=64;x=sa.l+Math.round((band-bw)/2);y=Math.round(r.top+r.height*.5-bh/2);}
+ else{bw=96;bh=44;x=Math.round(r.left+r.width*(w.k==='hub'?.5:.31)-bw/2);y=Math.round(r.top+(w.k==='hub'?r.height*.006:r.height*.03));}
+ b.style.cssText=`display:flex;left:${x}px;top:${y}px;width:${bw}px;height:${bh}px;flex-direction:${bh<56?'row':'column'};gap:${bh<56?6:0}px`;const h=`<div class="qi">${ico83('gold')}</div><div class="qt">QUESTS</div>${n?`<div class="qn">${n}</div>`:''}`;if(b._h!==h){b._h=h;b.innerHTML=h;const sv=b.querySelector('svg');if(sv){sv.style.width='20px';sv.style.height='20px';}}}
+setInterval(()=>{try{q5Btn();rk5Btn();}catch(e){}},350);
+addEventListener('resize',()=>{try{if(Q5.open)q5Render();q5Btn();rk5Btn();}catch(e){}});
+
+// ---------- 4. RANDOM LOOK: per heroine, a random owned UR look at the start of every new stage (saved per device) ----------
+const RK5={KEY:'mr105_rlook',s:null,last:''};
+function rk5S(){if(!RK5.s){try{RK5.s=JSON.parse(localStorage.getItem(RK5.KEY));}catch(e){RK5.s=null;}if(!RK5.s||typeof RK5.s!=='object')RK5.s={on:{}};if(!RK5.s.on)RK5.s.on={};}return RK5.s;}
+function rk5On(id){return!!rk5S().on[id];}
+function rk5Set(id,v){const s=rk5S();if(v)s.on[id]=1;else delete s.on[id];try{localStorage.setItem(RK5.KEY,JSON.stringify(s));}catch(e){}}
+function rk5Pool(id){const M=mxS(),C=M.cos&&M.cos[id]||[],o=[];for(let i=0;i<C.length;i++)if(C[i]>0)o.push(i);if(o.length===1)o.unshift(-1);return o;}
+function rk5Pick(id){const P=rk5Pool(id);if(P.length<2)return null;const cur=mxS().eq[id];const L=P.filter(i=>i!==cur);const i=L[(Math.random()*L.length)|0];mxWear(id,i);return i;}
+function rk5Stage(){const d=RL.d;if(!d)return;const key=(d.stage|0)+'|'+(RL.ss100&&RL.ss100.id||CM88.sel||'')+'|'+(d.seed|0);if(RK5.last===key)return;RK5.last=key;
+ for(const id of RL.IDS)if(rk5On(id))try{rk5Pick(id);}catch(e){}}
+{const _f=rlStartStage;rlStartStage=function(){try{if(RL.d&&!RL.d.over)rk5Stage();}catch(e){}return _f.apply(this,arguments);};}
+function rk5Btn(){let b=Q5.tog;if(!b){b=Q5.tog=document.createElement('div');b.id='rk105';document.body.appendChild(b);['pointerdown','touchstart','mousedown'].forEach(k=>b.addEventListener(k,e=>e.stopPropagation()));
+  b.addEventListener('click',e=>{e.stopPropagation();const id=rlUI.det;if(!id)return;rk5Set(id,!rk5On(id));rk5Btn();});}
+ const w=q5Where();if(!w||q5Rot()||w.k!=='detail'||rlUI.dtab!=='wr'||!rlUI.det){b.style.display='none';return;}
+ const id=rlUI.det,on=rk5On(id),n=rk5Pool(id).length,r=w.r,bw=Math.max(96,Math.round(r.width*.15)),bh=Math.max(44,Math.round(r.height*.1));
+ const x=Math.round(r.left+r.width*.435-bw),y=Math.round(r.top+r.height*.03);
+ b.className=on?'on':n<2?'na':'';b.style.cssText=`display:flex;left:${x}px;top:${y}px;width:${bw}px;height:${bh}px`;
+ const h=`<div class="a">RANDOM LOOK</div><div class="b">${on?(n<2?'ON · NO UR':'ON'):'OFF'}</div>`;if(b._h!==h){b._h=h;b.innerHTML=h;}}
+{const _r=rlUI.render;rlUI.render=function(){const r=_r.apply(this,arguments);try{rk5Btn();q5Btn();}catch(e){}return r;};}
+
+// ---------- 5. GROWTH RATES: every stat's chance to grow on a level is kept between 20% and 80% ----------
+const GR5={MIN:20,MAX:80};
+function gr5R(id,i,rk){const g=MX.G[id],X=mx8X(id),r=g[i]+5*(rk|0)+(i?Math.round(100*X[i]):0);return Math.max(GR5.MIN,Math.min(GR5.MAX,r));}
+mxRoll=function(id,lv,rk,seed){const b=MX.B[id],X=mx8X(id),rng=mxRng((seed+RL.IDS.indexOf(id)*1000003+lv*7919)>>>0),o=[0,0,0,0,0,0,0,0,0];
+ const a0=rng();if(rng()<gr5R(id,0,rk)/100)o[0]=Math.max(1,Math.round((b[0]*.03+X[0])*(.8+.4*a0)));
+ for(let i=1;i<9;i++)o[i]=rng()<gr5R(id,i,rk)/100?1:0;return o;};
+MX.grade=g=>g>=75?'S':g>=60?'A':g>=45?'B':g>=30?'C':'D';
+// old saves: re-roll every heroine's level gains once with the clamped rates (seeded, so it is the same every load)
+function gr5Mig(){const d=RL.d;if(!d||d.v105g)return;d.v105g=1;for(const id of RL.IDS){const H=d.h&&d.h[id];if(H)H.g=null;}MX.ver++;try{rlSave();}catch(e){}}
+{const _s=mxStats;mxStats=function(){try{if(RL.d&&!RL.d.v105g)gr5Mig();}catch(e){}return _s.apply(this,arguments);};}
+{const _n=rlNew;rlNew=function(){const d=_n.apply(this,arguments);if(d)d.v105g=1;return d;};}
+
+UW.V105={EL5,UC5,Q5,RK5,GR5,el5Top3,el5Bump,el5Gap,uc5Mul,q5Daily,q5Run,q5DRows,q5MRows,q5Ready,q5Claim,q5Open,q5Close,q5Ev,rk5On,rk5Set,rk5Pool,rk5Pick,gr5R,gr5Mig};
+
 </script><script>
 if (location.protocol === 'http:' || location.protocol === 'https:') {
   navigator.serviceWorker.register('sw.js');
